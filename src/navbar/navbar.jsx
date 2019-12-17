@@ -8,7 +8,7 @@ class Navbar extends React.Component {
         return (<div>
                     <nav className="navbar" role="navigation" aria-label="main navigation">
                       <div className="navbar-brand">
-                        <div class="navbar-item">
+                        <div className="navbar-item">
                             <div className="buttons has-addons">
                               <a className="button is-small is-light" href="https://github.com/reinhash">
                                   <span className="icon">

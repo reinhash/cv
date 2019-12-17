@@ -4,7 +4,22 @@ import ReactTypingEffect from 'react-typing-effect';
 class CvLong extends React.Component {
     constructor(props){
         super(props);
+        this.state = {
+            profExperience: true,
+            acadEducation: true,
+            langStack: true
+        }
+
+        this.toggleSegment = this.toggleSegment.bind(this)
     }
+
+    toggleSegment(segmentName){
+        let update = {}
+        update[segmentName] = !this.state[segmentName]
+        console.log(update)
+        this.setState(update, () => console.log(this.state))
+    }
+
     render(){
         return (<div>
                     <section className="hero">
@@ -40,12 +55,20 @@ class CvLong extends React.Component {
                             </div>
                         </div>
                     </section>
+                    
                     <section className="hero is-bold is-info">
                         <div className="hero-body">
-                          <h1 className="title is-2 has-text-centered">Professional Experience</h1>
+                          <h1 className="title is-2 has-text-centered">
+                            <a onClick={() => this.toggleSegment("profExperience")}>
+                            <span className="icon">
+                                <i className="far fa-eye-slash"></i>
+                            </span>
+                            </a>Professional Experience
+                          </h1>
                         </div>
                     </section>
-                    <section className="hero is-light is-bold">
+                    {this.state.profExperience ? (<div>
+                        <section className="hero is-light is-bold">
                         <div className="hero-body">
                             <div className="container has-text-centered">
                                 <div className="columns">
@@ -197,11 +220,19 @@ class CvLong extends React.Component {
                             </div>
                         </div>
                     </section>
+                    </div>) :null }
                     <section className="hero is-bold is-info">
                         <div className="hero-body">
-                          <h1 className="title is-2 has-text-centered">Academic education</h1>
+                          <h1 className="title is-2 has-text-centered">
+                                <a onClick={() => this.toggleSegment("acadEducation")}>
+                                    <span className="icon">
+                                        <i className="far fa-eye-slash"></i>
+                                    </span>
+                                </a>Academic education
+                            </h1>
                         </div>
                     </section>
+                    {this.state.acadEducation ? (<div>
                     <section className="hero is-light is-bold">
                         <div className="hero-body">
                             <div className="container has-text-centered">
@@ -351,11 +382,19 @@ class CvLong extends React.Component {
                             </div>
                         </div>
                     </section>
+                    </div>) : null}
                     <section className="hero is-bold is-info">
                         <div className="hero-body">
-                          <h1 className="title is-2 has-text-centered">Languages & Stack</h1>
+                          <h1 className="title is-2 has-text-centered">
+                          <a onClick={() => this.toggleSegment("langStack")}>
+                                <span className="icon">
+                                    <i className="far fa-eye-slash"></i>
+                                </span>
+                          </a>Languages & Stack
+                          </h1>
                         </div>
                     </section>
+                    {this.state.langStack ? (<div>
                     <section className="hero is-light is-bold">
                         <div className="hero-body">
                             <div className="container has-text-centered">
@@ -425,6 +464,7 @@ class CvLong extends React.Component {
                             </div>
                         </div>
                     </section>
+                    </div>) : null }
                 </div>);
     }
 
