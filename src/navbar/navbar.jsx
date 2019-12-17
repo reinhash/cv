@@ -8,7 +8,22 @@ class Navbar extends React.Component {
         return (<div>
                     <nav className="navbar" role="navigation" aria-label="main navigation">
                       <div className="navbar-brand">
-                        
+                        <div class="navbar-item">
+                            <div className="buttons has-addons">
+                              <a className="button is-small is-light" href="https://github.com/reinhash">
+                                  <span className="icon">
+                                    <i className="fab fa-github"></i>
+                                  </span>
+                                  <span>GitHub</span>
+                              </a>
+                              <a className="button is-small is-info" href="https://www.linkedin.com/in/reinhard-scheuerle-707348a8/">
+                                  <span className="icon">
+                                      <i className="fab fa-linkedin"></i>
+                                  </span>
+                                  <span>LinkedIn</span>
+                              </a>
+                            </div>
+                          </div>
                           
 
 
@@ -33,6 +48,9 @@ class Navbar extends React.Component {
                           </a>
 
                         </div>
+                        
+                          
+                        
 
                         
                       </div>

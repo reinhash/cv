@@ -30,7 +30,7 @@ class CvShort extends React.Component {
                           </header>
                           <LightSpeed left>
                               <div className="timeline-item">
-                                <div className="timeline-marker is-icon"></div>
+                                <div className="timeline-marker is-icon is-link"></div>
                                 <div className="timeline-content">
                                   <p className="heading">September 2009</p>
                                   <p>Start: <strong>Bachelor of Science: International Business - Finance</strong></p>
@@ -43,7 +43,7 @@ class CvShort extends React.Component {
                           </header>
                           <LightSpeed right>
                               <div className="timeline-item">
-                                <div className="timeline-marker"></div>
+                                <div className="timeline-marker is-link"></div>
                                 <div className="timeline-content">
                                   <p className="heading">January 2012</p>
                                   <p><strong>Study Abroad</strong></p>
@@ -58,7 +58,7 @@ class CvShort extends React.Component {
                           </header>
                           <LightSpeed left>
                               <div className="timeline-item">
-                                <div className="timeline-marker is-icon"></div>
+                                <div className="timeline-marker is-icon is-link"></div>
                                 <div className="timeline-content">
                                   <p className="heading">September 2013</p>
                                   <p>Start: <strong>Master of Science: International Business - Strategy & Innovation</strong></p>
@@ -71,7 +71,7 @@ class CvShort extends React.Component {
                           </header>
                           <LightSpeed right>
                               <div className="timeline-item">
-                                <div className="timeline-marker"></div>
+                                <div className="timeline-marker is-link"></div>
                                 <div className="timeline-content">
                                   <p className="heading">January 2012</p>
                                   <p><strong>Study Abroad</strong></p>
@@ -85,7 +85,7 @@ class CvShort extends React.Component {
                           </header>
                           <Pulse>
                               <div className="timeline-item">
-                                <div className="timeline-marker is-icon is-primary"></div>
+                                <div className="timeline-marker is-icon is-link"></div>
                                 <div className="timeline-content">
                                   <p className="heading"><strong>Graduation</strong></p>
                                 </div>
@@ -93,7 +93,7 @@ class CvShort extends React.Component {
                           </Pulse>
                           <Fade top>
                               <div className="timeline-item">
-                                <div className="timeline-marker"></div>
+                                <div className="timeline-marker is-primary"></div>
                                 <div className="timeline-content">
                                   <p className="heading">June 2015</p>
                                   <p><strong>Quality Management (Internship)</strong></p>
@@ -107,7 +107,7 @@ class CvShort extends React.Component {
                           </header>
                           <Fade top>
                               <div className="timeline-item">
-                                <div className="timeline-marker is-icon"></div>
+                                <div className="timeline-marker is-icon is-primary"></div>
                                 <div className="timeline-content">
                                   <p className="heading">June 2016</p>
                                   <p><strong>Equity Index Analyst</strong></p>
@@ -121,7 +121,7 @@ class CvShort extends React.Component {
                           </header>
                           <Fade top>
                               <div className="timeline-item">
-                                <div className="timeline-marker is-icon"></div>
+                                <div className="timeline-marker is-icon is-primary"></div>
                                 <div className="timeline-content">
                                   <p className="heading">December 2018</p>
                                   <p><strong>IT Consultant DMS/ECM</strong></p>
