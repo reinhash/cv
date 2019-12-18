@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactTypingEffect from 'react-typing-effect';
+import Fade from 'react-reveal/Fade';
 
 class CvLong extends React.Component {
     constructor(props){
@@ -7,7 +8,8 @@ class CvLong extends React.Component {
         this.state = {
             profExperience: true,
             acadEducation: true,
-            langStack: true
+            langStack: true,
+            eyeClassNames: ["fas fa-eye", "fas fa-eye-slash"]
         }
 
         this.toggleSegment = this.toggleSegment.bind(this)
@@ -58,16 +60,17 @@ class CvLong extends React.Component {
                     
                     <section className="hero is-bold is-info">
                         <div className="hero-body">
-                          <h1 className="title is-2 has-text-centered">
-                            <a onClick={() => this.toggleSegment("profExperience")}>
-                            <span className="icon">
-                                <i className="far fa-eye-slash"></i>
-                            </span>
-                            </a>Professional Experience
-                          </h1>
+                            <h1 className="title is-2 has-text-centered">
+                                <button className="button is-outlined is-link" onClick={() => this.toggleSegment("profExperience")}>
+                                    <span className="icon is-large">
+                                        <i className={this.state.profExperience ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
+                                    </span>
+                                </button> Professional Experience
+                            </h1>    
                         </div>
                     </section>
-                    {this.state.profExperience ? (<div>
+                    <Fade left collapse when={this.state.profExperience}>
+                    <div>
                         <section className="hero is-light is-bold">
                         <div className="hero-body">
                             <div className="container has-text-centered">
@@ -220,19 +223,22 @@ class CvLong extends React.Component {
                             </div>
                         </div>
                     </section>
-                    </div>) :null }
+                    </div>
+                    </Fade>
+                    
                     <section className="hero is-bold is-info">
                         <div className="hero-body">
                           <h1 className="title is-2 has-text-centered">
-                                <a onClick={() => this.toggleSegment("acadEducation")}>
+                                <button className="button is-outlined is-link" onClick={() => this.toggleSegment("acadEducation")}>
                                     <span className="icon">
-                                        <i className="far fa-eye-slash"></i>
+                                        <i className={this.state.acadEducation ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
                                     </span>
-                                </a>Academic education
+                                </button> Academic education
                             </h1>
                         </div>
                     </section>
-                    {this.state.acadEducation ? (<div>
+                    <Fade left collapse when={this.state.acadEducation}>
+                    <div>
                     <section className="hero is-light is-bold">
                         <div className="hero-body">
                             <div className="container has-text-centered">
@@ -382,19 +388,21 @@ class CvLong extends React.Component {
                             </div>
                         </div>
                     </section>
-                    </div>) : null}
+                    </div>
+                    </Fade>
                     <section className="hero is-bold is-info">
                         <div className="hero-body">
                           <h1 className="title is-2 has-text-centered">
-                          <a onClick={() => this.toggleSegment("langStack")}>
+                          <button className="button is-outlined is-link" onClick={() => this.toggleSegment("langStack")}>
                                 <span className="icon">
-                                    <i className="far fa-eye-slash"></i>
+                                    <i className={this.state.langStack ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
                                 </span>
-                          </a>Languages & Stack
+                          </button> Languages & Stack
                           </h1>
                         </div>
                     </section>
-                    {this.state.langStack ? (<div>
+                    <Fade left collapse when={this.state.langStack}>
+                    <div>
                     <section className="hero is-light is-bold">
                         <div className="hero-body">
                             <div className="container has-text-centered">
@@ -464,7 +472,8 @@ class CvLong extends React.Component {
                             </div>
                         </div>
                     </section>
-                    </div>) : null }
+                    </div>
+                    </Fade>
                 </div>);
     }
 
