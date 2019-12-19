@@ -433,7 +433,27 @@ class CvLong extends React.Component {
                                           </div>
                                           <div className="control">
                                             <div className="tags has-addons">
+                                              <p className="tag is-link is-large">NoSQL</p>
+                                            </div>
+                                          </div>
+                                          <div className="control">
+                                            <div className="tags has-addons">
                                               <p className="tag is-link is-large">HTML 5</p>
+                                            </div>
+                                          </div>
+                                          <div className="control">
+                                            <div className="tags has-addons">
+                                              <p className="tag is-link is-large">Bootstrap</p>
+                                            </div>
+                                          </div>
+                                          <div className="control">
+                                            <div className="tags has-addons">
+                                              <p className="tag is-link is-large">Ajax</p>
+                                            </div>
+                                          </div>
+                                          <div className="control">
+                                            <div className="tags has-addons">
+                                              <p className="tag is-link is-large">jQuery</p>
                                             </div>
                                           </div>
                                           <div className="control">
