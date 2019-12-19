@@ -72,6 +72,54 @@ class CvLong extends React.Component {
                     <Fade left collapse when={this.state.profExperience}>
                     <div>
                         <section className="hero is-light is-bold">
+                            <div className="hero-body">
+                                <div className="container has-text-centered">
+                                    <div className="columns">
+                                        <div className="column is-5 is-narrow">
+                                            <h1 className="title is-3 has-text-left-tablet">Full-stack developer course</h1>
+                                            <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.synalis.de">Bogota Bootcamp</a></h5>
+                                            <h5 className="subtitle is-6 has-text-left-tablet">Bogota Bootcamp teaches full-stack development with Ruby on Rails and React</h5>
+                                            <div className="level">
+                                                <div className="level-left">
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32">
+                                                            <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" />
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                        11/2019 - currently
+                                                        </p>
+                                                    </div>
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32">
+                                                            <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" />
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                        Bogota, Colombia
+                                                        </p>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                            
+                                        </div>
+                                        <div className="column is-offset-1 is-5 is-narrow">
+                                            <h5 className="subtitle is-5 has-text-left-tablet">Course contents</h5>
+                                            <div className="content">
+                                                <ul className="has-text-left">
+                                                    <li>Ruby on Rails as a full-stack framework</li>
+                                                    <li>React (Front-end)</li>
+                                                    <li>SQL (PG, Sqlite) and NoSQL databases (Firebase)</li>
+                                                    <li>Javascript, Ajax and jQuery</li>
+                                                    <li>HTML, CSS, Bootstrap and Bulma</li>
+                                                    <li>AWS tools</li>
+                                                    <li>GIT & GitHub</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section className="hero is-light is-bold">
                         <div className="hero-body">
                             <div className="container has-text-centered">
                                 <div className="columns">
