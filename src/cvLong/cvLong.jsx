@@ -86,7 +86,7 @@ class CvLong extends React.Component {
                                                             <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" />
                                                         </figure> 
                                                         <p className="subtitle is-6">
-                                                        11/2019 - currently
+                                                        10/2019 - currently
                                                         </p>
                                                     </div>
                                                     <div className="level-item">
@@ -134,7 +134,7 @@ class CvLong extends React.Component {
                                                         <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" />
                                                     </figure> 
                                                     <p className="subtitle is-6">
-                                                    12/2018 - 11/2019
+                                                    12/2018 - 10/2019
                                                     </p>
                                                 </div>
                                                 <div className="level-item">

@@ -6,6 +6,7 @@ import Navbar from './navbar/navbar.jsx'
 import CvLong from './cvLong/cvLong.jsx'
 import CvShort from './cvShort/cvShort.jsx'
 import Footer from './footer/footer.jsx'
+import Home from './home/home.jsx'
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <Navbar />
       <Router>
         <Switch>
-          <Route path="/cvlong"><CvLong /></Route>
-          <Route path="/cvshort"><CvShort /></Route>
+          <Route path="/cv"><CvLong /></Route>
+          <Route path="/timeline"><CvShort /></Route>
+          <Route path="/"><CvShort /></Route>
         </Switch>
       </Router>
       <Footer />
