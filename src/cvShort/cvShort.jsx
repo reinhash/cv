@@ -5,7 +5,15 @@ import Fade from 'react-reveal/Fade';
 
 function CvShort () {
     return (<div>
-              <section>
+              <section className="hero is-bold is-light">
+                <div className="hero-body">
+                  <h1 className="title is-bold is-1">
+                    Reinhard Scheuerle
+                  </h1>
+                  <h2 className="subtitle is-4">
+                    Welcome to my timeline
+                  </h2>
+                </div>
               </section>
               <section className="section">
                   <div className="timeline is-centered">

@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactTypingEffect from 'react-typing-effect';
 import Fade from 'react-reveal/Fade';
+import Roll from 'react-reveal/Roll';
 
 class CvLong extends React.Component {
     constructor(props){
@@ -462,77 +463,108 @@ class CvLong extends React.Component {
                                         <h5 className="subtitle is-5 has-text-left-tablet">French <progress className="progress is-primary" value="15" max="100">15%</progress></h5>
                                         <h5 className="subtitle is-5 has-text-left-tablet">Dutch <progress className="progress is-primary" value="30" max="100">30%</progress></h5>
                                     </div>
+                                    
                                     <div className="column  is-offset-1 is-5 is-narrow">
                                         <div className="field is-grouped is-grouped-multiline">
+                                          
                                           <div className="control">
+                                            <Roll left>
                                             <div className="tags has-addons">
                                               <p className="tag is-link is-large">Python 3</p>
                                             </div>
+                                            </Roll>
                                           </div>
+                                          
                                           <div className="control">
+                                          <Roll top>
                                             <div className="tags has-addons">
                                               <p className="tag is-link is-large">Javascript - ES6</p>
                                             </div>
+                                          </Roll>
                                           </div>
                                           <div className="control">
+                                          <Roll right>
                                             <div className="tags has-addons">
                                               <p className="tag is-link is-large">SQL</p>
                                             </div>
+                                          </Roll>
                                           </div>
                                           <div className="control">
+                                          <Roll left>
                                             <div className="tags has-addons">
                                               <p className="tag is-link is-large">NoSQL</p>
                                             </div>
+                                          </Roll>
                                           </div>
                                           <div className="control">
+                                          <Roll top>
                                             <div className="tags has-addons">
                                               <p className="tag is-link is-large">HTML 5</p>
                                             </div>
+                                          </Roll>
                                           </div>
                                           <div className="control">
+                                          <Roll right>
                                             <div className="tags has-addons">
                                               <p className="tag is-link is-large">Bootstrap</p>
                                             </div>
+                                          </Roll>
                                           </div>
                                           <div className="control">
+                                          <Roll top>
                                             <div className="tags has-addons">
                                               <p className="tag is-link is-large">Ajax</p>
                                             </div>
+                                          </Roll>
                                           </div>
                                           <div className="control">
+                                          <Roll bottom>
                                             <div className="tags has-addons">
                                               <p className="tag is-link is-large">jQuery</p>
                                             </div>
+                                          </Roll>
                                           </div>
                                           <div className="control">
+                                          <Roll bottom>
                                             <div className="tags has-addons">
                                               <p className="tag is-link is-large">CSS</p>
                                             </div>
+                                          </Roll>
                                           </div>
                                           <div className="control">
+                                          <Roll bottom>
                                             <div className="tags has-addons">
                                               <p className="tag is-link is-large">Rails 6</p>
                                             </div>
+                                          </Roll>
                                           </div>
                                           <div className="control">
+                                          <Roll bottom>
                                             <div className="tags has-addons">
                                               <p className="tag is-link is-large">React</p>
                                             </div>
+                                          </Roll>
                                           </div>
                                           <div className="control">
+                                          <Roll bottom>
                                             <div className="tags has-addons">
                                               <p className="tag is-link is-large">Git</p>
                                             </div>
+                                          </Roll>
                                           </div>
                                           <div className="control">
+                                          <Roll bottom>
                                             <div className="tags has-addons">
                                               <p className="tag is-link is-large">Ruby</p>
                                             </div>
+                                          </Roll>
                                           </div>
                                           <div className="control">
+                                          <Roll bottom>
                                             <div className="tags has-addons">
                                               <p className="tag is-link is-large">Bulma</p>
                                             </div>
+                                          </Roll>
                                           </div>
                                         </div>
                                     </div>
