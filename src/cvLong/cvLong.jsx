@@ -123,7 +123,7 @@ function ProfessionalExperience(){
                                         <div className="level-left">
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" />
+                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" alt="calender" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 10/2019 - currently
@@ -131,7 +131,7 @@ function ProfessionalExperience(){
                                             </div>
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" />
+                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" alt="location" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 Bogota, Colombia
@@ -171,7 +171,7 @@ function ProfessionalExperience(){
                                         <div className="level-left">
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" />
+                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" alt="calender" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 12/2018 - 10/2019
@@ -179,7 +179,7 @@ function ProfessionalExperience(){
                                             </div>
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" />
+                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" alt="location" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 Bonn, Germany
@@ -230,7 +230,7 @@ function ProfessionalExperience(){
                                         <div className="level-left">
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" />
+                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" alt="calender" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                     06/2016 - 01/2018
@@ -238,7 +238,7 @@ function ProfessionalExperience(){
                                             </div>
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" />
+                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" alt="location" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 Frankfurt, Germany
@@ -275,7 +275,7 @@ function ProfessionalExperience(){
                                         <div className="level-left">
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" />
+                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" alt="calender" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                     06/2015 - 05/2016
@@ -283,7 +283,7 @@ function ProfessionalExperience(){
                                             </div>
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" />
+                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" alt="location" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 Brussels, Belgium
@@ -320,7 +320,7 @@ function AcademicEducation(){
                                         <div className="level-left">
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" />
+                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" alt="calender" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                     09/2013 - 06/2015
@@ -328,7 +328,7 @@ function AcademicEducation(){
                                             </div>
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" />
+                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" alt="location" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 Maastricht, the Netherlands
@@ -359,7 +359,7 @@ function AcademicEducation(){
                                         <div className="level-left">
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" />
+                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" alt="calender" />
                                                 </figure>
                                                 <p className="subtitle is-6">
                                                     10/2014 - 02/2015
@@ -367,7 +367,7 @@ function AcademicEducation(){
                                             </div>
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" />
+                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" alt="location" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 Vienna, Austria
@@ -393,7 +393,7 @@ function AcademicEducation(){
                                         <div className="level-left">
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" />
+                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" alt="calender" />
                                                 </figure>
                                                 <p className="subtitle is-6">
                                                     09/2009 - 09/2013
@@ -401,7 +401,7 @@ function AcademicEducation(){
                                             </div>
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" />
+                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" alt="location" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 Maastricht, the Netherlands
@@ -432,7 +432,7 @@ function AcademicEducation(){
                                         <div className="level-left">
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" />
+                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" alt="calender" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                     02/2012 - 06/2012
@@ -440,7 +440,7 @@ function AcademicEducation(){
                                             </div>
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" />
+                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" alt="location" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 Spokane, USA
