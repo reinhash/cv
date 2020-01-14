@@ -260,11 +260,8 @@ class CvLong extends React.Component {
                                         <h5 className="subtitle is-5 has-text-left-tablet">Responsibilities and Tasks</h5>
                                         <div className="content">
                                             <ul className="has-text-left">
-                                                <li>Managed IT projects, tested and released platform features for the index calculation. Set-up new back-end calculation logics with the developers</li>
-                                                <li>Performed the selection of equity stocks for index rebalancings</li>
-                                                <li>Direct customer contact and relationship management</li>
-                                                <li>Responsible for the acquisition and setup of new custom indices</li>
-                                                <li>Continuously improved processes to achieve standardization using Python, VBA and SQL Databases</li>
+                                                <li>Analysis and process improvement of sold parts with quality concerns</li>
+                                                <li>Created and optimized reports on a monthly basis by using Excel and VBA</li>
                                             </ul>
                                         </div>
                                     </div>
