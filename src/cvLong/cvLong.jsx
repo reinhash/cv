@@ -101,6 +101,26 @@ function TitleHeader(){
                                         text="Full-stack developer"
                                         />
                                     </h2>
+                                    <div className="level">
+                                        <div className="level-left">
+                                            <div className="level-item">
+                                                <figure className="image is-32x32">
+                                                    <img src="https://img.icons8.com/plasticine/100/000000/whatsapp.png" />
+                                                </figure>
+                                                <p className="subtitle is-6">
+                                                 +57 (311) 207-9379‬
+                                                </p>
+                                            </div>
+                                            <div className="level-item">
+                                                <figure className="image is-32x32">
+                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" alt="location" />
+                                                </figure> 
+                                                <p className="subtitle is-6">
+                                                Bogota, Colombia
+                                                </p>
+                                            </div>
+                                        </div> 
+                                    </div>
                                 </div>
                             </div>
                         </div>
