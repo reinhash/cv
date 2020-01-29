@@ -10,6 +10,8 @@ class CvLong extends React.Component {
             profExperience: true,
             acadEducation: true,
             langStack: true,
+            phoneNumber: "+573112079379‬",
+            currentLocation: "Bogota, Colombia",
             eyeClassNames: ["fas fa-eye", "fas fa-eye-slash"]
         }
 
@@ -24,7 +26,7 @@ class CvLong extends React.Component {
 
     render(){
         return (<div>
-                    <TitleHeader />
+                    <TitleHeader phoneNumber={this.state.phoneNumber} currentLocation={this.state.currentLocation} />
                     <section className="hero is-bold is-info">
                         <div className="hero-body">
                             <h1 className="title is-2 has-text-centered">
@@ -71,7 +73,19 @@ class CvLong extends React.Component {
     }
 }
 
-function TitleHeader(){
+function TitleHeader(props){
+
+    function formatPhoneNumber(phoneNumberString) {
+        let pre = phoneNumberString[0] + phoneNumberString[1] + phoneNumberString[2]
+        let mid = phoneNumberString[3] + phoneNumberString[4] + phoneNumberString[5]
+        let end = phoneNumberString
+        .split("").map((number, index) => {if(index > 5) return number})
+        .filter(item => item!==undefined)
+        .reduce((i,j) => i.toString()+j.toString())
+        console.log(end)
+        return `${pre} (${mid}) ${end}`
+    }
+
     return (<div>
                 <section className="hero">
                     <div className="hero-body">
@@ -101,22 +115,23 @@ function TitleHeader(){
                                         text="Full-stack developer"
                                         />
                                     </h2>
+
                                     <div className="level">
                                         <div className="level-left">
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
                                                     <img src="https://img.icons8.com/plasticine/100/000000/whatsapp.png" />
                                                 </figure>
-                                                <p className="subtitle is-6">
-                                                 +57 (311) 207-9379‬
-                                                </p>
+                                                <a className="subtitle is-6" href={`https://api.whatsapp.com/send?phone=${props.phoneNumber}‬`} alt="whatsapp">
+                                                 {formatPhoneNumber(props.phoneNumber)}
+                                                </a>
                                             </div>
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
                                                     <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" alt="location" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
-                                                Bogota, Colombia
+                                                {props.currentLocation}
                                                 </p>
                                             </div>
                                         </div> 
