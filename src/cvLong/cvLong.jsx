@@ -82,7 +82,6 @@ function TitleHeader(props){
         .split("").map((number, index) => {if(index > 5) return number})
         .filter(item => item!==undefined)
         .reduce((i,j) => i.toString()+j.toString())
-        console.log(end)
         return `${pre} (${mid}) ${end}`
     }
 
@@ -92,30 +91,45 @@ function TitleHeader(props){
                         <div className="container has-text-centered">
                             <div className="columns is-centered">
                                 <div className="column is-one-fifth">
-                                    <div className="tile is-ancestor">
-                                        <div className="tile is-vertical is-1">
-                                            <div className="tile">
-                                                <div className="tile is-parent is-vertical">
+                                    <div className="columns is-centered">
+                                        <div className="column">
+                                            <div className="tile is-ancestor">
+                                                <div className="tile is-1 is-parent">
                                                     <article className="tile is-child box">
-                                                        <figure className="image is-128x128">
-                                                            <img className="is-rounded" alt="Profile_picture" src={process.env.PUBLIC_URL + "/profile_picture_icon.JPG"} />
-                                                        </figure>
+                                                        <div className="level">
+                                                            <div className="level-item">
+                                                                <figure className="image is-128x128">
+                                                                    <img className="is-rounded" alt="Profile_picture" src={process.env.PUBLIC_URL + "/profile_picture_icon.JPG"} />
+                                                                </figure>
+                                                            </div>
+                                                        </div>
                                                     </article>
                                                 </div>
-                                            </div>
+                                            </div> 
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div>
                                 <div className="column">
-                                    <h1 className="title is-bold is-1 has-text-left">
-                                        Reinhard Scheuerle
-                                    </h1>
-                                    <h2 className="subtitle is-4 has-text-left">
-                                        <ReactTypingEffect
-                                        text="Full-stack developer"
-                                        />
-                                    </h2>
-
+                                    <div className="level">
+                                        <div className="level-left">
+                                            <div className="level-item">
+                                                <h1 className="title is-bold is-1">
+                                                    Reinhard Scheuerle
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="level">
+                                        <div className="level-left">
+                                            <div className="level-item">
+                                                <h2 className="subtitle is-4 has-text-left">
+                                                    <ReactTypingEffect
+                                                    text="Full-stack developer"
+                                                    />
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div className="level">
                                         <div className="level-left">
                                             <div className="level-item">
