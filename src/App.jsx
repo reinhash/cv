@@ -15,7 +15,7 @@ function App() {
         <Switch>
           <Route path="/cv"><CvLong /></Route>
           <Route path="/timeline"><CvShort /></Route>
-          <Route path="/"><CvShort /></Route>
+          <Route path="/"><CvLong /></Route>
         </Switch>
       </Router>
       <Footer />
