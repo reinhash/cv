@@ -134,7 +134,7 @@ function TitleHeader(props){
                                         <div className="level-left">
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://img.icons8.com/plasticine/100/000000/whatsapp.png" />
+                                                    <img src={require("./whatsapp.png")} />
                                                 </figure>
                                                 <a className="subtitle is-6" href={`https://api.whatsapp.com/send?phone=${props.phoneNumber}‬`} alt="whatsapp">
                                                  {formatPhoneNumber(props.phoneNumber)}
@@ -142,7 +142,7 @@ function TitleHeader(props){
                                             </div>
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" alt="location" />
+                                                    <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 {props.currentLocation}
@@ -172,7 +172,7 @@ function ProfessionalExperience(){
                                         <div className="level-left">
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" alt="calender" />
+                                                    <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 10/2019 - currently
@@ -180,7 +180,7 @@ function ProfessionalExperience(){
                                             </div>
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" alt="location" />
+                                                    <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 Bogota, Colombia
@@ -220,7 +220,7 @@ function ProfessionalExperience(){
                                         <div className="level-left">
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" alt="calender" />
+                                                    <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 12/2018 - 10/2019
@@ -228,7 +228,7 @@ function ProfessionalExperience(){
                                             </div>
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" alt="location" />
+                                                    <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 Bonn, Germany
@@ -279,7 +279,7 @@ function ProfessionalExperience(){
                                         <div className="level-left">
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" alt="calender" />
+                                                    <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                     06/2016 - 01/2018
@@ -287,7 +287,7 @@ function ProfessionalExperience(){
                                             </div>
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" alt="location" />
+                                                    <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 Frankfurt, Germany
@@ -324,7 +324,7 @@ function ProfessionalExperience(){
                                         <div className="level-left">
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" alt="calender" />
+                                                    <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                     06/2015 - 05/2016
@@ -332,7 +332,7 @@ function ProfessionalExperience(){
                                             </div>
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" alt="location" />
+                                                    <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 Brussels, Belgium
@@ -369,7 +369,7 @@ function AcademicEducation(){
                                         <div className="level-left">
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" alt="calender" />
+                                                    <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                     09/2013 - 06/2015
@@ -377,7 +377,7 @@ function AcademicEducation(){
                                             </div>
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" alt="location" />
+                                                    <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 Maastricht, the Netherlands
@@ -408,7 +408,7 @@ function AcademicEducation(){
                                         <div className="level-left">
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" alt="calender" />
+                                                    <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                 </figure>
                                                 <p className="subtitle is-6">
                                                     10/2014 - 02/2015
@@ -416,7 +416,7 @@ function AcademicEducation(){
                                             </div>
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" alt="location" />
+                                                    <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 Vienna, Austria
@@ -442,7 +442,7 @@ function AcademicEducation(){
                                         <div className="level-left">
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" alt="calender" />
+                                                    <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                 </figure>
                                                 <p className="subtitle is-6">
                                                     09/2009 - 09/2013
@@ -450,7 +450,7 @@ function AcademicEducation(){
                                             </div>
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" alt="location" />
+                                                    <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 Maastricht, the Netherlands
@@ -481,7 +481,7 @@ function AcademicEducation(){
                                         <div className="level-left">
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://carlisletheacarlisletheatre.org/images/calendar-png-blue-7.png" alt="calender" />
+                                                    <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                     02/2012 - 06/2012
@@ -489,7 +489,7 @@ function AcademicEducation(){
                                             </div>
                                             <div className="level-item">
                                                 <figure className="image is-32x32">
-                                                    <img src="https://icon-library.net/images/location-pin-icon/location-pin-icon-13.jpg" alt="location" />
+                                                    <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                 </figure> 
                                                 <p className="subtitle is-6">
                                                 Spokane, USA
@@ -509,18 +509,21 @@ function AcademicEducation(){
 }
 
 function LangStack(){
+
     return (<div>
                 <section className="hero is-light is-bold">
                     <div className="hero-body">
                         <div className="container has-text-centered">
                             <div className="columns">
+                            
                                 <div className="column is-5 is-narrow">
-                                    <h5 className="subtitle is-5 has-text-left-tablet">German <progress className="progress is-primary" value="100" max="100">100%</progress></h5>
+                                    <h5 className="subtitle is-5 has-text-left-tablet">German <progress className="progress is-primary ui-progressbar-value" value="100" max="100">100%</progress></h5>
                                     <h5 className="subtitle is-5 has-text-left-tablet">English <progress className="progress is-primary" value="95" max="100">95%</progress></h5>
                                     <h5 className="subtitle is-5 has-text-left-tablet">Spanish <progress className="progress is-primary" value="70" max="100">70%</progress></h5>
                                     <h5 className="subtitle is-5 has-text-left-tablet">French <progress className="progress is-primary" value="15" max="100">15%</progress></h5>
                                     <h5 className="subtitle is-5 has-text-left-tablet">Dutch <progress className="progress is-primary" value="30" max="100">30%</progress></h5>
                                 </div>
+
                                 <div className="column  is-offset-1 is-5 is-narrow">
                                     <div className="field is-grouped is-grouped-multiline">
                                         <div className="control">
