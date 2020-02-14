@@ -171,7 +171,7 @@ function ProfessionalExperience(){
                                     <div className="level">
                                         <div className="level-left">
                                             <div className="level-item">
-                                                <figure className="image is-32x32">
+                                                <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
                                                     <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                 </figure> 
                                                 <p className="subtitle is-6">
@@ -219,7 +219,7 @@ function ProfessionalExperience(){
                                     <div className="level">
                                         <div className="level-left">
                                             <div className="level-item">
-                                                <figure className="image is-32x32">
+                                                <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
                                                     <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                 </figure> 
                                                 <p className="subtitle is-6">
@@ -278,7 +278,7 @@ function ProfessionalExperience(){
                                     <div className="level">
                                         <div className="level-left">
                                             <div className="level-item">
-                                                <figure className="image is-32x32">
+                                                <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
                                                     <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                 </figure> 
                                                 <p className="subtitle is-6">
@@ -323,7 +323,7 @@ function ProfessionalExperience(){
                                     <div className="level">
                                         <div className="level-left">
                                             <div className="level-item">
-                                                <figure className="image is-32x32">
+                                                <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
                                                     <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                 </figure> 
                                                 <p className="subtitle is-6">
@@ -368,7 +368,7 @@ function AcademicEducation(){
                                     <div className="level">
                                         <div className="level-left">
                                             <div className="level-item">
-                                                <figure className="image is-32x32">
+                                                <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
                                                     <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                 </figure> 
                                                 <p className="subtitle is-6">
@@ -407,7 +407,7 @@ function AcademicEducation(){
                                     <div className="level">
                                         <div className="level-left">
                                             <div className="level-item">
-                                                <figure className="image is-32x32">
+                                                <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
                                                     <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                 </figure>
                                                 <p className="subtitle is-6">
@@ -441,7 +441,7 @@ function AcademicEducation(){
                                     <div className="level">
                                         <div className="level-left">
                                             <div className="level-item">
-                                                <figure className="image is-32x32">
+                                                <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
                                                     <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                 </figure>
                                                 <p className="subtitle is-6">
@@ -480,7 +480,7 @@ function AcademicEducation(){
                                     <div className="level">
                                         <div className="level-left">
                                             <div className="level-item">
-                                                <figure className="image is-32x32">
+                                                <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
                                                     <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                 </figure> 
                                                 <p className="subtitle is-6">
