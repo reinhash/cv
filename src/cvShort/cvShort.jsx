@@ -140,9 +140,6 @@ function Timeline(){
                       </div>
                     </div>
                 </Fade>
-                <header className="timeline-header">
-                  <span className="tag is-medium is-dark">2019</span>
-                </header>
                 <Fade top>
                     <div className="timeline-item">
                       <div className="timeline-marker is-icon">
@@ -151,6 +148,20 @@ function Timeline(){
                       <div className="timeline-content">
                         <p className="heading">October 2019</p>
                         <p>Bogota Bootcamp</p>
+                      </div>
+                    </div>
+                </Fade>
+                <header className="timeline-header">
+                  <span className="tag is-medium is-dark">2020</span>
+                </header>
+                <Fade top>
+                    <div className="timeline-item">
+                      <div className="timeline-marker is-icon">
+                        <i className="fa fa-flag"></i>
+                      </div>
+                      <div className="timeline-content">
+                        <p className="heading">January 2020</p>
+                        <p>Freelance Software Developer</p>
                       </div>
                     </div>
                 </Fade>

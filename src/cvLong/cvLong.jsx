@@ -165,6 +165,47 @@ function ProfessionalExperience(){
                         <div className="container has-text-centered">
                             <div className="columns">
                                 <div className="column is-5 is-narrow">
+                                    <h1 className="title is-3 has-text-left-tablet">Freelance Software Developer</h1>
+                                    <h5 className="subtitle is-6 has-text-left-tablet"></h5>
+                                    <div className="level">
+                                        <div className="level-left">
+                                            <div className="level-item">
+                                                <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
+                                                    <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                </figure> 
+                                                <p className="subtitle is-6">
+                                                01/2020 - currently
+                                                </p>
+                                            </div>
+                                            <div className="level-item">
+                                                <figure className="image is-32x32">
+                                                    <img src={require("./location-pin-icon-13.jpg")} alt="location" />
+                                                </figure> 
+                                                <p className="subtitle is-6">
+                                                Remote
+                                                </p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    
+                                </div>
+                                <div className="column is-offset-1 is-5 is-narrow">
+                                    <h5 className="subtitle is-5 has-text-left-tablet">Projects</h5>
+                                    <div className="content">
+                                        <ul className="has-text-left">
+                                            <li><u><a href="http://www.daxosline.com">Daxos</a></u>: Fullstack development for the german chamber of commerce in Bogota. We are building a plattform that connects people from Latin America to german universities and scholarships. #NodeJS, #React, #MySQL, #AWS, #GIT</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="hero is-light is-bold">
+                    <div className="hero-body">
+                        <div className="container has-text-centered">
+                            <div className="columns">
+                                <div className="column is-5 is-narrow">
                                     <h1 className="title is-3 has-text-left-tablet">Full-stack developer course</h1>
                                     <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.synalis.de">Bogota Bootcamp</a></h5>
                                     <h5 className="subtitle is-6 has-text-left-tablet">Bogota Bootcamp teaches full-stack development with Ruby on Rails and React</h5>
@@ -175,7 +216,7 @@ function ProfessionalExperience(){
                                                     <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                 </figure> 
                                                 <p className="subtitle is-6">
-                                                10/2019 - currently
+                                                10/2019 - 12/2019
                                                 </p>
                                             </div>
                                             <div className="level-item">
@@ -519,7 +560,7 @@ function LangStack(){
                                 <div className="column is-5 is-narrow">
                                     <h5 className="subtitle is-5 has-text-left-tablet">German <progress className="progress is-primary ui-progressbar-value" value="100" max="100">100%</progress></h5>
                                     <h5 className="subtitle is-5 has-text-left-tablet">English <progress className="progress is-primary" value="95" max="100">95%</progress></h5>
-                                    <h5 className="subtitle is-5 has-text-left-tablet">Spanish <progress className="progress is-primary" value="70" max="100">70%</progress></h5>
+                                    <h5 className="subtitle is-5 has-text-left-tablet">Spanish <progress className="progress is-primary" value="82" max="100">82%</progress></h5>
                                     <h5 className="subtitle is-5 has-text-left-tablet">French <progress className="progress is-primary" value="15" max="100">15%</progress></h5>
                                     <h5 className="subtitle is-5 has-text-left-tablet">Dutch <progress className="progress is-primary" value="30" max="100">30%</progress></h5>
                                 </div>
@@ -541,16 +582,37 @@ function LangStack(){
                                             </Roll>
                                         </div>
                                         <div className="control">
+                                            <Roll top>
+                                                <div className="tags has-addons">
+                                                    <p className="tag is-link is-large">Ruby</p>
+                                                </div>
+                                            </Roll>
+                                        </div>
+                                        <div className="control">
                                             <Roll right>
                                                 <div className="tags has-addons">
-                                                    <p className="tag is-link is-large">SQL</p>
+                                                    <p className="tag is-link is-large">MySQL</p>
+                                                </div>
+                                            </Roll>
+                                        </div>
+                                        <div className="control">
+                                            <Roll right>
+                                                <div className="tags has-addons">
+                                                    <p className="tag is-link is-large">Postgre SQL</p>
+                                                </div>
+                                            </Roll>
+                                        </div>
+                                        <div className="control">
+                                            <Roll right>
+                                                <div className="tags has-addons">
+                                                    <p className="tag is-link is-large">MS SQL Server</p>
                                                 </div>
                                             </Roll>
                                         </div>
                                         <div className="control">
                                             <Roll left>
                                                 <div className="tags has-addons">
-                                                    <p className="tag is-link is-large">NoSQL</p>
+                                                    <p className="tag is-link is-large">MongoDB</p>
                                                 </div>
                                             </Roll>
                                         </div>
@@ -565,6 +627,20 @@ function LangStack(){
                                             <Roll right>
                                                 <div className="tags has-addons">
                                                     <p className="tag is-link is-large">Bootstrap</p>
+                                                </div>
+                                            </Roll>
+                                        </div>
+                                        <div className="control">
+                                            <Roll bottom>
+                                                <div className="tags has-addons">
+                                                    <p className="tag is-link is-large">Bulma</p>
+                                                </div>
+                                            </Roll>
+                                        </div>
+                                        <div className="control">
+                                            <Roll bottom>
+                                                <div className="tags has-addons">
+                                                    <p className="tag is-link is-large">CSS</p>
                                                 </div>
                                             </Roll>
                                         </div>
@@ -585,20 +661,6 @@ function LangStack(){
                                         <div className="control">
                                             <Roll bottom>
                                                 <div className="tags has-addons">
-                                                    <p className="tag is-link is-large">CSS</p>
-                                                </div>
-                                            </Roll>
-                                        </div>
-                                        <div className="control">
-                                            <Roll bottom>
-                                                <div className="tags has-addons">
-                                                    <p className="tag is-link is-large">Rails 6</p>
-                                                </div>
-                                            </Roll>
-                                        </div>
-                                        <div className="control">
-                                            <Roll bottom>
-                                                <div className="tags has-addons">
                                                     <p className="tag is-link is-large">React</p>
                                                 </div>
                                             </Roll>
@@ -606,21 +668,28 @@ function LangStack(){
                                         <div className="control">
                                             <Roll bottom>
                                                 <div className="tags has-addons">
+                                                    <p className="tag is-link is-large">NodeJS</p>
+                                                </div>
+                                            </Roll>
+                                        </div>
+                                        <div className="control">
+                                            <Roll bottom>
+                                                <div className="tags has-addons">
+                                                    <p className="tag is-link is-large">Django</p>
+                                                </div>
+                                            </Roll>
+                                        </div>
+                                        <div className="control">
+                                            <Roll bottom>
+                                                <div className="tags has-addons">
+                                                    <p className="tag is-link is-large">Ruby on Rails</p>
+                                                </div>
+                                            </Roll>
+                                        </div>
+                                        <div className="control">
+                                            <Roll bottom>
+                                                <div className="tags has-addons">
                                                     <p className="tag is-link is-large">Git</p>
-                                                </div>
-                                            </Roll>
-                                        </div>
-                                        <div className="control">
-                                            <Roll bottom>
-                                                <div className="tags has-addons">
-                                                    <p className="tag is-link is-large">Ruby</p>
-                                                </div>
-                                            </Roll>
-                                        </div>
-                                        <div className="control">
-                                            <Roll bottom>
-                                                <div className="tags has-addons">
-                                                    <p className="tag is-link is-large">Bulma</p>
                                                 </div>
                                             </Roll>
                                         </div>
