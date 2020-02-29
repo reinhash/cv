@@ -142,8 +142,7 @@ function Timeline(){
                 </Fade>
                 <Fade top>
                     <div className="timeline-item">
-                      <div className="timeline-marker is-icon">
-                        <i className="fa fa-flag"></i>
+                      <div className="timeline-marker is-icon is-link">
                       </div>
                       <div className="timeline-content">
                         <p className="heading">October 2019</p>
@@ -156,8 +155,7 @@ function Timeline(){
                 </header>
                 <Fade top>
                     <div className="timeline-item">
-                      <div className="timeline-marker is-icon">
-                        <i className="fa fa-flag"></i>
+                      <div className="timeline-marker is-icon is-primary">
                       </div>
                       <div className="timeline-content">
                         <p className="heading">January 2020</p>
