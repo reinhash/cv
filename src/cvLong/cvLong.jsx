@@ -289,8 +289,8 @@ class CvLong extends React.Component {
                                             <ul className="has-text-left">
                                                 <li>{this.props.langGerman ? "Einführung und Konfiguration von ELO (ELO ist ein Enterprise Content Management System aus Stuttgart)" : ("Implementation and configuration of ELO (ELO is an Enterprise Content Management (ECM) system from Stuttgart, Germany) on premise including its modular business solution packages.")} </li>
                                                 <li>{this.props.langGerman ? "Entwicklung von benutzerdefinierten Skripten und Funktionen innerhalb des Tomcat Apache Servers (Verwendung von Javascript in Rhino Engine)" : "Development of custom scripts and functions within the framework of Tomcat Apache (using Javascript in Rhino Engine)"}</li>
-                                                <li>{this.props.langGerman ?  "" : "Management of projects, starting from the diagnosis/analysis of the customer’s needs until and including the final implementation"}</li>
-                                                <li>Led workshops to determine customer needs, align digital processes and optimize system integration</li>
+                                                <li>{this.props.langGerman ? "Projektmanagement, von Beginn der Diagnose- /Analysephase bis zur produktiven Implementierung der Lösung" : "Management of projects, starting from the diagnosis/analysis of the customer’s needs until and including the final implementation"}</li>
+                                                <li>{this.props.langGerman ? "Leitung der workshops des Anforderungsmanagements, Einfügung neuer digitaler Prozesse und Systemintegration" : "Led workshops to determine customer needs, align digital processes and optimize system integration"}</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -303,10 +303,10 @@ class CvLong extends React.Component {
                             <div className="container has-text-centered">
                                 <div className="columns">
                                     <div className="column is-5 is-narrow">
-                                        2018 - Gap year
+                                        {this.props.langGerman ? "2018 - Gap year" : "2018 - Gap year"}
                                     </div>
                                     <div className="column  is-offset-1 is-5 is-narrow">
-                                        Travelled, volunteered, learned Spanish, wrote Python Code
+                                        {this.props.langGerman ? "Reisen, Volunteering, lernte Spanisch, Python-programmierung" : "Travelled, volunteered, learned Spanish, wrote Python Code"}
                                     </div>
                                 </div>
                             </div>
@@ -319,7 +319,7 @@ class CvLong extends React.Component {
                                     <div className="column is-5 is-narrow">
                                         <h1 className="title is-3 has-text-left-tablet">Equity Index Analyst</h1>
                                         <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.solactive.com">Solactive AG</a></h5>
-                                        <h5 className="subtitle is-6 has-text-left-tablet">Solactive is a fast paced, aggressively expansive Fintech company specialized in Index calculation and passively managed financial products</h5>
+                                        <h5 className="subtitle is-6 has-text-left-tablet">{this.props.langGerman ? "Solactive ist ein agiles, aggressiv expandierendes Fintech-Unternehmen spezialisiert auf Indexberechnung und passiv verwaltete Finanzprodukte" : "Solactive is a fast paced, aggressively expansive Fintech company specialized in Index calculation and passively managed financial products"}</h5>
                                         <div className="level">
                                             <div className="level-left">
                                                 <div className="level-item">
@@ -335,21 +335,21 @@ class CvLong extends React.Component {
                                                         <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                     </figure> 
                                                     <p className="subtitle is-6">
-                                                    Frankfurt, Germany
+                                                    {this.props.langGerman ? "Frankfurt, Deutschland" : "Frankfurt, Germany"}
                                                     </p>
                                                 </div>
                                             </div> 
                                         </div>
                                     </div>
                                     <div className="column  is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">Responsibilities and Tasks</h5>
+                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Verantwortung und Aufgaben" : "Responsibilities and Tasks"}</h5>
                                         <div className="content">
                                             <ul className="has-text-left">
-                                                <li>Managed IT projects, tested and released platform features for the index calculation. Set-up new back-end calculation logics with the developers</li>
-                                                <li>Performed the selection of equity stocks for index rebalancings</li>
-                                                <li>Direct customer contact and relationship management</li>
-                                                <li>Responsible for the acquisition and setup of new custom indices</li>
-                                                <li>Continuously improved processes to achieve standardization using Python, VBA and SQL Databases</li>
+                                                <li>{this.props.langGerman ? "IT-Projektmanagement, Testung und Freigabe von neuen Plattform-features für die Indexberechnung. Aufsetzung neuer Backend Kalkulationslogiken mit den Softwareentwicklern" :"Managed IT projects, tested and released platform features for the index calculation. Set-up new back-end calculation logics with the developers"}</li>
+                                                <li>{this.props.langGerman ? "Selektion der Aktien für Indexneubalanzierungen" : "Performed the selection of equity stocks for index rebalancings"}</li>
+                                                <li>{this.props.langGerman ? "Kundenkontakt und Kundenbeziehungen" : "Direct customer contact and relationship management"}</li>
+                                                <li>{this.props.langGerman ? "Verantwortung für die Gewinnung und die Umsetzung neuer Finanzprodukte im Bereich Equity" : "Responsible for the acquisition and setup of new custom indices"}</li>
+                                                <li>{this.props.langGerman ? "Kontinuierliche Verbesserung der Prozesse zur Standardisierung" : "Continuously improved processes to achieve standardization using Python, VBA and SQL Databases"}</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -362,9 +362,9 @@ class CvLong extends React.Component {
                             <div className="container has-text-centered">
                                 <div className="columns">
                                     <div className="column is-5 is-narrow">
-                                        <h1 className="title is-3 has-text-left-tablet">Quality Management (Internship)</h1>
+                                        <h1 className="title is-3 has-text-left-tablet">{this.props.langGerman ? "Qualitätsmanagement (Praktikum)" : "Quality Management (Internship)"}</h1>
                                         <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.solactive.com">Robert Bosch GmbH</a></h5>
-                                        <h5 className="subtitle is-6 has-text-left-tablet">Bosch is a leader in the automotive supply industry and offers a vast variety of solutions</h5>
+                                        <h5 className="subtitle is-6 has-text-left-tablet">{this.props.langGerman ? "Bosch ist führender Zulieferer in der Automobilindustrie" : "Bosch is a leader in the automotive supply industry and offers a vast variety of solutions"}</h5>
                                         <div className="level">
                                             <div className="level-left">
                                                 <div className="level-item">
@@ -380,18 +380,18 @@ class CvLong extends React.Component {
                                                         <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                     </figure> 
                                                     <p className="subtitle is-6">
-                                                    Brussels, Belgium
+                                                        {this.props.langGerman ? "Brüssel, Belgien" :"Brussels, Belgium"}
                                                     </p>
                                                 </div>
                                             </div>   
                                         </div>
                                     </div>
                                     <div className="column  is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">Responsibilities and Tasks</h5>
+                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Verantwortung und Aufgaben" : "Responsibilities and Tasks"}</h5>
                                         <div className="content">
                                             <ul className="has-text-left">
-                                                <li>Analysis and process improvement of sold parts with quality concerns</li>
-                                                <li>Created and optimized reports on a monthly basis by using Excel and VBA</li>
+                                                <li>{this.props.langGerman ? "Analyse und Prozessverbesserung von verkauften Teilen mit Qualitätsproblemen" : "Analysis and process improvement of sold parts with quality concerns"}</li>
+                                                <li>{this.props.langGerman ? "Erstellung und Optimierung monatlichen Berichten unter Verwendung von Excel und VBA" : "Created and optimized reports on a monthly basis by using Excel and VBA"}</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -425,7 +425,7 @@ class CvLong extends React.Component {
                                                         <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                     </figure> 
                                                     <p className="subtitle is-6">
-                                                    Maastricht, the Netherlands
+                                                        {this.props.langGerman ? "Maastricht, Niederlande" : "Maastricht, the Netherlands"}
                                                     </p>
                                                 </div>
                                             </div> 
@@ -435,7 +435,7 @@ class CvLong extends React.Component {
                                         <h5 className="subtitle is-5 has-text-left-tablet">Master of Science: International Business - Strategy & Innovation</h5>
                                         <div className="content">
                                             <ul className="has-text-left">
-                                                <li>Master thesis investigated the effect of ownership structures on divestiture abnormal market performance</li>
+                                                <li>{this.props.langGerman ? "Die Masterarbeit untersuchte den Einfluss von Eigentümerstrukturen auf abnormale Marktleistungen die durch die Veräußerung von Unternehmensteilen entstehen" : "Master thesis investigated the effect of ownership structures on divestiture abnormal market performance"}</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -448,7 +448,7 @@ class CvLong extends React.Component {
                             <div className="container has-text-centered">
                                 <div className="columns">
                                     <div className="column is-5 is-narrow">
-                                        <h1 className="title is-3 has-text-left-tablet"><a href="//www.wu.ac.at/">Vienna University of Economics and Business</a></h1>
+                                        <h1 className="title is-3 has-text-left-tablet"><a href="//www.wu.ac.at/">{this.props.langGerman ? "Wirtschaftsuniversität Wien" : "Vienna University of Economics and Business"}</a></h1>
                                         <div className="level">
                                             <div className="level-left">
                                                 <div className="level-item">
@@ -464,14 +464,14 @@ class CvLong extends React.Component {
                                                         <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                     </figure> 
                                                     <p className="subtitle is-6">
-                                                    Vienna, Austria
+                                                    {this.props.langGerman ? "Wien, Österreich" : "Vienna, Austria"}
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="column  is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">Study Abroad</h5>
+                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Auslandssemester" : "Study Abroad"}</h5>
                                     </div>
                                 </div>
                             </div>
@@ -498,7 +498,7 @@ class CvLong extends React.Component {
                                                         <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                     </figure> 
                                                     <p className="subtitle is-6">
-                                                    Maastricht, the Netherlands
+                                                        {this.props.langGerman ? "Maastricht, Niederlande" : "Maastricht, the Netherlands"}
                                                     </p>
                                                 </div>
                                             </div>  
@@ -508,7 +508,7 @@ class CvLong extends React.Component {
                                         <h5 className="subtitle is-5 has-text-left-tablet">Bachelor of Science: International Business - Finance</h5>
                                         <div className="content">
                                             <ul className="has-text-left">
-                                                <li>Bachelor thesis analyzed initial IPO performance and its relation to IPO pricing</li>
+                                                <li>{this.props.langGerman ? "Die Bachelorarbeit analysierte die anfängliche IPO-Performance und deren Zusammenhang mit der IPO-Preisfestsetzung" : "Bachelor thesis analyzed initial IPO performance and its relation to IPO pricing"}</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -544,7 +544,7 @@ class CvLong extends React.Component {
                                         </div>
                                     </div>
                                     <div className="column  is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">Study Abroad</h5>
+                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Auslandssemester" : "Study Abroad"}</h5>
                                     </div>
                                 </div>
                             </div>
@@ -562,11 +562,11 @@ class CvLong extends React.Component {
                                 <div className="columns">
                                 
                                     <div className="column is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">German <progress className="progress is-primary ui-progressbar-value" value="100" max="100">100%</progress></h5>
-                                        <h5 className="subtitle is-5 has-text-left-tablet">English <progress className="progress is-primary" value="95" max="100">95%</progress></h5>
-                                        <h5 className="subtitle is-5 has-text-left-tablet">Spanish <progress className="progress is-primary" value="82" max="100">82%</progress></h5>
-                                        <h5 className="subtitle is-5 has-text-left-tablet">French <progress className="progress is-primary" value="15" max="100">15%</progress></h5>
-                                        <h5 className="subtitle is-5 has-text-left-tablet">Dutch <progress className="progress is-primary" value="30" max="100">30%</progress></h5>
+                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Deutsch" : "German"} <progress className="progress is-primary ui-progressbar-value" value="100" max="100">100%</progress></h5>
+                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Englisch" : "English"} <progress className="progress is-primary" value="95" max="100">95%</progress></h5>
+                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Spanisch" : "Spanish"} <progress className="progress is-primary" value="82" max="100">82%</progress></h5>
+                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Französisch" : "French"} <progress className="progress is-primary" value="15" max="100">15%</progress></h5>
+                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Niederländisch" : "Dutch"} <progress className="progress is-primary" value="30" max="100">30%</progress></h5>
                                     </div>
 
                                     <div className="column  is-offset-1 is-5 is-narrow">

@@ -9,7 +9,6 @@ class Navbar extends React.Component {
   }
 
   render(){
-    console.log("props: ", this.props)
     return (<div>
               <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
@@ -48,7 +47,7 @@ class Navbar extends React.Component {
                     <div className="navbar-item">
                       <div className="field">
                         <input id="switchOutlinedDefault" onClick={() => this.props.setLanguage()} type="checkbox" name="switchOutlinedDefault" className="switch is-rounded is-outlined" defaultChecked={this.props.langGerman ? "checked" : ""} />
-    <label for="switchOutlinedDefault">{this.props.langGerman ? "English" : "German"}</label>
+                        <label for="switchOutlinedDefault">German</label>
                       </div>
                     </div>
                   </div>
