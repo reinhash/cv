@@ -10,6 +10,7 @@ class CvLong extends React.Component {
             profExperience: true,
             acadEducation: true,
             langStack: true,
+            courses: true,
             phoneNumber: "+573112079379‬",
             currentLocation: "Bogota, Colombia",
             currentLocationGER: "Bogota, Kolumbien",
@@ -25,53 +26,7 @@ class CvLong extends React.Component {
         this.setState(update)
     }
 
-    render(){
-        return (<div>
-                    <this.TitleHeader phoneNumber={this.state.phoneNumber} currentLocation={this.state.currentLocation} />
-                    <section className="hero is-bold is-info">
-                        <div className="hero-body">
-                            <h1 className="title is-2 has-text-centered">
-                                <button className="button is-outlined is-link" onClick={() => this.toggleSegment("profExperience")}>
-                                    <span className="icon is-large">
-                                        <i className={this.state.profExperience ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
-                                    </span>
-                                </button>{this.props.langGerman ? " Berufliche Erfahrung" :  " Professional Experience"}
-                            </h1>    
-                        </div>
-                    </section>
-                    <Fade left collapse when={this.state.profExperience}>
-                        <this.ProfessionalExperience />
-                    </Fade>
-                    <section className="hero is-bold is-info">
-                        <div className="hero-body">
-                          <h1 className="title is-2 has-text-centered">
-                                <button className="button is-outlined is-link" onClick={() => this.toggleSegment("acadEducation")}>
-                                    <span className="icon">
-                                        <i className={this.state.acadEducation ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
-                                    </span>
-                                </button>{this.props.langGerman ? " Akademische Ausbildung" :  " Academic education"}
-                            </h1>
-                        </div>
-                    </section>
-                    <Fade left collapse when={this.state.acadEducation}>
-                        <this.AcademicEducation />
-                    </Fade>
-                    <section className="hero is-bold is-info">
-                        <div className="hero-body">
-                          <h1 className="title is-2 has-text-centered">
-                          <button className="button is-outlined is-link" onClick={() => this.toggleSegment("langStack")}>
-                                <span className="icon">
-                                    <i className={this.state.langStack ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
-                                </span>
-                          </button>{this.props.langGerman ? " Sprachen & Stack" :  " Languages & Stack"}
-                          </h1>
-                        </div>
-                    </section>
-                    <Fade left collapse when={this.state.langStack}>
-                        <this.LangStack />
-                    </Fade>
-                </div>);
-    }
+    
 
     TitleHeader = (props) => {
 
@@ -198,54 +153,6 @@ class CvLong extends React.Component {
                                                 <li><u><a href="http://www.daxosline.com">Daxos</a></u>
                                                 {this.props.langGerman ? ": Full-Stack Entwicklung für ein Projekt der deutschen Handelskammer in Bogota. Wir entwickeln eine Plattform mit der Schulabgänger aus Lateinamerika sich für Studiengänge und Stipendien in Deutschland bewerben können. #NodeJS, #React, #MySQL, #AWS, #GIT" :  ": Fullstack development for the german chamber of commerce in Bogota. We are building a plattform that connects people from Latin America to german universities and scholarships. #NodeJS, #React, #MySQL, #AWS, #GIT"}
                                                 </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section className="hero is-light is-bold">
-                        <div className="hero-body">
-                            <div className="container has-text-centered">
-                                <div className="columns">
-                                    <div className="column is-5 is-narrow">
-                                        <h1 className="title is-3 has-text-left-tablet">{this.props.langGerman ? "Full-Stack Entwicklerkurs" : "Full-stack developer course"}</h1>
-                                        <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.synalis.de">Bogota Bootcamp</a></h5>
-                                        <h5 className="subtitle is-6 has-text-left-tablet">{this.props.langGerman ? "Bogota Bootcamp unterrichtet Fullstack-Entwicklung mit Ruby on Rails und React" : "Bogota Bootcamp teaches full-stack development with Ruby on Rails and React"}</h5>
-                                        <div className="level">
-                                            <div className="level-left">
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
-                                                        <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
-                                                    </figure> 
-                                                    <p className="subtitle is-6">
-                                                    10/2019 - 12/2019
-                                                    </p>
-                                                </div>
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32">
-                                                        <img src={require("./location-pin-icon-13.jpg")} alt="location" />
-                                                    </figure> 
-                                                    <p className="subtitle is-6">
-                                                    {this.props.langGerman ? "Bogota, Kolumbien" : "Bogota, Colombia"}
-                                                    </p>
-                                                </div>
-                                            </div> 
-                                        </div>
-                                        
-                                    </div>
-                                    <div className="column is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Kursinhalte" : "Course contents"}</h5>
-                                        <div className="content">
-                                            <ul className="has-text-left">
-                                                <li>{this.props.langGerman ? "Ruby on Rails als full-stack framework" : "Ruby on Rails as a full-stack framework"}</li>
-                                                <li>{this.props.langGerman ? "React (Front-end)" : "React (Front-end)"}</li>
-                                                <li>{this.props.langGerman ? "SQL (PG, Sqlite) und NoSQL Datenbanken (Firebase)" : "SQL (PG, Sqlite) and NoSQL databases (Firebase)"}</li>
-                                                <li>{this.props.langGerman ? "Javascript, Ajax und jQuery" : "Javascript, Ajax and jQuery"}</li>
-                                                <li>{this.props.langGerman ? "HTML, CSS, Bootstrap und Bulma" : "HTML, CSS, Bootstrap and Bulma"}</li>
-                                                <li>{this.props.langGerman ? "AWS tools" : "AWS tools"}</li>
-                                                <li>{this.props.langGerman ? "GIT & GitHub" : "GIT & GitHub"}</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -431,7 +338,7 @@ class CvLong extends React.Component {
                                             </div> 
                                         </div>
                                     </div>
-                                    <div className="column  is-offset-1 is-5 is-narrow">
+                                    <div className="column is-offset-1 is-5 is-narrow">
                                         <h5 className="subtitle is-5 has-text-left-tablet">Master of Science: International Business - Strategy & Innovation</h5>
                                         <div className="content">
                                             <ul className="has-text-left">
@@ -704,6 +611,122 @@ class CvLong extends React.Component {
                         </div>
                     </section>
                 </div>)
+    }
+
+    Courses = () => {
+        return (<div>
+                    <section className="hero is-light is-bold">
+                        <div className="hero-body">
+                            <div className="container has-text-centered">
+                                <div className="columns">
+                                    <div className="column is-5 is-narrow">
+                                        <h1 className="title is-3 has-text-left-tablet">{this.props.langGerman ? "Full-Stack Entwicklerkurs" : "Full-stack developer course"}</h1>
+                                        <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.bogotabootcamp.com">Bogota Bootcamp</a></h5>
+                                        <h5 className="subtitle is-6 has-text-left-tablet">{this.props.langGerman ? "Bogota Bootcamp unterrichtet Fullstack-Entwicklung mit Ruby on Rails und React" : "Bogota Bootcamp teaches full-stack development with Ruby on Rails and React"}</h5>
+                                        <div className="level">
+                                            <div className="level-left">
+                                                <div className="level-item">
+                                                    <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
+                                                        <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                    </figure> 
+                                                    <p className="subtitle is-6">
+                                                    10/2019 - 12/2019
+                                                    </p>
+                                                </div>
+                                                <div className="level-item">
+                                                    <figure className="image is-32x32">
+                                                        <img src={require("./location-pin-icon-13.jpg")} alt="location" />
+                                                    </figure> 
+                                                    <p className="subtitle is-6">
+                                                    {this.props.langGerman ? "Bogota, Kolumbien" : "Bogota, Colombia"}
+                                                    </p>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="column is-offset-1 is-5 is-narrow">
+                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Kursinhalte" : "Course contents"}</h5>
+                                        <div className="content">
+                                            <ul className="has-text-left">
+                                                <li>{this.props.langGerman ? "Ruby on Rails als full-stack framework" : "Ruby on Rails as a full-stack framework"}</li>
+                                                <li>{this.props.langGerman ? "React (Front-end)" : "React (Front-end)"}</li>
+                                                <li>{this.props.langGerman ? "SQL (PG, Sqlite) und NoSQL Datenbanken (Firebase)" : "SQL (PG, Sqlite) and NoSQL databases (Firebase)"}</li>
+                                                <li>{this.props.langGerman ? "Javascript, Ajax und jQuery" : "Javascript, Ajax and jQuery"}</li>
+                                                <li>{this.props.langGerman ? "HTML, CSS, Bootstrap und Bulma" : "HTML, CSS, Bootstrap and Bulma"}</li>
+                                                <li>{this.props.langGerman ? "AWS tools" : "AWS tools"}</li>
+                                                <li>{this.props.langGerman ? "GIT & GitHub" : "GIT & GitHub"}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                 </div>)
+    }
+
+
+    render(){
+        return (<div>
+                    <this.TitleHeader phoneNumber={this.state.phoneNumber} currentLocation={this.state.currentLocation} />
+                    <section className="hero is-bold is-info">
+                        <div className="hero-body">
+                            <h1 className="title is-2 has-text-centered">
+                                <button className="button is-outlined is-link" onClick={() => this.toggleSegment("profExperience")}>
+                                    <span className="icon is-large">
+                                        <i className={this.state.profExperience ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
+                                    </span>
+                                </button>{this.props.langGerman ? " Berufliche Erfahrung" :  " Professional Experience"}
+                            </h1>    
+                        </div>
+                    </section>
+                    <Fade left collapse when={this.state.profExperience}>
+                        <this.ProfessionalExperience />
+                    </Fade>
+                    <section className="hero is-bold is-info">
+                        <div className="hero-body">
+                          <h1 className="title is-2 has-text-centered">
+                                <button className="button is-outlined is-link" onClick={() => this.toggleSegment("acadEducation")}>
+                                    <span className="icon">
+                                        <i className={this.state.acadEducation ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
+                                    </span>
+                                </button>{this.props.langGerman ? " Akademische Ausbildung" :  " Academic education"}
+                            </h1>
+                        </div>
+                    </section>
+                    <Fade left collapse when={this.state.acadEducation}>
+                        <this.AcademicEducation />
+                    </Fade>
+                    
+                    <section className="hero is-bold is-info">
+                        <div className="hero-body">
+                          <h1 className="title is-2 has-text-centered">
+                                <button className="button is-outlined is-link" onClick={() => this.toggleSegment("courses")}>
+                                    <span className="icon">
+                                        <i className={this.state.acadEducation ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
+                                    </span>
+                                </button>{this.props.langGerman ? " Kurse" :  " Courses"}
+                            </h1>
+                        </div>
+                    </section>
+                    <Fade left collapse when={this.state.courses}>
+                        <this.Courses />
+                    </Fade>
+                    <section className="hero is-bold is-info">
+                        <div className="hero-body">
+                          <h1 className="title is-2 has-text-centered">
+                          <button className="button is-outlined is-link" onClick={() => this.toggleSegment("langStack")}>
+                                <span className="icon">
+                                    <i className={this.state.langStack ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
+                                </span>
+                          </button>{this.props.langGerman ? " Sprachen & Stack" :  " Languages & Stack"}
+                          </h1>
+                        </div>
+                    </section>
+                    <Fade left collapse when={this.state.langStack}>
+                        <this.LangStack />
+                    </Fade>
+                </div>);
     }
 }
 
