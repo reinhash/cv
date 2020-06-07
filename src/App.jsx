@@ -12,15 +12,17 @@ class App extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      langGerman: true,
+      langGerman: false,
     }
   }
 
   setLanguage = () => {
     this.setState({langGerman: !this.state.langGerman})
-    const cookies = new Cookies();
-    cookies.set('lang', 'en', { path: '/' });
-    console.log(cookies.get('lang'));
+    // const cookies = new Cookies();
+    // cookies.set('lang', 'en', { path: '/' });
+    // console.log(cookies.get('lang'));
+
+
     //window.location.reload();
   }
 
