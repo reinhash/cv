@@ -91,7 +91,7 @@ class CvLong extends React.Component {
                                                     <figure className="image is-32x32">
                                                         <img src={require("./whatsapp.png")} />
                                                     </figure>
-                                                    <a className="subtitle is-6" href={`https://api.whatsapp.com/send?phone=${props.phoneNumber}‬`} alt="whatsapp">
+                                                    <a className="subtitle is-6" target="_blank" href={`https://api.whatsapp.com/send?phone=${props.phoneNumber}‬`} alt="whatsapp">
                                                     {formatPhoneNumber(props.phoneNumber)}
                                                     </a>
                                                 </div>
@@ -151,7 +151,7 @@ class CvLong extends React.Component {
                                         <div className="content">
                                             <ul className="has-text-left">
                                                 <li><u><a href="http://www.daxosline.com">Daxos</a></u>
-                                                {this.props.langGerman ? ": Full-Stack Entwicklung für ein Projekt der deutschen Handelskammer in Bogota. Wir entwickeln eine Plattform mit der Schulabgänger aus Lateinamerika sich für Studiengänge und Stipendien in Deutschland bewerben können. #NodeJS, #React, #MySQL, #AWS, #GIT" :  ": Fullstack development for the german chamber of commerce in Bogota. We are building a plattform that connects people from Latin America to german universities and scholarships. #NodeJS, #React, #MySQL, #AWS, #GIT"}
+                                                {this.props.langGerman ? ": Full-Stack Entwicklung für ein Projekt der deutschen Handelskammer in Bogota. Wir entwickeln eine Plattform mit der Schulabgänger aus Lateinamerika sich für Studiengänge und Stipendien in Deutschland bewerben können. #NodeJS, #React, #MySQL, #AWS, #GIT" :  ": Fullstack development for the german chamber of commerce in Bogota. We are building a platform that connects people from Latin America to german universities and scholarships. #NodeJS, #React, #MySQL, #AWS, #GIT"}
                                                 </li>
                                             </ul>
                                         </div>
