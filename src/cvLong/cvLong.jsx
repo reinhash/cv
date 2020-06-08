@@ -197,7 +197,7 @@ class CvLong extends React.Component {
                                                 <li>{this.props.langGerman ? "Einführung und Konfiguration von ELO (ELO ist ein Enterprise Content Management System aus Stuttgart)" : ("Implementation and configuration of ELO (ELO is an Enterprise Content Management (ECM) system from Stuttgart, Germany) on premise including its modular business solution packages.")} </li>
                                                 <li>{this.props.langGerman ? "Entwicklung von benutzerdefinierten Skripten und Funktionen innerhalb des Tomcat Apache Servers (Verwendung von Javascript in Rhino Engine)" : "Development of custom scripts and functions within the framework of Tomcat Apache (using Javascript in Rhino Engine)"}</li>
                                                 <li>{this.props.langGerman ? "Projektmanagement, von Beginn der Diagnose- /Analysephase bis zur produktiven Implementierung der Lösung" : "Management of projects, starting from the diagnosis/analysis of the customer’s needs until and including the final implementation"}</li>
-                                                <li>{this.props.langGerman ? "Leitung der workshops des Anforderungsmanagements, Einfügung neuer digitaler Prozesse und Systemintegration" : "Led workshops to determine customer needs, align digital processes and optimize system integration"}</li>
+                                                <li>{this.props.langGerman ? "Durchführung von Workshops des Anforderungsmanagements, Einfügung neuer digitaler Prozesse und Systemintegration" : "Led workshops to determine customer needs, align digital processes and optimize system integration"}</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -298,7 +298,7 @@ class CvLong extends React.Component {
                                         <div className="content">
                                             <ul className="has-text-left">
                                                 <li>{this.props.langGerman ? "Analyse und Prozessverbesserung von verkauften Teilen mit Qualitätsproblemen" : "Analysis and process improvement of sold parts with quality concerns"}</li>
-                                                <li>{this.props.langGerman ? "Erstellung und Optimierung monatlichen Berichten unter Verwendung von Excel und VBA" : "Created and optimized reports on a monthly basis by using Excel and VBA"}</li>
+                                                <li>{this.props.langGerman ? "Erstellung und Optimierung von monatlichen Berichten unter Verwendung von Excel und VBA" : "Created and optimized reports on a monthly basis by using Excel and VBA"}</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -648,7 +648,7 @@ class CvLong extends React.Component {
                                         <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Kursinhalte" : "Course contents"}</h5>
                                         <div className="content">
                                             <ul className="has-text-left">
-                                                <li>{this.props.langGerman ? "Ruby on Rails als full-stack framework" : "Ruby on Rails as a full-stack framework"}</li>
+                                                <li>{this.props.langGerman ? "Ruby on Rails als full-stack framework" : "Ruby on Rails as a Full-Stack Framework"}</li>
                                                 <li>{this.props.langGerman ? "React (Front-end)" : "React (Front-end)"}</li>
                                                 <li>{this.props.langGerman ? "SQL (PG, Sqlite) und NoSQL Datenbanken (Firebase)" : "SQL (PG, Sqlite) and NoSQL databases (Firebase)"}</li>
                                                 <li>{this.props.langGerman ? "Javascript, Ajax und jQuery" : "Javascript, Ajax and jQuery"}</li>

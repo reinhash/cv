@@ -159,7 +159,7 @@ function Timeline(props){
                       </div>
                       <div className="timeline-content">
                         <p className="heading">{props.langGerman ? "Januar 2020" : "January 2020"}</p>
-                        <p>{props.langGerman ? "Freelance Softwareentwickler" : "Freelance Software Developer"}</p>
+                        <p><strong>{props.langGerman ? "Freelance Softwareentwickler" : "Freelance Software Developer"}</strong></p>
                       </div>
                     </div>
                 </Fade>
