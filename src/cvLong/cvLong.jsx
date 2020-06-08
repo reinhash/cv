@@ -703,7 +703,7 @@ class CvLong extends React.Component {
                           <h1 className="title is-2 has-text-centered">
                                 <button className="button is-outlined is-link" onClick={() => this.toggleSegment("courses")}>
                                     <span className="icon">
-                                        <i className={this.state.acadEducation ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
+                                        <i className={this.state.courses ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
                                     </span>
                                 </button>{this.props.langGerman ? " Kurse" :  " Courses"}
                             </h1>
