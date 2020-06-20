@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a98c47fb.chunk.css",
+    "main.js": "/static/js/main.bdb68937.chunk.js",
+    "main.js.map": "/static/js/main.bdb68937.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7a18a26f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7a18a26f.js.map",
+    "static/js/2.69337133.chunk.js": "/static/js/2.69337133.chunk.js",
+    "static/js/2.69337133.chunk.js.map": "/static/js/2.69337133.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.97d21009fb3a3bcd0e10f235032fb47e.js": "/precache-manifest.97d21009fb3a3bcd0e10f235032fb47e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.a98c47fb.chunk.css.map": "/static/css/main.a98c47fb.chunk.css.map",
+    "static/js/2.69337133.chunk.js.LICENSE.txt": "/static/js/2.69337133.chunk.js.LICENSE.txt",
+    "static/media/location-pin-icon-13.jpg": "/static/media/location-pin-icon-13.a1954f60.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a18a26f.js",
+    "static/js/2.69337133.chunk.js",
+    "static/css/main.a98c47fb.chunk.css",
+    "static/js/main.bdb68937.chunk.js"
+  ]
+}
