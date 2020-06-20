@@ -1,4 +1,4 @@
-var sslRedirect = require(‘heroku-ssl-redirect’);
+var sslRedirect = require("heroku-ssl-redirect");
 const express = require('express');
 const path = require('path');
 const e = require('express');
