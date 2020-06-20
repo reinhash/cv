@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const e = require('express');
 
 const app = express();
 
@@ -11,7 +12,9 @@ app.get('*', (req,res) =>{
     if (req.headers["x-forwarded-proto"] === "https"){
         res.sendFile(path.join(__dirname+'/reinhardcv/build/index.html'));
     }
-    res.redirect("https://" + req.headers.host + req.url); 
+    else {
+        res.redirect("https://" + req.headers.host + req.url); 
+    }
 });
 
 const port = process.env.PORT || 5000;
