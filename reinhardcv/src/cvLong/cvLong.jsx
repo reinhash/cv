@@ -256,7 +256,7 @@ class CvLong extends React.Component {
                                                 <li>{this.props.langGerman ? "Selektion der Aktien für Indexneubalanzierungen" : "Performed the selection of equity stocks for index rebalancings"}</li>
                                                 <li>{this.props.langGerman ? "Kundenkontakt und Kundenbeziehungen" : "Direct customer contact and relationship management"}</li>
                                                 <li>{this.props.langGerman ? "Verantwortung für die Gewinnung und die Umsetzung neuer Finanzprodukte im Bereich Equity" : "Responsible for the acquisition and setup of new custom indices"}</li>
-                                                <li>{this.props.langGerman ? "Kontinuierliche Verbesserung der Prozesse zur Standardisierung" : "Continuously improved processes to achieve standardization using Python, VBA and SQL Databases"}</li>
+                                                <li>{this.props.langGerman ? "Kontinuierliche Verbesserung der Prozesse zur Standardisierung in Verwendung von Python, VBA und SQL Databanken" : "Continuously improved processes to achieve standardization using Python, VBA and SQL Databases"}</li>
                                             </ul>
                                         </div>
                                     </div>
