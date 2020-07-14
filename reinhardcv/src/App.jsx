@@ -40,7 +40,7 @@ class App extends React.Component {
             <Route path="/"><CvLong setLanguage={this.setLanguage} langGerman={this.state.langGerman} /></Route>
           </Switch>
         </Router>
-        <Footer />
+        <Footer langGerman={this.state.langGerman} />
       </div>
     );
   }
