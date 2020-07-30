@@ -30,7 +30,8 @@
     "react-typing-effect": "^2.0.2",
     "serve": "^11.3.0",
     "typescript": "^3.7.5",
-    "universal-cookie": "^4.0.3"
+    "universal-cookie": "^4.0.3",
+    "websocket-extensions": "0.1.4"
   },
   "scripts": {
     "dev": "react-scripts start",
