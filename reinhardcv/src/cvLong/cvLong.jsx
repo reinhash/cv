@@ -12,8 +12,8 @@ class CvLong extends React.Component {
             langStack: true,
             courses: true,
             phoneNumber: "+4915158359427‬",
-            currentLocation: "Bogota, Colombia",
-            currentLocationGER: "Bogota, Kolumbien",
+            currentLocation: "Berlin, Germany",
+            currentLocationGER: "Berlin, Deutschland",
             eyeClassNames: ["fas fa-eye", "fas fa-eye-slash"]
         }
 
