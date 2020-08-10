@@ -12,9 +12,162 @@ class CvLong extends React.Component {
             langStack: true,
             courses: true,
             phoneNumber: "+4915158359427‬",
-            currentLocation: "Berlin, Germany",
-            currentLocationGER: "Berlin, Deutschland",
-            eyeClassNames: ["fas fa-eye", "fas fa-eye-slash"]
+            eyeClassNames: ["fas fa-eye", "fas fa-eye-slash"],
+            content: {
+                location: ["Berlin, Deutschland", "Berlin, Germany"],
+                headerProfessionalExperience: [" Berufliche Erfahrung",  " Professional Experience"],
+                headerAcademicEducation: [" Akademische Ausbildung",  " Academic education"],
+                headerCourses: [ " Kurse",  " Courses"],
+                headerLangStack: [" Sprachen & Stack",  " Languages & Stack"],
+                professionalExperience: {
+                    softwareDeveloper: {
+                        title: ["Freelance Softwareentwickler", "Freelance Software Developer"],
+                        time: ["01/2020 - momentan", "01/2020 - currently"],
+                        header: [" Projekte", " Projects"],
+                        projects: [": Full-Stack Entwicklung für ein Projekt der deutschen Handelskammer in Bogota. Wir entwickeln eine Plattform mit der Schulabgänger aus Lateinamerika sich für Studiengänge und Stipendien in Deutschland bewerben können. #NodeJS, #React, #MySQL, #AWS, #GIT",  ": Fullstack development for the german chamber of commerce in Bogota. We are building a platform that connects people from Latin America to german universities and scholarships. #NodeJS, #React, #MySQL, #AWS, #GIT"]
+                    },
+                    synalis: {
+                        description: ["synalis ist eine mittelständische Firma, die sich auf die Bereiche DMS / ECM, ERP, CRM, Collaboration, Microsoft Cloud und Cyber Security spezialisiert", "synalis is a mid-sized IT company from Germany that specializes in the areas of DMS / ECM, ERP, CRM, Collaboration, Microsoft Cloud and Cyber Security"],
+                        location: ["Bonn, Deutschland", "Bonn, Germany"],
+                        header: ["Verantwortung und Aufgaben", "Responsibilities and Tasks"],
+                        tasks: [
+                            ["Einführung und Konfiguration von ELO (ELO ist ein Enterprise Content Management System aus Stuttgart)", "Implementation and configuration of ELO (ELO is an Enterprise Content Management (ECM) system from Stuttgart, Germany) on premise including its modular business solution packages."],
+                            ["Entwicklung von benutzerdefinierten Skripten und Funktionen innerhalb des Tomcat Apache Servers (Verwendung von Javascript in Rhino Engine)", "Development of custom scripts and functions within the framework of Tomcat Apache (using Javascript in Rhino Engine)"],
+                            ["Projektmanagement, von Beginn der Diagnose- /Analysephase bis zur produktiven Implementierung der Lösung", "Management of projects, starting from the diagnosis/analysis of the customer’s needs until and including the final implementation"],
+                            ["Durchführung von Workshops des Anforderungsmanagements, Einfügung neuer digitaler Prozesse und Systemintegration", "Led workshops to determine customer needs, align digital processes and optimize system integration"],
+                        ],
+                    },
+                    gapYear: {
+                        description: ["2018 - Gap year", "2018 - Gap year"],
+                        tasks: ["Reisen, Volunteering, lernte Spanisch, Python-programmierung", "Travelled, volunteered, learned Spanish, wrote Python Code"],
+                    },
+                    solactive: {
+                        description: ["Solactive ist ein agiles, aggressiv expandierendes Fintech-Unternehmen spezialisiert auf Indexberechnung und passiv verwaltete Finanzprodukte", "Solactive is a fast paced, aggressively expansive Fintech company specialized in Index calculation and passively managed financial products"],
+                        location: [ "Frankfurt, Deutschland", "Frankfurt, Germany"],
+                        header: ["Verantwortung und Aufgaben", "Responsibilities and Tasks"],
+                        tasks: [
+                            ["IT-Projektmanagement, Testung und Freigabe von neuen Plattform-features für die Indexberechnung. Aufsetzung neuer Backend Kalkulationslogiken mit den Softwareentwicklern" ,"Managed IT projects, tested and released platform features for the index calculation. Set-up new back-end calculation logics with the developers"],
+                            ["Selektion der Aktien für Indexneubalanzierungen" , "Performed the selection of equity stocks for index rebalancings"],
+                            ["Kundenkontakt und Kundenbeziehungen" , "Direct customer contact and relationship management"],
+                            ["Verantwortung für die Gewinnung und die Umsetzung neuer Finanzprodukte im Bereich Equity" , "Responsible for the acquisition and setup of new custom indices"],
+                            ["Kontinuierliche Verbesserung der Prozesse zur Standardisierung in Verwendung von Python, VBA und SQL Databanken" , "Continuously improved processes to achieve standardization using Python, VBA and SQL Databases"],
+                        ]
+                    },
+                    bosch: {
+                        title: ["Qualitätsmanagement (Praktikum)", "Quality Management (Internship)"],
+                        description: ["Bosch ist führender Zulieferer in der Automobilindustrie", "Bosch is a leader in the automotive supply industry and offers a vast variety of solutions"],
+                        location: ["Brüssel, Belgien", "Brussels, Belgium"],
+                        header: ["Verantwortung und Aufgaben", "Responsibilities and Tasks"],
+                        tasks: [
+                            ["Analyse und Prozessverbesserung von verkauften Teilen mit Qualitätsproblemen", "Analysis and process improvement of sold parts with quality concerns"],
+                            ["Erstellung und Optimierung von monatlichen Berichten unter Verwendung von Excel und VBA", "Created and optimized reports on a monthly basis by using Excel and VBA"],
+                        ]
+                    }
+                },
+                academicEducation: {
+                    master: {
+                        maastricht: {
+                            schoolName: ["Maastricht University, School of Business and Economics"],
+                            time: ["09/2013 - 06/2015"],
+                            location: ["Maastricht, Niederlande", "Maastricht, the Netherlands"],
+                            studyName: ["Master of Science: International Business - Strategy & Innovation"],
+                            thesis: ["Die Masterarbeit untersuchte den Einfluss von Eigentümerstrukturen auf abnormale Marktleistungen die durch die Veräußerung von Unternehmensteilen entstehen", "Master thesis investigated the effect of ownership structures on divestiture abnormal market performance"],
+                        },
+                        vienna: {
+                            schoolName: ["Wirtschaftsuniversität Wien", "Vienna University of Economics and Business"],
+                            time: ["10/2014 - 02/2015"],
+                            location: ["Wien, Österreich", "Vienna, Austria"],
+                            studyName: ["Auslandssemester", "Study Abroad"],
+                        }
+                    },
+                    bachelor: {
+                        maastricht: {
+                            schoolName: ["Maastricht University, School of Business and Economics"],
+                            time: ["09/2009 - 09/2013"],
+                            location: ["Maastricht, Niederlande", "Maastricht, the Netherlands"],
+                            studyName: ["Bachelor of Science: International Business - Finance"],
+                            thesis: ["Die Bachelorarbeit analysierte die anfängliche IPO-Performance und deren Zusammenhang mit der IPO-Preisfestsetzung", "Bachelor thesis analyzed initial IPO performance and its relation to IPO pricing"],
+                        },
+                        whitworth: {
+                            schoolName: ["Whitworth University"],
+                            time: ["02/2012 - 06/2012"],
+                            location: ["Spokane, USA"],
+                            studyName: ["Auslandssemester", "Study Abroad"],
+                        }
+                    }
+                },
+                courses: {
+                    bogotaBootCamp: {
+                        courseName: ["Full-Stack Entwicklerkurs", "Full-stack developer course"],
+                        courseProviderName: ["Bogota Bootcamp"],
+                        description: ["Bogota Bootcamp unterrichtet Fullstack-Entwicklung mit Ruby on Rails und React", "Bogota Bootcamp teaches full-stack development with Ruby on Rails and React"],
+                        time: ["10/2019 - 12/2019"],
+                        location: ["Bogota, Kolumbien", "Bogota, Colombia"],
+                        header: ["Kursinhalte", "Course contents"],
+                        courseContents: [
+                            ["Ruby on Rails als full-stack framework", "Ruby on Rails as a Full-Stack Framework"],
+                            ["React (Front-end)", "React (Front-end)"],
+                            ["SQL (PG, Sqlite) und NoSQL Datenbanken (Firebase)", "SQL (PG, Sqlite) and NoSQL databases (Firebase)"],
+                            ["Javascript, Ajax und jQuery", "Javascript, Ajax and jQuery"],
+                            ["HTML, CSS, Bootstrap und Bulma", "HTML, CSS, Bootstrap and Bulma"],
+                            ["AWS tools", "AWS tools"],
+                            ["GIT & GitHub", "GIT & GitHub"],
+                        ],
+                    }
+                },
+                langStack: {
+                    languages: [
+                                    {
+                                        content: ["Deutsch", "German"],
+                                        className: "progress is-primary ui-progressbar-value",
+                                        value: 100
+                                    },
+                                    {
+                                        content: [ "Englisch", "English"],
+                                        className: "progress is-primary",
+                                        value: 95,
+                                    },
+                                    {
+                                        content: ["Spanisch", "Spanish"],
+                                        className: "progress is-primary",
+                                        value: 82,
+                                    },
+                                    {
+                                        content: ["Französisch", "French"],
+                                        className: "progress is-primary",
+                                        value: 15,
+                                    },
+                                    {
+                                        content: ["Niederländisch", "Dutch"],
+                                        className: "progress is-primary",
+                                        value: 30,
+                                    }                 
+                    ],
+                    programmingLanguages: {
+                        languages: [
+                            "Python 3",
+                            "Javascript - ES6",
+                            "Ruby",
+                            "MySQL",
+                            "Postgre SQL",
+                            "MS SQL Server",
+                            "MongoDB",
+                            "HTML 5",
+                            "Bootstrap",
+                            "Bulma",
+                            "CSS",
+                            "Ajax",
+                            "jQuery",
+                            "React",
+                            "NodeJS",
+                            "Django",
+                            "Ruby on Rails",
+                            "Git",
+                        ],
+
+                    }
+                }
+            }
         }
 
         this.toggleSegment = this.toggleSegment.bind(this)
@@ -100,7 +253,7 @@ class CvLong extends React.Component {
                                                         <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                     </figure> 
                                                     <p className="subtitle is-6">
-                                                    {this.props.langGerman ? this.state.currentLocationGER : this.state.currentLocation}
+                                                        {this.state.content['location'][props.languageIndex]}
                                                     </p>
                                                 </div>
                                             </div> 
@@ -115,14 +268,14 @@ class CvLong extends React.Component {
     }
 
 
-    ProfessionalExperience = () => {
+    ProfessionalExperience = (props) => {
         return (<div>
                     <section className="hero is-light is-bold">
                         <div className="hero-body">
                             <div className="container has-text-centered">
                                 <div className="columns">
                                     <div className="column is-5 is-narrow">
-                                        <h1 className="title is-3 has-text-left-tablet">{this.props.langGerman ? "Freelance Softwareentwickler" : "Freelance Software Developer"}</h1>
+                                        <h1 className="title is-3 has-text-left-tablet">{this.state.content['professionalExperience']['softwareDeveloper']['title'][props.languageIndex]}</h1>
                                         <h5 className="subtitle is-6 has-text-left-tablet"></h5>
                                         <div className="level">
                                             <div className="level-left">
@@ -131,7 +284,7 @@ class CvLong extends React.Component {
                                                         <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                     </figure> 
                                                     <p className="subtitle is-6">
-                                                        {this.props.langGerman ? "01/2020 - momentan" : "01/2020 - currently"}
+                                                        {this.state.content['professionalExperience']['softwareDeveloper']['time'][props.languageIndex]}
                                                     </p>
                                                 </div>
                                                 <div className="level-item">
@@ -147,11 +300,11 @@ class CvLong extends React.Component {
                                         
                                     </div>
                                     <div className="column is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? " Projekte" :  " Projects"}</h5>
+                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['professionalExperience']['softwareDeveloper']['header'][props.languageIndex]}</h5>
                                         <div className="content">
                                             <ul className="has-text-left">
                                                 <li><u><a href="http://www.daxosline.com">Daxos</a></u>
-                                                {this.props.langGerman ? ": Full-Stack Entwicklung für ein Projekt der deutschen Handelskammer in Bogota. Wir entwickeln eine Plattform mit der Schulabgänger aus Lateinamerika sich für Studiengänge und Stipendien in Deutschland bewerben können. #NodeJS, #React, #MySQL, #AWS, #GIT" :  ": Fullstack development for the german chamber of commerce in Bogota. We are building a platform that connects people from Latin America to german universities and scholarships. #NodeJS, #React, #MySQL, #AWS, #GIT"}
+                                                    {this.state.content['professionalExperience']['softwareDeveloper']['projects'][props.languageIndex]}
                                                 </li>
                                             </ul>
                                         </div>
@@ -167,7 +320,7 @@ class CvLong extends React.Component {
                                     <div className="column is-5 is-narrow">
                                         <h1 className="title is-3 has-text-left-tablet">IT Consultant DMS/ECM</h1>
                                         <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.synalis.de">synalis GmbH & Co. KG</a></h5>
-                                        <h5 className="subtitle is-6 has-text-left-tablet">{this.props.langGerman ? "synalis ist eine mittelständische Firma, die sich auf die Bereiche DMS / ECM, ERP, CRM, Collaboration, Microsoft Cloud und Cyber Security spezialisiert" : "synalis is a mid-sized IT company from Germany that specializes in the areas of DMS / ECM, ERP, CRM, Collaboration, Microsoft Cloud and Cyber Security"}</h5>
+                                        <h5 className="subtitle is-6 has-text-left-tablet">{this.state.content['professionalExperience']['synalis']['description'][props.languageIndex]}</h5>
                                         <div className="level">
                                             <div className="level-left">
                                                 <div className="level-item">
@@ -183,7 +336,7 @@ class CvLong extends React.Component {
                                                         <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                     </figure> 
                                                     <p className="subtitle is-6">
-                                                        {this.props.langGerman ? "Bonn, Deutschland" : "Bonn, Germany"}
+                                                        {this.state.content['professionalExperience']['synalis']['location'][props.languageIndex]}
                                                     </p>
                                                 </div>
                                             </div> 
@@ -191,13 +344,12 @@ class CvLong extends React.Component {
                                         
                                     </div>
                                     <div className="column is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Verantwortung und Aufgaben" : "Responsibilities and Tasks"}</h5>
+                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['professionalExperience']['synalis']['header'][props.languageIndex]}</h5>
                                         <div className="content">
                                             <ul className="has-text-left">
-                                                <li>{this.props.langGerman ? "Einführung und Konfiguration von ELO (ELO ist ein Enterprise Content Management System aus Stuttgart)" : ("Implementation and configuration of ELO (ELO is an Enterprise Content Management (ECM) system from Stuttgart, Germany) on premise including its modular business solution packages.")} </li>
-                                                <li>{this.props.langGerman ? "Entwicklung von benutzerdefinierten Skripten und Funktionen innerhalb des Tomcat Apache Servers (Verwendung von Javascript in Rhino Engine)" : "Development of custom scripts and functions within the framework of Tomcat Apache (using Javascript in Rhino Engine)"}</li>
-                                                <li>{this.props.langGerman ? "Projektmanagement, von Beginn der Diagnose- /Analysephase bis zur produktiven Implementierung der Lösung" : "Management of projects, starting from the diagnosis/analysis of the customer’s needs until and including the final implementation"}</li>
-                                                <li>{this.props.langGerman ? "Durchführung von Workshops des Anforderungsmanagements, Einfügung neuer digitaler Prozesse und Systemintegration" : "Led workshops to determine customer needs, align digital processes and optimize system integration"}</li>
+                                                {this.state.content['professionalExperience']['synalis']['tasks'].map((item, index) => {
+                                                    return (<li>{item[props.languageIndex]}</li>)
+                                                })}
                                             </ul>
                                         </div>
                                     </div>
@@ -210,10 +362,10 @@ class CvLong extends React.Component {
                             <div className="container has-text-centered">
                                 <div className="columns">
                                     <div className="column is-5 is-narrow">
-                                        {this.props.langGerman ? "2018 - Gap year" : "2018 - Gap year"}
+                                        {this.state.content['professionalExperience']['gapYear']['description'][props.languageIndex]}
                                     </div>
                                     <div className="column  is-offset-1 is-5 is-narrow">
-                                        {this.props.langGerman ? "Reisen, Volunteering, lernte Spanisch, Python-programmierung" : "Travelled, volunteered, learned Spanish, wrote Python Code"}
+                                        {this.state.content['professionalExperience']['gapYear']['tasks'][props.languageIndex]}
                                     </div>
                                 </div>
                             </div>
@@ -226,7 +378,7 @@ class CvLong extends React.Component {
                                     <div className="column is-5 is-narrow">
                                         <h1 className="title is-3 has-text-left-tablet">Equity Index Analyst</h1>
                                         <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.solactive.com">Solactive AG</a></h5>
-                                        <h5 className="subtitle is-6 has-text-left-tablet">{this.props.langGerman ? "Solactive ist ein agiles, aggressiv expandierendes Fintech-Unternehmen spezialisiert auf Indexberechnung und passiv verwaltete Finanzprodukte" : "Solactive is a fast paced, aggressively expansive Fintech company specialized in Index calculation and passively managed financial products"}</h5>
+                                        <h5 className="subtitle is-6 has-text-left-tablet">{this.state.content['professionalExperience']['solactive']['description'][props.languageIndex]}</h5>
                                         <div className="level">
                                             <div className="level-left">
                                                 <div className="level-item">
@@ -242,21 +394,19 @@ class CvLong extends React.Component {
                                                         <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                     </figure> 
                                                     <p className="subtitle is-6">
-                                                    {this.props.langGerman ? "Frankfurt, Deutschland" : "Frankfurt, Germany"}
+                                                        {this.state.content['professionalExperience']['solactive']['location'][props.languageIndex]}
                                                     </p>
                                                 </div>
                                             </div> 
                                         </div>
                                     </div>
                                     <div className="column  is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Verantwortung und Aufgaben" : "Responsibilities and Tasks"}</h5>
+                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['professionalExperience']['solactive']['header'][props.languageIndex]}</h5>
                                         <div className="content">
                                             <ul className="has-text-left">
-                                                <li>{this.props.langGerman ? "IT-Projektmanagement, Testung und Freigabe von neuen Plattform-features für die Indexberechnung. Aufsetzung neuer Backend Kalkulationslogiken mit den Softwareentwicklern" :"Managed IT projects, tested and released platform features for the index calculation. Set-up new back-end calculation logics with the developers"}</li>
-                                                <li>{this.props.langGerman ? "Selektion der Aktien für Indexneubalanzierungen" : "Performed the selection of equity stocks for index rebalancings"}</li>
-                                                <li>{this.props.langGerman ? "Kundenkontakt und Kundenbeziehungen" : "Direct customer contact and relationship management"}</li>
-                                                <li>{this.props.langGerman ? "Verantwortung für die Gewinnung und die Umsetzung neuer Finanzprodukte im Bereich Equity" : "Responsible for the acquisition and setup of new custom indices"}</li>
-                                                <li>{this.props.langGerman ? "Kontinuierliche Verbesserung der Prozesse zur Standardisierung in Verwendung von Python, VBA und SQL Databanken" : "Continuously improved processes to achieve standardization using Python, VBA and SQL Databases"}</li>
+                                                {this.state.content['professionalExperience']['solactive']['tasks'].map((item, index) => {
+                                                    return (<li>{item[props.languageIndex]}</li>)
+                                                })}
                                             </ul>
                                         </div>
                                     </div>
@@ -269,9 +419,9 @@ class CvLong extends React.Component {
                             <div className="container has-text-centered">
                                 <div className="columns">
                                     <div className="column is-5 is-narrow">
-                                        <h1 className="title is-3 has-text-left-tablet">{this.props.langGerman ? "Qualitätsmanagement (Praktikum)" : "Quality Management (Internship)"}</h1>
+                                        <h1 className="title is-3 has-text-left-tablet">{this.state.content['professionalExperience']['bosch']['title'][props.languageIndex]}</h1>
                                         <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.solactive.com">Robert Bosch GmbH</a></h5>
-                                        <h5 className="subtitle is-6 has-text-left-tablet">{this.props.langGerman ? "Bosch ist führender Zulieferer in der Automobilindustrie" : "Bosch is a leader in the automotive supply industry and offers a vast variety of solutions"}</h5>
+                                        <h5 className="subtitle is-6 has-text-left-tablet">{this.state.content['professionalExperience']['bosch']['description'][props.languageIndex]}</h5>
                                         <div className="level">
                                             <div className="level-left">
                                                 <div className="level-item">
@@ -287,18 +437,19 @@ class CvLong extends React.Component {
                                                         <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                     </figure> 
                                                     <p className="subtitle is-6">
-                                                        {this.props.langGerman ? "Brüssel, Belgien" :"Brussels, Belgium"}
+                                                        {this.state.content['professionalExperience']['bosch']['location'][props.languageIndex]}
                                                     </p>
                                                 </div>
                                             </div>   
                                         </div>
                                     </div>
                                     <div className="column  is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Verantwortung und Aufgaben" : "Responsibilities and Tasks"}</h5>
+                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['professionalExperience']['bosch']['header'][props.languageIndex]}</h5>
                                         <div className="content">
                                             <ul className="has-text-left">
-                                                <li>{this.props.langGerman ? "Analyse und Prozessverbesserung von verkauften Teilen mit Qualitätsproblemen" : "Analysis and process improvement of sold parts with quality concerns"}</li>
-                                                <li>{this.props.langGerman ? "Erstellung und Optimierung von monatlichen Berichten unter Verwendung von Excel und VBA" : "Created and optimized reports on a monthly basis by using Excel and VBA"}</li>
+                                                {this.state.content['professionalExperience']['bosch']['tasks'].map((item, index) => {
+                                                    return (<li>{item[props.languageIndex]}</li>)
+                                                })}
                                             </ul>
                                         </div>
                                     </div>
@@ -309,14 +460,14 @@ class CvLong extends React.Component {
                 </div>)
     }
 
-    AcademicEducation = () => {
+    AcademicEducation = (props) => {
         return (<div>
                     <section className="hero is-light is-bold">
                         <div className="hero-body">
                             <div className="container has-text-centered">
                                 <div className="columns">
                                     <div className="column is-5 is-narrow">
-                                        <h1 className="title is-3 has-text-left-tablet"><a href="//www.maastrichtuniversity.nl/">Maastricht University, School of Business and Economics</a></h1>
+                                        <h1 className="title is-3 has-text-left-tablet"><a href="//www.maastrichtuniversity.nl/">{this.state.content['academicEducation']['master']['maastricht']['schoolName']}</a></h1>
                                         <div className="level">
                                             <div className="level-left">
                                                 <div className="level-item">
@@ -324,7 +475,7 @@ class CvLong extends React.Component {
                                                         <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                     </figure> 
                                                     <p className="subtitle is-6">
-                                                        09/2013 - 06/2015
+                                                        {this.state.content['academicEducation']['master']['maastricht']['time']}
                                                     </p>
                                                 </div>
                                                 <div className="level-item">
@@ -332,17 +483,17 @@ class CvLong extends React.Component {
                                                         <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                     </figure> 
                                                     <p className="subtitle is-6">
-                                                        {this.props.langGerman ? "Maastricht, Niederlande" : "Maastricht, the Netherlands"}
+                                                        {this.state.content['academicEducation']['master']['maastricht']['location'][props.languageIndex]}
                                                     </p>
                                                 </div>
                                             </div> 
                                         </div>
                                     </div>
                                     <div className="column is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">Master of Science: International Business - Strategy & Innovation</h5>
+                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['academicEducation']['master']['maastricht']['studyName']}</h5>
                                         <div className="content">
                                             <ul className="has-text-left">
-                                                <li>{this.props.langGerman ? "Die Masterarbeit untersuchte den Einfluss von Eigentümerstrukturen auf abnormale Marktleistungen die durch die Veräußerung von Unternehmensteilen entstehen" : "Master thesis investigated the effect of ownership structures on divestiture abnormal market performance"}</li>
+                                                <li>{this.state.content['academicEducation']['master']['maastricht']['thesis'][props.languageIndex]}</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -355,7 +506,7 @@ class CvLong extends React.Component {
                             <div className="container has-text-centered">
                                 <div className="columns">
                                     <div className="column is-5 is-narrow">
-                                        <h1 className="title is-3 has-text-left-tablet"><a href="//www.wu.ac.at/">{this.props.langGerman ? "Wirtschaftsuniversität Wien" : "Vienna University of Economics and Business"}</a></h1>
+                                        <h1 className="title is-3 has-text-left-tablet"><a href="//www.wu.ac.at/">{this.state.content['academicEducation']['master']['vienna']['schoolName'][props.languageIndex]}</a></h1>
                                         <div className="level">
                                             <div className="level-left">
                                                 <div className="level-item">
@@ -363,7 +514,7 @@ class CvLong extends React.Component {
                                                         <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                     </figure>
                                                     <p className="subtitle is-6">
-                                                        10/2014 - 02/2015
+                                                        {this.state.content['academicEducation']['master']['vienna']['time']}
                                                     </p> 
                                                 </div>
                                                 <div className="level-item">
@@ -371,14 +522,14 @@ class CvLong extends React.Component {
                                                         <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                     </figure> 
                                                     <p className="subtitle is-6">
-                                                    {this.props.langGerman ? "Wien, Österreich" : "Vienna, Austria"}
+                                                        {this.state.content['academicEducation']['master']['vienna']['location'][props.languageIndex]}
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="column  is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Auslandssemester" : "Study Abroad"}</h5>
+                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['academicEducation']['master']['vienna']['studyName'][props.languageIndex]}</h5>
                                     </div>
                                 </div>
                             </div>
@@ -389,7 +540,7 @@ class CvLong extends React.Component {
                             <div className="container has-text-centered">
                                 <div className="columns">
                                     <div className="column is-5 is-narrow">
-                                        <h1 className="title is-3 has-text-left-tablet"><a href="//www.maastrichtuniversity.nl/">Maastricht University, School of Business and Economics</a></h1>
+                                        <h1 className="title is-3 has-text-left-tablet"><a href="//www.maastrichtuniversity.nl/">{this.state.content['academicEducation']['bachelor']['maastricht']['schoolName']}</a></h1>
                                         <div className="level">
                                             <div className="level-left">
                                                 <div className="level-item">
@@ -397,7 +548,7 @@ class CvLong extends React.Component {
                                                         <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                     </figure>
                                                     <p className="subtitle is-6">
-                                                        09/2009 - 09/2013
+                                                        {this.state.content['academicEducation']['bachelor']['maastricht']['time']}
                                                     </p>
                                                 </div>
                                                 <div className="level-item">
@@ -405,17 +556,17 @@ class CvLong extends React.Component {
                                                         <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                     </figure> 
                                                     <p className="subtitle is-6">
-                                                        {this.props.langGerman ? "Maastricht, Niederlande" : "Maastricht, the Netherlands"}
+                                                        {this.state.content['academicEducation']['bachelor']['maastricht']['location'][props.languageIndex]}
                                                     </p>
                                                 </div>
                                             </div>  
                                         </div>
                                     </div>
                                     <div className="column  is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">Bachelor of Science: International Business - Finance</h5>
+                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['academicEducation']['bachelor']['maastricht']['studyName']}</h5>
                                         <div className="content">
                                             <ul className="has-text-left">
-                                                <li>{this.props.langGerman ? "Die Bachelorarbeit analysierte die anfängliche IPO-Performance und deren Zusammenhang mit der IPO-Preisfestsetzung" : "Bachelor thesis analyzed initial IPO performance and its relation to IPO pricing"}</li>
+                                                <li>{this.state.content['academicEducation']['bachelor']['maastricht']['thesis'][props.languageIndex]}</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -428,7 +579,7 @@ class CvLong extends React.Component {
                             <div className="container has-text-centered">
                                 <div className="columns">
                                     <div className="column is-5 is-narrow">
-                                        <h1 className="title is-3 has-text-left-tablet"><a href="//www.whitworth.edu/">Whitworth University</a></h1>
+                                        <h1 className="title is-3 has-text-left-tablet"><a href="//www.whitworth.edu/">{this.state.content['academicEducation']['bachelor']['whitworth']['schoolName']}</a></h1>
                                         <div className="level">
                                             <div className="level-left">
                                                 <div className="level-item">
@@ -436,7 +587,7 @@ class CvLong extends React.Component {
                                                         <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                     </figure> 
                                                     <p className="subtitle is-6">
-                                                        02/2012 - 06/2012
+                                                        {this.state.content['academicEducation']['bachelor']['whitworth']['time']}
                                                     </p>
                                                 </div>
                                                 <div className="level-item">
@@ -444,14 +595,14 @@ class CvLong extends React.Component {
                                                         <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                     </figure> 
                                                     <p className="subtitle is-6">
-                                                    Spokane, USA
+                                                    {this.state.content['academicEducation']['bachelor']['whitworth']['location']}
                                                     </p>
                                                 </div>
                                             </div>   
                                         </div>
                                     </div>
                                     <div className="column  is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Auslandssemester" : "Study Abroad"}</h5>
+                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['academicEducation']['bachelor']['whitworth']['studyName'][props.languageIndex]}</h5>
                                     </div>
                                 </div>
                             </div>
@@ -460,169 +611,16 @@ class CvLong extends React.Component {
                 </div>)
     }
 
-    LangStack = () => {
-
-        return (<div>
-                    <section className="hero is-light is-bold">
-                        <div className="hero-body">
-                            <div className="container has-text-centered">
-                                <div className="columns">
-                                
-                                    <div className="column is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Deutsch" : "German"} <progress className="progress is-primary ui-progressbar-value" value="100" max="100">100%</progress></h5>
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Englisch" : "English"} <progress className="progress is-primary" value="95" max="100">95%</progress></h5>
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Spanisch" : "Spanish"} <progress className="progress is-primary" value="82" max="100">82%</progress></h5>
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Französisch" : "French"} <progress className="progress is-primary" value="15" max="100">15%</progress></h5>
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Niederländisch" : "Dutch"} <progress className="progress is-primary" value="30" max="100">30%</progress></h5>
-                                    </div>
-
-                                    <div className="column  is-offset-1 is-5 is-narrow">
-                                        <div className="field is-grouped is-grouped-multiline">
-                                            <div className="control">
-                                                <Roll left>
-                                                    <div className="tags has-addons">
-                                                        <p className="tag is-link is-large">Python 3</p>
-                                                    </div>
-                                                </Roll>
-                                            </div>
-                                            <div className="control">
-                                                <Roll top>
-                                                    <div className="tags has-addons">
-                                                        <p className="tag is-link is-large">Javascript - ES6</p>
-                                                    </div>
-                                                </Roll>
-                                            </div>
-                                            <div className="control">
-                                                <Roll top>
-                                                    <div className="tags has-addons">
-                                                        <p className="tag is-link is-large">Ruby</p>
-                                                    </div>
-                                                </Roll>
-                                            </div>
-                                            <div className="control">
-                                                <Roll right>
-                                                    <div className="tags has-addons">
-                                                        <p className="tag is-link is-large">MySQL</p>
-                                                    </div>
-                                                </Roll>
-                                            </div>
-                                            <div className="control">
-                                                <Roll right>
-                                                    <div className="tags has-addons">
-                                                        <p className="tag is-link is-large">Postgre SQL</p>
-                                                    </div>
-                                                </Roll>
-                                            </div>
-                                            <div className="control">
-                                                <Roll right>
-                                                    <div className="tags has-addons">
-                                                        <p className="tag is-link is-large">MS SQL Server</p>
-                                                    </div>
-                                                </Roll>
-                                            </div>
-                                            <div className="control">
-                                                <Roll left>
-                                                    <div className="tags has-addons">
-                                                        <p className="tag is-link is-large">MongoDB</p>
-                                                    </div>
-                                                </Roll>
-                                            </div>
-                                            <div className="control">
-                                                <Roll top>
-                                                    <div className="tags has-addons">
-                                                        <p className="tag is-link is-large">HTML 5</p>
-                                                    </div>
-                                                </Roll>
-                                            </div>
-                                            <div className="control">
-                                                <Roll right>
-                                                    <div className="tags has-addons">
-                                                        <p className="tag is-link is-large">Bootstrap</p>
-                                                    </div>
-                                                </Roll>
-                                            </div>
-                                            <div className="control">
-                                                <Roll bottom>
-                                                    <div className="tags has-addons">
-                                                        <p className="tag is-link is-large">Bulma</p>
-                                                    </div>
-                                                </Roll>
-                                            </div>
-                                            <div className="control">
-                                                <Roll bottom>
-                                                    <div className="tags has-addons">
-                                                        <p className="tag is-link is-large">CSS</p>
-                                                    </div>
-                                                </Roll>
-                                            </div>
-                                            <div className="control">
-                                                <Roll top>
-                                                    <div className="tags has-addons">
-                                                        <p className="tag is-link is-large">Ajax</p>
-                                                    </div>
-                                                </Roll>
-                                            </div>
-                                            <div className="control">
-                                                <Roll bottom>
-                                                    <div className="tags has-addons">
-                                                        <p className="tag is-link is-large">jQuery</p>
-                                                    </div>
-                                                </Roll>
-                                            </div>
-                                            <div className="control">
-                                                <Roll bottom>
-                                                    <div className="tags has-addons">
-                                                        <p className="tag is-link is-large">React</p>
-                                                    </div>
-                                                </Roll>
-                                            </div>
-                                            <div className="control">
-                                                <Roll bottom>
-                                                    <div className="tags has-addons">
-                                                        <p className="tag is-link is-large">NodeJS</p>
-                                                    </div>
-                                                </Roll>
-                                            </div>
-                                            <div className="control">
-                                                <Roll bottom>
-                                                    <div className="tags has-addons">
-                                                        <p className="tag is-link is-large">Django</p>
-                                                    </div>
-                                                </Roll>
-                                            </div>
-                                            <div className="control">
-                                                <Roll bottom>
-                                                    <div className="tags has-addons">
-                                                        <p className="tag is-link is-large">Ruby on Rails</p>
-                                                    </div>
-                                                </Roll>
-                                            </div>
-                                            <div className="control">
-                                                <Roll bottom>
-                                                    <div className="tags has-addons">
-                                                        <p className="tag is-link is-large">Git</p>
-                                                    </div>
-                                                </Roll>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>)
-    }
-
-    Courses = () => {
+    Courses = (props) => {
         return (<div>
                     <section className="hero is-light is-bold">
                         <div className="hero-body">
                             <div className="container has-text-centered">
                                 <div className="columns">
                                     <div className="column is-5 is-narrow">
-                                        <h1 className="title is-3 has-text-left-tablet">{this.props.langGerman ? "Full-Stack Entwicklerkurs" : "Full-stack developer course"}</h1>
-                                        <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.bogotabootcamp.com">Bogota Bootcamp</a></h5>
-                                        <h5 className="subtitle is-6 has-text-left-tablet">{this.props.langGerman ? "Bogota Bootcamp unterrichtet Fullstack-Entwicklung mit Ruby on Rails und React" : "Bogota Bootcamp teaches full-stack development with Ruby on Rails and React"}</h5>
+                                        <h1 className="title is-3 has-text-left-tablet">{this.state.content['courses']['bogotaBootCamp']['courseName'][props.languageIndex]}</h1>
+                                        <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.bogotabootcamp.com">{this.state.content['courses']['bogotaBootCamp']['courseName']}</a></h5>
+                                        <h5 className="subtitle is-6 has-text-left-tablet">{this.state.content['courses']['bogotaBootCamp']['description'][props.languageIndex]}</h5>
                                         <div className="level">
                                             <div className="level-left">
                                                 <div className="level-item">
@@ -630,7 +628,7 @@ class CvLong extends React.Component {
                                                         <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                     </figure> 
                                                     <p className="subtitle is-6">
-                                                    10/2019 - 12/2019
+                                                        {this.state.content['courses']['bogotaBootCamp']['time']}
                                                     </p>
                                                 </div>
                                                 <div className="level-item">
@@ -638,23 +636,19 @@ class CvLong extends React.Component {
                                                         <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                     </figure> 
                                                     <p className="subtitle is-6">
-                                                    {this.props.langGerman ? "Bogota, Kolumbien" : "Bogota, Colombia"}
+                                                        {this.state.content['courses']['bogotaBootCamp']['location'][props.languageIndex]}
                                                     </p>
                                                 </div>
                                             </div> 
                                         </div>
                                     </div>
                                     <div className="column is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.props.langGerman ? "Kursinhalte" : "Course contents"}</h5>
+                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['courses']['bogotaBootCamp']['header'][props.languageIndex]}</h5>
                                         <div className="content">
                                             <ul className="has-text-left">
-                                                <li>{this.props.langGerman ? "Ruby on Rails als full-stack framework" : "Ruby on Rails as a Full-Stack Framework"}</li>
-                                                <li>{this.props.langGerman ? "React (Front-end)" : "React (Front-end)"}</li>
-                                                <li>{this.props.langGerman ? "SQL (PG, Sqlite) und NoSQL Datenbanken (Firebase)" : "SQL (PG, Sqlite) and NoSQL databases (Firebase)"}</li>
-                                                <li>{this.props.langGerman ? "Javascript, Ajax und jQuery" : "Javascript, Ajax and jQuery"}</li>
-                                                <li>{this.props.langGerman ? "HTML, CSS, Bootstrap und Bulma" : "HTML, CSS, Bootstrap and Bulma"}</li>
-                                                <li>{this.props.langGerman ? "AWS tools" : "AWS tools"}</li>
-                                                <li>{this.props.langGerman ? "GIT & GitHub" : "GIT & GitHub"}</li>
+                                                {this.state.content['courses']['bogotaBootCamp']['courseContents'].map((item, index) => {
+                                                    return <li>{item[props.languageIndex]}</li>
+                                                })}
                                             </ul>
                                         </div>
                                     </div>
@@ -665,10 +659,45 @@ class CvLong extends React.Component {
                  </div>)
     }
 
+    LangStack = (props) => {
+
+        return (<div>
+                    <section className="hero is-light is-bold">
+                        <div className="hero-body">
+                            <div className="container has-text-centered">
+                                <div className="columns">
+                                
+                                    <div className="column is-5 is-narrow">
+                                        {this.state.content['langStack']['languages'].map((item, index) => {
+                                            return <h5 className="subtitle is-5 has-text-left-tablet">{item['content'][props.languageIndex]} <progress className={item['className']} value={item['value']} max="100">{item['value']}%</progress></h5>
+                                        })}
+                                    </div>
+                                    <div className="column  is-offset-1 is-5 is-narrow">
+                                        <div className="field is-grouped is-grouped-multiline">
+                                            
+                                            {this.state.content['langStack']['programmingLanguages']['languages'].map((item, index) => {
+                                                return (<div className="control">
+                                                            <Roll top>
+                                                                <div className="tags has-addons">
+                                                                    <p className="tag is-link is-large">{item}</p>
+                                                                </div>
+                                                            </Roll>
+                                                        </div>)
+                                            })}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>)
+    }
+
 
     render(){
+        let languageIndex = this.props.langGerman ? 0 : 1
         return (<div>
-                    <this.TitleHeader phoneNumber={this.state.phoneNumber} currentLocation={this.state.currentLocation} />
+                    <this.TitleHeader phoneNumber={this.state.phoneNumber} currentLocation={this.state.currentLocation} languageIndex={languageIndex} />
                     <section className="hero is-bold is-info">
                         <div className="hero-body">
                             <h1 className="title is-2 has-text-centered">
@@ -676,12 +705,12 @@ class CvLong extends React.Component {
                                     <span className="icon is-large">
                                         <i className={this.state.profExperience ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
                                     </span>
-                                </button>{this.props.langGerman ? " Berufliche Erfahrung" :  " Professional Experience"}
+                                </button>{this.state.content['headerProfessionalExperience'][languageIndex]}
                             </h1>    
                         </div>
                     </section>
                     <Fade left collapse when={this.state.profExperience}>
-                        <this.ProfessionalExperience />
+                        <this.ProfessionalExperience languageIndex={languageIndex} />
                     </Fade>
                     <section className="hero is-bold is-info">
                         <div className="hero-body">
@@ -690,12 +719,12 @@ class CvLong extends React.Component {
                                     <span className="icon">
                                         <i className={this.state.acadEducation ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
                                     </span>
-                                </button>{this.props.langGerman ? " Akademische Ausbildung" :  " Academic education"}
+                                </button>{this.state.content['headerAcademicEducation'][languageIndex]}
                             </h1>
                         </div>
                     </section>
                     <Fade left collapse when={this.state.acadEducation}>
-                        <this.AcademicEducation />
+                        <this.AcademicEducation languageIndex={languageIndex} />
                     </Fade>
                     
                     <section className="hero is-bold is-info">
@@ -705,12 +734,12 @@ class CvLong extends React.Component {
                                     <span className="icon">
                                         <i className={this.state.courses ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
                                     </span>
-                                </button>{this.props.langGerman ? " Kurse" :  " Courses"}
+                                </button>{this.state.content['headerCourses'][languageIndex]}
                             </h1>
                         </div>
                     </section>
                     <Fade left collapse when={this.state.courses}>
-                        <this.Courses />
+                        <this.Courses languageIndex={languageIndex} />
                     </Fade>
                     <section className="hero is-bold is-info">
                         <div className="hero-body">
@@ -719,12 +748,12 @@ class CvLong extends React.Component {
                                 <span className="icon">
                                     <i className={this.state.langStack ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
                                 </span>
-                          </button>{this.props.langGerman ? " Sprachen & Stack" :  " Languages & Stack"}
+                          </button>{this.state.content['headerLangStack'][languageIndex]}
                           </h1>
                         </div>
                     </section>
                     <Fade left collapse when={this.state.langStack}>
-                        <this.LangStack />
+                        <this.LangStack languageIndex={languageIndex} />
                     </Fade>
                 </div>);
     }
