@@ -160,7 +160,6 @@ class CvLong extends React.Component {
                             "jQuery",
                             "React",
                             "NodeJS",
-                            "Django",
                             "Ruby on Rails",
                             "Git",
                         ],
