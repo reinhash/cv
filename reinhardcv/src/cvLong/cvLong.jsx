@@ -618,7 +618,7 @@ class CvLong extends React.Component {
                                 <div className="columns">
                                     <div className="column is-5 is-narrow">
                                         <h1 className="title is-3 has-text-left-tablet">{this.state.content['courses']['bogotaBootCamp']['courseName'][props.languageIndex]}</h1>
-                                        <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.bogotabootcamp.com">{this.state.content['courses']['bogotaBootCamp']['courseName']}</a></h5>
+                                        <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.bogotabootcamp.com">{this.state.content['courses']['bogotaBootCamp']['courseProviderName'][props.languageIndex]}</a></h5>
                                         <h5 className="subtitle is-6 has-text-left-tablet">{this.state.content['courses']['bogotaBootCamp']['description'][props.languageIndex]}</h5>
                                         <div className="level">
                                             <div className="level-left">
