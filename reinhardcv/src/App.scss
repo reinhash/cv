@@ -1,6 +1,7 @@
 $box-background-color: inherit;
 $switch-focus: 0px dotted;
 
+@import './node_modules/bulma/bulma.sass';
 @import './node_modules/bulma/sass/utilities/_all.sass';
 @import './node_modules/bulma/sass/base/_all.sass';
 @import './node_modules/bulma/sass/elements/_all.sass';
@@ -11,3 +12,13 @@ $switch-focus: 0px dotted;
 @import './node_modules/bulma-divider/src/sass/index.sass';
 @import './node_modules/bulma-timeline/src/sass/index.sass';
 @import './node_modules/bulma-switch/src/sass/index.sass';
+
+@include mobile {
+    .tabs ul {
+      flex-direction: column;
+  
+      li {
+        width: 100%;
+      }
+    }
+  }

@@ -761,42 +761,44 @@ class CvLong extends React.Component {
         let languageIndex = this.props.langGerman ? 0 : 1
         return (<div>
                     <this.TitleHeader phoneNumber={this.state.phoneNumber} currentLocation={this.state.currentLocation} languageIndex={languageIndex} />
-                    <div className="tabs is-centered is-boxed is-fullwidth ">
-                        <ul>
-                            <li onClick={() => this.toggleSegment("profExperience")} 
-                                className={this.state.profExperience ? "is-active" : ""}
-                                // style={this.state.profExperience ? this.state.styles['selected'] : this.state.styles['unSelected']}
-                            >
-                                <a>
-                                    <span className="icon is-small"><i className="fas fa-briefcase" aria-hidden="true"></i></span>
-                                    <span>{this.state.content['headerProfessionalExperience'][languageIndex]}</span>
-                                </a>
-                            </li>
-                            <li onClick={() => this.toggleSegment("acadEducation")} 
-                                className={this.state.acadEducation ? "is-active" : ""}
-                            >
-                                <a>
-                                    <span className="icon is-small"><i className="fas fa-university" aria-hidden="true"></i></span>
-                                    <span>{this.state.content['headerAcademicEducation'][languageIndex]}</span>
-                                </a>
-                            </li>
-                            <li onClick={() => this.toggleSegment("courses")} 
-                                className={this.state.courses ? "is-active" : ""}
-                            >
-                                <a>
-                                    <span className="icon is-small"><i className="fas fa-scroll" aria-hidden="true"></i></span>
-                                    <span>{this.state.content['headerCourses'][languageIndex]}</span>
-                                </a>
-                            </li>
-                            <li onClick={() => this.toggleSegment("langStack")} 
-                                className={this.state.langStack ? "is-active" : ""}
-                            >
-                                <a>
-                                    <span className="icon is-small"><i className="fas fa-cubes" aria-hidden="true"></i></span>
-                                    <span>{this.state.content['headerLangStack'][languageIndex]}</span>
-                                </a>
-                            </li>
-                        </ul>
+                    <div className="container">
+                        <div className="tabs is-centered is-fullwidth is-boxed">
+                            <ul>
+                                <li onClick={() => this.toggleSegment("profExperience")} 
+                                    className={this.state.profExperience ? "is-active" : ""}
+                                    // style={this.state.profExperience ? this.state.styles['selected'] : this.state.styles['unSelected']}
+                                >
+                                    <a>
+                                        <span className="icon is-small"><i className="fas fa-briefcase" aria-hidden="true"></i></span>
+                                        <span>{this.state.content['headerProfessionalExperience'][languageIndex]}</span>
+                                    </a>
+                                </li>
+                                <li onClick={() => this.toggleSegment("acadEducation")} 
+                                    className={this.state.acadEducation ? "is-active" : ""}
+                                >
+                                    <a>
+                                        <span className="icon is-small"><i className="fas fa-university" aria-hidden="true"></i></span>
+                                        <span>{this.state.content['headerAcademicEducation'][languageIndex]}</span>
+                                    </a>
+                                </li>
+                                <li onClick={() => this.toggleSegment("courses")} 
+                                    className={this.state.courses ? "is-active" : ""}
+                                >
+                                    <a>
+                                        <span className="icon is-small"><i className="fas fa-scroll" aria-hidden="true"></i></span>
+                                        <span>{this.state.content['headerCourses'][languageIndex]}</span>
+                                    </a>
+                                </li>
+                                <li onClick={() => this.toggleSegment("langStack")} 
+                                    className={this.state.langStack ? "is-active" : ""}
+                                >
+                                    <a>
+                                        <span className="icon is-small"><i className="fas fa-cubes" aria-hidden="true"></i></span>
+                                        <span>{this.state.content['headerLangStack'][languageIndex]}</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     {this.state.profExperience ? <this.ProfessionalExperience languageIndex={languageIndex} /> : <Fragment></Fragment>}
                     {this.state.acadEducation ? <this.AcademicEducation languageIndex={languageIndex} /> : <Fragment></Fragment>}

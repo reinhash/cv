@@ -65,7 +65,7 @@ function CvShort (props) {
     let languageIndex = props.langGerman ? 0 : 1
     return (<div>
               <section className="hero is-bold is-light">
-                <div className="hero-body">
+                <div className="hero-body has-text-centered">
                   <h1 className="title is-bold is-1">
                     Reinhard Scheuerle
                   </h1>

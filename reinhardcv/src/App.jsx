@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import './App.sass';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Cookies from 'universal-cookie'
 import Navbar from './navbar/navbar.jsx';
