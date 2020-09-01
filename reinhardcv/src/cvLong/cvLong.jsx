@@ -767,22 +767,34 @@ class CvLong extends React.Component {
                                 className={this.state.profExperience ? "is-active" : ""}
                                 // style={this.state.profExperience ? this.state.styles['selected'] : this.state.styles['unSelected']}
                             >
-                                <a>{this.state.content['headerProfessionalExperience'][languageIndex]}</a>
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-briefcase" aria-hidden="true"></i></span>
+                                    <span>{this.state.content['headerProfessionalExperience'][languageIndex]}</span>
+                                </a>
                             </li>
                             <li onClick={() => this.toggleSegment("acadEducation")} 
                                 className={this.state.acadEducation ? "is-active" : ""}
                             >
-                                <a>{this.state.content['headerAcademicEducation'][languageIndex]}</a>
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-university" aria-hidden="true"></i></span>
+                                    <span>{this.state.content['headerAcademicEducation'][languageIndex]}</span>
+                                </a>
                             </li>
                             <li onClick={() => this.toggleSegment("courses")} 
                                 className={this.state.courses ? "is-active" : ""}
                             >
-                                <a>{this.state.content['headerCourses'][languageIndex]}</a>
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-scroll" aria-hidden="true"></i></span>
+                                    <span>{this.state.content['headerCourses'][languageIndex]}</span>
+                                </a>
                             </li>
                             <li onClick={() => this.toggleSegment("langStack")} 
                                 className={this.state.langStack ? "is-active" : ""}
                             >
-                                <a>{this.state.content['headerLangStack'][languageIndex]}</a>
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-cubes" aria-hidden="true"></i></span>
+                                    <span>{this.state.content['headerLangStack'][languageIndex]}</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
