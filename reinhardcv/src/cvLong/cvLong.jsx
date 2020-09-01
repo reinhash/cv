@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import ReactTypingEffect from 'react-typing-effect';
 import Fade from 'react-reveal/Fade';
 import Roll from 'react-reveal/Roll';
@@ -7,10 +7,14 @@ class CvLong extends React.Component {
     constructor(props){
         super(props);
         this.state = {
+            styles: {
+                selected: {"backgroundColor": "#3298dc"},
+                unSelected: {"backgroundColor": "#ffffff"},
+            },
             profExperience: true,
-            acadEducation: true,
-            langStack: true,
-            courses: true,
+            acadEducation: false,
+            langStack: false,
+            courses: false,
             phoneNumber: "+4915158359427‬",
             eyeClassNames: ["fas fa-eye", "fas fa-eye-slash"],
             content: {
@@ -174,6 +178,10 @@ class CvLong extends React.Component {
 
     toggleSegment(segmentName){
         let update = {}
+        update["profExperience"] = false;
+        update["acadEducation"] = false;
+        update["langStack"] = false;
+        update["courses"] = false;
         update[segmentName] = !this.state[segmentName]
         this.setState(update)
     }
@@ -268,428 +276,484 @@ class CvLong extends React.Component {
 
 
     ProfessionalExperience = (props) => {
-        return (<div>
-                    <section className="hero is-light is-bold">
+        return (<Fragment>
+                    <section className="hero is-bold has-background-info">
                         <div className="hero-body">
-                            <div className="container has-text-centered">
-                                <div className="columns">
-                                    <div className="column is-5 is-narrow">
-                                        <h1 className="title is-3 has-text-left-tablet">{this.state.content['professionalExperience']['softwareDeveloper']['title'][props.languageIndex]}</h1>
-                                        <h5 className="subtitle is-6 has-text-left-tablet"></h5>
-                                        <div className="level">
-                                            <div className="level-left">
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
-                                                        <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
-                                                    </figure> 
-                                                    <p className="subtitle is-6">
-                                                        {this.state.content['professionalExperience']['softwareDeveloper']['time'][props.languageIndex]}
-                                                    </p>
-                                                </div>
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32">
-                                                        <img src={require("./location-pin-icon-13.jpg")} alt="location" />
-                                                    </figure> 
-                                                    <p className="subtitle is-6">
-                                                    Remote
-                                                    </p>
-                                                </div>
-                                            </div> 
-                                        </div>
-                                        
-                                    </div>
-                                    <div className="column is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['professionalExperience']['softwareDeveloper']['header'][props.languageIndex]}</h5>
-                                        <div className="content">
-                                            <ul className="has-text-left">
-                                                <li><u><a href="http://www.daxosline.com">Daxos</a></u>
-                                                    {this.state.content['professionalExperience']['softwareDeveloper']['projects'][props.languageIndex]}
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <h1 className="title is-2 has-text-centered has-text-white-ter">
+                                {/* <button className="button is-outlined is-link" onClick={() => this.toggleSegment("profExperience")}>
+                                    <span className="icon is-large">
+                                        <i className={this.state.profExperience ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
+                                    </span>
+                                </button> */}
+                                {this.state.content['headerProfessionalExperience'][props.languageIndex]}
+                            </h1>    
                         </div>
                     </section>
-                    <section className="hero is-light is-bold">
-                        <div className="hero-body">
-                            <div className="container has-text-centered">
-                                <div className="columns">
-                                    <div className="column is-5 is-narrow">
-                                        <h1 className="title is-3 has-text-left-tablet">IT Consultant DMS/ECM</h1>
-                                        <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.synalis.de">synalis GmbH & Co. KG</a></h5>
-                                        <h5 className="subtitle is-6 has-text-left-tablet">{this.state.content['professionalExperience']['synalis']['description'][props.languageIndex]}</h5>
-                                        <div className="level">
-                                            <div className="level-left">
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
-                                                        <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
-                                                    </figure> 
-                                                    <p className="subtitle is-6">
-                                                    12/2018 - 10/2019
-                                                    </p>
-                                                </div>
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32">
-                                                        <img src={require("./location-pin-icon-13.jpg")} alt="location" />
-                                                    </figure> 
-                                                    <p className="subtitle is-6">
-                                                        {this.state.content['professionalExperience']['synalis']['location'][props.languageIndex]}
-                                                    </p>
-                                                </div>
-                                            </div> 
+                    <div>
+                        <section className="hero is-light is-bold">
+                            <div className="hero-body">
+                                <div className="container has-text-centered">
+                                    <div className="columns">
+                                        <div className="column is-5 is-narrow">
+                                            <h1 className="title is-3 has-text-left-tablet">{this.state.content['professionalExperience']['softwareDeveloper']['title'][props.languageIndex]}</h1>
+                                            <h5 className="subtitle is-6 has-text-left-tablet"></h5>
+                                            <div className="level">
+                                                <div className="level-left">
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
+                                                            <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                            {this.state.content['professionalExperience']['softwareDeveloper']['time'][props.languageIndex]}
+                                                        </p>
+                                                    </div>
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32">
+                                                            <img src={require("./location-pin-icon-13.jpg")} alt="location" />
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                        Remote
+                                                        </p>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                            
                                         </div>
-                                        
-                                    </div>
-                                    <div className="column is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['professionalExperience']['synalis']['header'][props.languageIndex]}</h5>
-                                        <div className="content">
-                                            <ul className="has-text-left">
-                                                {this.state.content['professionalExperience']['synalis']['tasks'].map((item, index) => {
-                                                    return (<li>{item[props.languageIndex]}</li>)
-                                                })}
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section className="hero is-light is-bold">
-                        <div className="hero-body">
-                            <div className="container has-text-centered">
-                                <div className="columns">
-                                    <div className="column is-5 is-narrow">
-                                        {this.state.content['professionalExperience']['gapYear']['description'][props.languageIndex]}
-                                    </div>
-                                    <div className="column  is-offset-1 is-5 is-narrow">
-                                        {this.state.content['professionalExperience']['gapYear']['tasks'][props.languageIndex]}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section className="hero is-light is-bold">
-                        <div className="hero-body">
-                            <div className="container has-text-centered">
-                                <div className="columns">
-                                    <div className="column is-5 is-narrow">
-                                        <h1 className="title is-3 has-text-left-tablet">Equity Index Analyst</h1>
-                                        <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.solactive.com">Solactive AG</a></h5>
-                                        <h5 className="subtitle is-6 has-text-left-tablet">{this.state.content['professionalExperience']['solactive']['description'][props.languageIndex]}</h5>
-                                        <div className="level">
-                                            <div className="level-left">
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
-                                                        <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
-                                                    </figure> 
-                                                    <p className="subtitle is-6">
-                                                        06/2016 - 01/2018
-                                                    </p>
-                                                </div>
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32">
-                                                        <img src={require("./location-pin-icon-13.jpg")} alt="location" />
-                                                    </figure> 
-                                                    <p className="subtitle is-6">
-                                                        {this.state.content['professionalExperience']['solactive']['location'][props.languageIndex]}
-                                                    </p>
-                                                </div>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="column  is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['professionalExperience']['solactive']['header'][props.languageIndex]}</h5>
-                                        <div className="content">
-                                            <ul className="has-text-left">
-                                                {this.state.content['professionalExperience']['solactive']['tasks'].map((item, index) => {
-                                                    return (<li>{item[props.languageIndex]}</li>)
-                                                })}
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section className="hero is-light is-bold">
-                        <div className="hero-body">
-                            <div className="container has-text-centered">
-                                <div className="columns">
-                                    <div className="column is-5 is-narrow">
-                                        <h1 className="title is-3 has-text-left-tablet">{this.state.content['professionalExperience']['bosch']['title'][props.languageIndex]}</h1>
-                                        <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.solactive.com">Robert Bosch GmbH</a></h5>
-                                        <h5 className="subtitle is-6 has-text-left-tablet">{this.state.content['professionalExperience']['bosch']['description'][props.languageIndex]}</h5>
-                                        <div className="level">
-                                            <div className="level-left">
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
-                                                        <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
-                                                    </figure> 
-                                                    <p className="subtitle is-6">
-                                                        06/2015 - 05/2016
-                                                    </p>
-                                                </div>
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32">
-                                                        <img src={require("./location-pin-icon-13.jpg")} alt="location" />
-                                                    </figure> 
-                                                    <p className="subtitle is-6">
-                                                        {this.state.content['professionalExperience']['bosch']['location'][props.languageIndex]}
-                                                    </p>
-                                                </div>
-                                            </div>   
-                                        </div>
-                                    </div>
-                                    <div className="column  is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['professionalExperience']['bosch']['header'][props.languageIndex]}</h5>
-                                        <div className="content">
-                                            <ul className="has-text-left">
-                                                {this.state.content['professionalExperience']['bosch']['tasks'].map((item, index) => {
-                                                    return (<li>{item[props.languageIndex]}</li>)
-                                                })}
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>)
-    }
-
-    AcademicEducation = (props) => {
-        return (<div>
-                    <section className="hero is-light is-bold">
-                        <div className="hero-body">
-                            <div className="container has-text-centered">
-                                <div className="columns">
-                                    <div className="column is-5 is-narrow">
-                                        <h1 className="title is-3 has-text-left-tablet"><a href="//www.maastrichtuniversity.nl/">{this.state.content['academicEducation']['master']['maastricht']['schoolName']}</a></h1>
-                                        <div className="level">
-                                            <div className="level-left">
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
-                                                        <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
-                                                    </figure> 
-                                                    <p className="subtitle is-6">
-                                                        {this.state.content['academicEducation']['master']['maastricht']['time']}
-                                                    </p>
-                                                </div>
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32">
-                                                        <img src={require("./location-pin-icon-13.jpg")} alt="location" />
-                                                    </figure> 
-                                                    <p className="subtitle is-6">
-                                                        {this.state.content['academicEducation']['master']['maastricht']['location'][props.languageIndex]}
-                                                    </p>
-                                                </div>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="column is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['academicEducation']['master']['maastricht']['studyName']}</h5>
-                                        <div className="content">
-                                            <ul className="has-text-left">
-                                                <li>{this.state.content['academicEducation']['master']['maastricht']['thesis'][props.languageIndex]}</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section className="hero is-light is-bold">
-                        <div className="hero-body">
-                            <div className="container has-text-centered">
-                                <div className="columns">
-                                    <div className="column is-5 is-narrow">
-                                        <h1 className="title is-3 has-text-left-tablet"><a href="//www.wu.ac.at/">{this.state.content['academicEducation']['master']['vienna']['schoolName'][props.languageIndex]}</a></h1>
-                                        <div className="level">
-                                            <div className="level-left">
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
-                                                        <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
-                                                    </figure>
-                                                    <p className="subtitle is-6">
-                                                        {this.state.content['academicEducation']['master']['vienna']['time']}
-                                                    </p> 
-                                                </div>
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32">
-                                                        <img src={require("./location-pin-icon-13.jpg")} alt="location" />
-                                                    </figure> 
-                                                    <p className="subtitle is-6">
-                                                        {this.state.content['academicEducation']['master']['vienna']['location'][props.languageIndex]}
-                                                    </p>
-                                                </div>
+                                        <div className="column is-offset-1 is-5 is-narrow">
+                                            <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['professionalExperience']['softwareDeveloper']['header'][props.languageIndex]}</h5>
+                                            <div className="content">
+                                                <ul className="has-text-left">
+                                                    <li><u><a href="http://www.daxosline.com">Daxos</a></u>
+                                                        {this.state.content['professionalExperience']['softwareDeveloper']['projects'][props.languageIndex]}
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="column  is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['academicEducation']['master']['vienna']['studyName'][props.languageIndex]}</h5>
+                                </div>
+                            </div>
+                        </section>
+                        <section className="hero is-light is-bold">
+                            <div className="hero-body">
+                                <div className="container has-text-centered">
+                                    <div className="columns">
+                                        <div className="column is-5 is-narrow">
+                                            <h1 className="title is-3 has-text-left-tablet">IT Consultant DMS/ECM</h1>
+                                            <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.synalis.de">synalis GmbH & Co. KG</a></h5>
+                                            <h5 className="subtitle is-6 has-text-left-tablet">{this.state.content['professionalExperience']['synalis']['description'][props.languageIndex]}</h5>
+                                            <div className="level">
+                                                <div className="level-left">
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
+                                                            <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                        12/2018 - 10/2019
+                                                        </p>
+                                                    </div>
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32">
+                                                            <img src={require("./location-pin-icon-13.jpg")} alt="location" />
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                            {this.state.content['professionalExperience']['synalis']['location'][props.languageIndex]}
+                                                        </p>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                            
+                                        </div>
+                                        <div className="column is-offset-1 is-5 is-narrow">
+                                            <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['professionalExperience']['synalis']['header'][props.languageIndex]}</h5>
+                                            <div className="content">
+                                                <ul className="has-text-left">
+                                                    {this.state.content['professionalExperience']['synalis']['tasks'].map((item, index) => {
+                                                        return (<li>{item[props.languageIndex]}</li>)
+                                                    })}
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                    <section className="hero is-light is-bold">
+                        </section>
+                        <section className="hero is-light is-bold">
+                            <div className="hero-body">
+                                <div className="container has-text-centered">
+                                    <div className="columns">
+                                        <div className="column is-5 is-narrow">
+                                            {this.state.content['professionalExperience']['gapYear']['description'][props.languageIndex]}
+                                        </div>
+                                        <div className="column  is-offset-1 is-5 is-narrow">
+                                            {this.state.content['professionalExperience']['gapYear']['tasks'][props.languageIndex]}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section className="hero is-light is-bold">
+                            <div className="hero-body">
+                                <div className="container has-text-centered">
+                                    <div className="columns">
+                                        <div className="column is-5 is-narrow">
+                                            <h1 className="title is-3 has-text-left-tablet">Equity Index Analyst</h1>
+                                            <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.solactive.com">Solactive AG</a></h5>
+                                            <h5 className="subtitle is-6 has-text-left-tablet">{this.state.content['professionalExperience']['solactive']['description'][props.languageIndex]}</h5>
+                                            <div className="level">
+                                                <div className="level-left">
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
+                                                            <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                            06/2016 - 01/2018
+                                                        </p>
+                                                    </div>
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32">
+                                                            <img src={require("./location-pin-icon-13.jpg")} alt="location" />
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                            {this.state.content['professionalExperience']['solactive']['location'][props.languageIndex]}
+                                                        </p>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div className="column  is-offset-1 is-5 is-narrow">
+                                            <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['professionalExperience']['solactive']['header'][props.languageIndex]}</h5>
+                                            <div className="content">
+                                                <ul className="has-text-left">
+                                                    {this.state.content['professionalExperience']['solactive']['tasks'].map((item, index) => {
+                                                        return (<li>{item[props.languageIndex]}</li>)
+                                                    })}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section className="hero is-light is-bold">
+                            <div className="hero-body">
+                                <div className="container has-text-centered">
+                                    <div className="columns">
+                                        <div className="column is-5 is-narrow">
+                                            <h1 className="title is-3 has-text-left-tablet">{this.state.content['professionalExperience']['bosch']['title'][props.languageIndex]}</h1>
+                                            <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.solactive.com">Robert Bosch GmbH</a></h5>
+                                            <h5 className="subtitle is-6 has-text-left-tablet">{this.state.content['professionalExperience']['bosch']['description'][props.languageIndex]}</h5>
+                                            <div className="level">
+                                                <div className="level-left">
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
+                                                            <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                            06/2015 - 05/2016
+                                                        </p>
+                                                    </div>
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32">
+                                                            <img src={require("./location-pin-icon-13.jpg")} alt="location" />
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                            {this.state.content['professionalExperience']['bosch']['location'][props.languageIndex]}
+                                                        </p>
+                                                    </div>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                        <div className="column  is-offset-1 is-5 is-narrow">
+                                            <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['professionalExperience']['bosch']['header'][props.languageIndex]}</h5>
+                                            <div className="content">
+                                                <ul className="has-text-left">
+                                                    {this.state.content['professionalExperience']['bosch']['tasks'].map((item, index) => {
+                                                        return (<li>{item[props.languageIndex]}</li>)
+                                                    })}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </Fragment>)
+    }
+
+    AcademicEducation = (props) => {
+        return (<Fragment>
+                    <section className="hero is-bold has-background-info">
                         <div className="hero-body">
-                            <div className="container has-text-centered">
-                                <div className="columns">
-                                    <div className="column is-5 is-narrow">
-                                        <h1 className="title is-3 has-text-left-tablet"><a href="//www.maastrichtuniversity.nl/">{this.state.content['academicEducation']['bachelor']['maastricht']['schoolName']}</a></h1>
-                                        <div className="level">
-                                            <div className="level-left">
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
-                                                        <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
-                                                    </figure>
-                                                    <p className="subtitle is-6">
-                                                        {this.state.content['academicEducation']['bachelor']['maastricht']['time']}
-                                                    </p>
-                                                </div>
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32">
-                                                        <img src={require("./location-pin-icon-13.jpg")} alt="location" />
-                                                    </figure> 
-                                                    <p className="subtitle is-6">
-                                                        {this.state.content['academicEducation']['bachelor']['maastricht']['location'][props.languageIndex]}
-                                                    </p>
-                                                </div>
-                                            </div>  
+                            <h1 className="title is-2 has-text-centered has-text-white-ter">
+                                {/* <button className="button is-outlined is-link" onClick={() => this.toggleSegment("acadEducation")}>
+                                    <span className="icon">
+                                        <i className={this.state.acadEducation ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
+                                    </span>
+                                </button> */}
+                                {this.state.content['headerAcademicEducation'][props.languageIndex]}
+                            </h1>
+                        </div>
+                    </section>
+                    <div>
+                        <section className="hero is-light is-bold">
+                            <div className="hero-body">
+                                <div className="container has-text-centered">
+                                    <div className="columns">
+                                        <div className="column is-5 is-narrow">
+                                            <h1 className="title is-3 has-text-left-tablet"><a href="//www.maastrichtuniversity.nl/">{this.state.content['academicEducation']['master']['maastricht']['schoolName']}</a></h1>
+                                            <div className="level">
+                                                <div className="level-left">
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
+                                                            <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                            {this.state.content['academicEducation']['master']['maastricht']['time']}
+                                                        </p>
+                                                    </div>
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32">
+                                                            <img src={require("./location-pin-icon-13.jpg")} alt="location" />
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                            {this.state.content['academicEducation']['master']['maastricht']['location'][props.languageIndex]}
+                                                        </p>
+                                                    </div>
+                                                </div> 
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="column  is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['academicEducation']['bachelor']['maastricht']['studyName']}</h5>
-                                        <div className="content">
-                                            <ul className="has-text-left">
-                                                <li>{this.state.content['academicEducation']['bachelor']['maastricht']['thesis'][props.languageIndex]}</li>
-                                            </ul>
+                                        <div className="column is-offset-1 is-5 is-narrow">
+                                            <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['academicEducation']['master']['maastricht']['studyName']}</h5>
+                                            <div className="content">
+                                                <ul className="has-text-left">
+                                                    <li>{this.state.content['academicEducation']['master']['maastricht']['thesis'][props.languageIndex]}</li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                    <section className="hero is-light is-bold">
-                        <div className="hero-body">
-                            <div className="container has-text-centered">
-                                <div className="columns">
-                                    <div className="column is-5 is-narrow">
-                                        <h1 className="title is-3 has-text-left-tablet"><a href="//www.whitworth.edu/">{this.state.content['academicEducation']['bachelor']['whitworth']['schoolName']}</a></h1>
-                                        <div className="level">
-                                            <div className="level-left">
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
-                                                        <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
-                                                    </figure> 
-                                                    <p className="subtitle is-6">
-                                                        {this.state.content['academicEducation']['bachelor']['whitworth']['time']}
-                                                    </p>
+                        </section>
+                        <section className="hero is-light is-bold">
+                            <div className="hero-body">
+                                <div className="container has-text-centered">
+                                    <div className="columns">
+                                        <div className="column is-5 is-narrow">
+                                            <h1 className="title is-3 has-text-left-tablet"><a href="//www.wu.ac.at/">{this.state.content['academicEducation']['master']['vienna']['schoolName'][props.languageIndex]}</a></h1>
+                                            <div className="level">
+                                                <div className="level-left">
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
+                                                            <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                        </figure>
+                                                        <p className="subtitle is-6">
+                                                            {this.state.content['academicEducation']['master']['vienna']['time']}
+                                                        </p> 
+                                                    </div>
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32">
+                                                            <img src={require("./location-pin-icon-13.jpg")} alt="location" />
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                            {this.state.content['academicEducation']['master']['vienna']['location'][props.languageIndex]}
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32">
-                                                        <img src={require("./location-pin-icon-13.jpg")} alt="location" />
-                                                    </figure> 
-                                                    <p className="subtitle is-6">
-                                                    {this.state.content['academicEducation']['bachelor']['whitworth']['location']}
-                                                    </p>
-                                                </div>
-                                            </div>   
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="column  is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['academicEducation']['bachelor']['whitworth']['studyName'][props.languageIndex]}</h5>
+                                        <div className="column  is-offset-1 is-5 is-narrow">
+                                            <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['academicEducation']['master']['vienna']['studyName'][props.languageIndex]}</h5>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                </div>)
+                        </section>
+                        <section className="hero is-light is-bold">
+                            <div className="hero-body">
+                                <div className="container has-text-centered">
+                                    <div className="columns">
+                                        <div className="column is-5 is-narrow">
+                                            <h1 className="title is-3 has-text-left-tablet"><a href="//www.maastrichtuniversity.nl/">{this.state.content['academicEducation']['bachelor']['maastricht']['schoolName']}</a></h1>
+                                            <div className="level">
+                                                <div className="level-left">
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
+                                                            <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                        </figure>
+                                                        <p className="subtitle is-6">
+                                                            {this.state.content['academicEducation']['bachelor']['maastricht']['time']}
+                                                        </p>
+                                                    </div>
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32">
+                                                            <img src={require("./location-pin-icon-13.jpg")} alt="location" />
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                            {this.state.content['academicEducation']['bachelor']['maastricht']['location'][props.languageIndex]}
+                                                        </p>
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div className="column  is-offset-1 is-5 is-narrow">
+                                            <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['academicEducation']['bachelor']['maastricht']['studyName']}</h5>
+                                            <div className="content">
+                                                <ul className="has-text-left">
+                                                    <li>{this.state.content['academicEducation']['bachelor']['maastricht']['thesis'][props.languageIndex]}</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section className="hero is-light is-bold">
+                            <div className="hero-body">
+                                <div className="container has-text-centered">
+                                    <div className="columns">
+                                        <div className="column is-5 is-narrow">
+                                            <h1 className="title is-3 has-text-left-tablet"><a href="//www.whitworth.edu/">{this.state.content['academicEducation']['bachelor']['whitworth']['schoolName']}</a></h1>
+                                            <div className="level">
+                                                <div className="level-left">
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
+                                                            <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                            {this.state.content['academicEducation']['bachelor']['whitworth']['time']}
+                                                        </p>
+                                                    </div>
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32">
+                                                            <img src={require("./location-pin-icon-13.jpg")} alt="location" />
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                        {this.state.content['academicEducation']['bachelor']['whitworth']['location']}
+                                                        </p>
+                                                    </div>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                        <div className="column  is-offset-1 is-5 is-narrow">
+                                            <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['academicEducation']['bachelor']['whitworth']['studyName'][props.languageIndex]}</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </Fragment>)
     }
 
     Courses = (props) => {
-        return (<div>
-                    <section className="hero is-light is-bold">
+        return (<Fragment>
+                    <section className="hero is-bold has-background-info">
                         <div className="hero-body">
-                            <div className="container has-text-centered">
-                                <div className="columns">
-                                    <div className="column is-5 is-narrow">
-                                        <h1 className="title is-3 has-text-left-tablet">{this.state.content['courses']['bogotaBootCamp']['courseName'][props.languageIndex]}</h1>
-                                        <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.bogotabootcamp.com">{this.state.content['courses']['bogotaBootCamp']['courseProviderName'][props.languageIndex]}</a></h5>
-                                        <h5 className="subtitle is-6 has-text-left-tablet">{this.state.content['courses']['bogotaBootCamp']['description'][props.languageIndex]}</h5>
-                                        <div className="level">
-                                            <div className="level-left">
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
-                                                        <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
-                                                    </figure> 
-                                                    <p className="subtitle is-6">
-                                                        {this.state.content['courses']['bogotaBootCamp']['time']}
-                                                    </p>
-                                                </div>
-                                                <div className="level-item">
-                                                    <figure className="image is-32x32">
-                                                        <img src={require("./location-pin-icon-13.jpg")} alt="location" />
-                                                    </figure> 
-                                                    <p className="subtitle is-6">
-                                                        {this.state.content['courses']['bogotaBootCamp']['location'][props.languageIndex]}
-                                                    </p>
-                                                </div>
-                                            </div> 
+                            <h1 className="title is-2 has-text-centered has-text-white-ter">
+                                {/* <button className="button is-outlined is-link" onClick={() => this.toggleSegment("courses")}>
+                                    <span className="icon">
+                                        <i className={this.state.courses ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
+                                    </span>
+                                </button> */}
+                                {this.state.content['headerCourses'][props.languageIndex]}
+                            </h1>
+                        </div>
+                    </section>
+                    <div>
+                        <section className="hero is-light is-bold">
+                            <div className="hero-body">
+                                <div className="container has-text-centered">
+                                    <div className="columns">
+                                        <div className="column is-5 is-narrow">
+                                            <h1 className="title is-3 has-text-left-tablet">{this.state.content['courses']['bogotaBootCamp']['courseName'][props.languageIndex]}</h1>
+                                            <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.bogotabootcamp.com">{this.state.content['courses']['bogotaBootCamp']['courseProviderName'][props.languageIndex]}</a></h5>
+                                            <h5 className="subtitle is-6 has-text-left-tablet">{this.state.content['courses']['bogotaBootCamp']['description'][props.languageIndex]}</h5>
+                                            <div className="level">
+                                                <div className="level-left">
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
+                                                            <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                            {this.state.content['courses']['bogotaBootCamp']['time']}
+                                                        </p>
+                                                    </div>
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32">
+                                                            <img src={require("./location-pin-icon-13.jpg")} alt="location" />
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                            {this.state.content['courses']['bogotaBootCamp']['location'][props.languageIndex]}
+                                                        </p>
+                                                    </div>
+                                                </div> 
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="column is-offset-1 is-5 is-narrow">
-                                        <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['courses']['bogotaBootCamp']['header'][props.languageIndex]}</h5>
-                                        <div className="content">
-                                            <ul className="has-text-left">
-                                                {this.state.content['courses']['bogotaBootCamp']['courseContents'].map((item, index) => {
-                                                    return <li>{item[props.languageIndex]}</li>
-                                                })}
-                                            </ul>
+                                        <div className="column is-offset-1 is-5 is-narrow">
+                                            <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['courses']['bogotaBootCamp']['header'][props.languageIndex]}</h5>
+                                            <div className="content">
+                                                <ul className="has-text-left">
+                                                    {this.state.content['courses']['bogotaBootCamp']['courseContents'].map((item, index) => {
+                                                        return <li>{item[props.languageIndex]}</li>
+                                                    })}
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                 </div>)
+                        </section>
+                    </div>
+                </Fragment>)
     }
 
     LangStack = (props) => {
 
-        return (<div>
-                    <section className="hero is-light is-bold">
+        return (<Fragment>
+                    <section className="hero is-bold has-background-info">
                         <div className="hero-body">
-                            <div className="container has-text-centered">
-                                <div className="columns">
-                                
-                                    <div className="column is-5 is-narrow">
-                                        {this.state.content['langStack']['languages'].map((item, index) => {
-                                            return <h5 className="subtitle is-5 has-text-left-tablet">{item['content'][props.languageIndex]} <progress className={item['className']} value={item['value']} max="100">{item['value']}%</progress></h5>
-                                        })}
-                                    </div>
-                                    <div className="column  is-offset-1 is-5 is-narrow">
-                                        <div className="field is-grouped is-grouped-multiline">
-                                            
-                                            {this.state.content['langStack']['programmingLanguages']['languages'].map((item, index) => {
-                                                return (<div className="control">
-                                                            <Roll top>
-                                                                <div className="tags has-addons">
-                                                                    <p className="tag is-link is-large">{item}</p>
-                                                                </div>
-                                                            </Roll>
-                                                        </div>)
+                            <h1 className="title is-2 has-text-centered has-text-white-ter">
+                            {/* <button className="button is-outlined is-link" onClick={() => this.toggleSegment("langStack")}>
+                                    <span className="icon">
+                                        <i className={this.state.langStack ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
+                                    </span>
+                            </button> */}
+                            {this.state.content['headerLangStack'][props.languageIndex]}
+                            </h1>
+                        </div>
+                    </section>
+                    <div>
+                        <section className="hero is-light is-bold">
+                            <div className="hero-body">
+                                <div className="container has-text-centered">
+                                    <div className="columns">
+                                    
+                                        <div className="column is-5 is-narrow">
+                                            {this.state.content['langStack']['languages'].map((item, index) => {
+                                                return <h5 className="subtitle is-5 has-text-left-tablet">{item['content'][props.languageIndex]} <progress className={item['className']} value={item['value']} max="100">{item['value']}%</progress></h5>
                                             })}
+                                        </div>
+                                        <div className="column  is-offset-1 is-5 is-narrow">
+                                            <div className="field is-grouped is-grouped-multiline">
+                                                
+                                                {this.state.content['langStack']['programmingLanguages']['languages'].map((item, index) => {
+                                                    return (<div className="control">
+                                                                <Roll top>
+                                                                    <div className="tags has-addons">
+                                                                        <p className="tag is-link is-large">{item}</p>
+                                                                    </div>
+                                                                </Roll>
+                                                            </div>)
+                                                })}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                </div>)
+                        </section>
+                    </div>
+                </Fragment>)
     }
 
 
@@ -697,71 +761,53 @@ class CvLong extends React.Component {
         let languageIndex = this.props.langGerman ? 0 : 1
         return (<div>
                     <this.TitleHeader phoneNumber={this.state.phoneNumber} currentLocation={this.state.currentLocation} languageIndex={languageIndex} />
-                    <div className="tabs is-centered is-boxed is-fullwidth">
+                    <div className="tabs is-centered is-boxed is-fullwidth ">
                         <ul>
-                            <li className="is-active"><a>{this.state.content['headerProfessionalExperience'][languageIndex]}</a></li>
-                            <li><a>{this.state.content['headerAcademicEducation'][languageIndex]}</a></li>
-                            <li><a>{this.state.content['headerCourses'][languageIndex]}</a></li>
-                            <li><a>{this.state.content['headerLangStack'][languageIndex]}</a></li>
+                            <li onClick={() => this.toggleSegment("profExperience")} 
+                                className={this.state.profExperience ? "is-active" : ""}
+                                // style={this.state.profExperience ? this.state.styles['selected'] : this.state.styles['unSelected']}
+                            >
+                                <a>{this.state.content['headerProfessionalExperience'][languageIndex]}</a>
+                            </li>
+                            <li onClick={() => this.toggleSegment("acadEducation")} 
+                                className={this.state.acadEducation ? "is-active" : ""}
+                            >
+                                <a>{this.state.content['headerAcademicEducation'][languageIndex]}</a>
+                            </li>
+                            <li onClick={() => this.toggleSegment("courses")} 
+                                className={this.state.courses ? "is-active" : ""}
+                            >
+                                <a>{this.state.content['headerCourses'][languageIndex]}</a>
+                            </li>
+                            <li onClick={() => this.toggleSegment("langStack")} 
+                                className={this.state.langStack ? "is-active" : ""}
+                            >
+                                <a>{this.state.content['headerLangStack'][languageIndex]}</a>
+                            </li>
                         </ul>
                     </div>
-                    <section className="hero is-bold is-info">
-                        <div className="hero-body">
-                            <h1 className="title is-2 has-text-centered">
-                                <button className="button is-outlined is-link" onClick={() => this.toggleSegment("profExperience")}>
-                                    <span className="icon is-large">
-                                        <i className={this.state.profExperience ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
-                                    </span>
-                                </button>{this.state.content['headerProfessionalExperience'][languageIndex]}
-                            </h1>    
-                        </div>
-                    </section>
-                    <Fade left collapse when={this.state.profExperience}>
-                        <this.ProfessionalExperience languageIndex={languageIndex} />
-                    </Fade>
-                    <section className="hero is-bold is-info">
-                        <div className="hero-body">
-                          <h1 className="title is-2 has-text-centered">
-                                <button className="button is-outlined is-link" onClick={() => this.toggleSegment("acadEducation")}>
-                                    <span className="icon">
-                                        <i className={this.state.acadEducation ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
-                                    </span>
-                                </button>{this.state.content['headerAcademicEducation'][languageIndex]}
-                            </h1>
-                        </div>
-                    </section>
-                    <Fade left collapse when={this.state.acadEducation}>
-                        <this.AcademicEducation languageIndex={languageIndex} />
-                    </Fade>
+                    {this.state.profExperience ? <this.ProfessionalExperience languageIndex={languageIndex} /> : <Fragment></Fragment>}
+                    {this.state.acadEducation ? <this.AcademicEducation languageIndex={languageIndex} /> : <Fragment></Fragment>}
+                    {this.state.courses ? <this.Courses languageIndex={languageIndex} /> : <Fragment></Fragment>}
+                    {this.state.langStack ? <this.LangStack languageIndex={languageIndex} /> : <Fragment></Fragment>}
+
                     
-                    <section className="hero is-bold is-info">
-                        <div className="hero-body">
-                          <h1 className="title is-2 has-text-centered">
-                                <button className="button is-outlined is-link" onClick={() => this.toggleSegment("courses")}>
-                                    <span className="icon">
-                                        <i className={this.state.courses ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
-                                    </span>
-                                </button>{this.state.content['headerCourses'][languageIndex]}
-                            </h1>
-                        </div>
-                    </section>
-                    <Fade left collapse when={this.state.courses}>
+                    {/* <Fade left when={this.state.profExperience}>
+                        <this.ProfessionalExperience languageIndex={languageIndex} />
+                    </Fade> */}
+                    
+                    {/* <Fade left when={this.state.acadEducation}>
+                        <this.AcademicEducation languageIndex={languageIndex} />
+                    </Fade> */}
+                    
+                    
+                    {/* <Fade left when={this.state.courses}>
                         <this.Courses languageIndex={languageIndex} />
-                    </Fade>
-                    <section className="hero is-bold is-info">
-                        <div className="hero-body">
-                          <h1 className="title is-2 has-text-centered">
-                          <button className="button is-outlined is-link" onClick={() => this.toggleSegment("langStack")}>
-                                <span className="icon">
-                                    <i className={this.state.langStack ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
-                                </span>
-                          </button>{this.state.content['headerLangStack'][languageIndex]}
-                          </h1>
-                        </div>
-                    </section>
-                    <Fade left collapse when={this.state.langStack}>
+                    </Fade> */}
+                    
+                    {/* <Fade left when={this.state.langStack}>
                         <this.LangStack languageIndex={languageIndex} />
-                    </Fade>
+                    </Fade> */}
                 </div>);
     }
 }
