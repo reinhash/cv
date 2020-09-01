@@ -697,6 +697,14 @@ class CvLong extends React.Component {
         let languageIndex = this.props.langGerman ? 0 : 1
         return (<div>
                     <this.TitleHeader phoneNumber={this.state.phoneNumber} currentLocation={this.state.currentLocation} languageIndex={languageIndex} />
+                    <div className="tabs is-centered is-boxed is-fullwidth">
+                        <ul>
+                            <li className="is-active"><a>{this.state.content['headerProfessionalExperience'][languageIndex]}</a></li>
+                            <li><a>{this.state.content['headerAcademicEducation'][languageIndex]}</a></li>
+                            <li><a>{this.state.content['headerCourses'][languageIndex]}</a></li>
+                            <li><a>{this.state.content['headerLangStack'][languageIndex]}</a></li>
+                        </ul>
+                    </div>
                     <section className="hero is-bold is-info">
                         <div className="hero-body">
                             <h1 className="title is-2 has-text-centered">
