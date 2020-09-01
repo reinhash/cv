@@ -40,3 +40,13 @@
 .progress::-webkit-progress-value {
   transition: width 0.5s ease;
 }
+
+@include mobile {
+  .tabs ul {
+    flex-direction: column;
+
+    li {
+      width: 100%;
+    }
+  }
+}

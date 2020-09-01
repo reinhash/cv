@@ -300,8 +300,8 @@ class CvLong extends React.Component {
                                             <div className="level">
                                                 <div className="level-left">
                                                     <div className="level-item">
-                                                        <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
-                                                            <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                        <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
+                                                            <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                         </figure> 
                                                         <p className="subtitle is-6">
                                                             {this.state.content['professionalExperience']['softwareDeveloper']['time'][props.languageIndex]}
@@ -344,8 +344,8 @@ class CvLong extends React.Component {
                                             <div className="level">
                                                 <div className="level-left">
                                                     <div className="level-item">
-                                                        <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
-                                                            <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                        <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
+                                                            <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                         </figure> 
                                                         <p className="subtitle is-6">
                                                         12/2018 - 10/2019
@@ -402,8 +402,8 @@ class CvLong extends React.Component {
                                             <div className="level">
                                                 <div className="level-left">
                                                     <div className="level-item">
-                                                        <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
-                                                            <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                        <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
+                                                            <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                         </figure> 
                                                         <p className="subtitle is-6">
                                                             06/2016 - 01/2018
@@ -445,8 +445,8 @@ class CvLong extends React.Component {
                                             <div className="level">
                                                 <div className="level-left">
                                                     <div className="level-item">
-                                                        <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
-                                                            <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                        <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
+                                                            <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                         </figure> 
                                                         <p className="subtitle is-6">
                                                             06/2015 - 05/2016
@@ -505,8 +505,8 @@ class CvLong extends React.Component {
                                             <div className="level">
                                                 <div className="level-left">
                                                     <div className="level-item">
-                                                        <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
-                                                            <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                        <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
+                                                            <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                         </figure> 
                                                         <p className="subtitle is-6">
                                                             {this.state.content['academicEducation']['master']['maastricht']['time']}
@@ -544,8 +544,8 @@ class CvLong extends React.Component {
                                             <div className="level">
                                                 <div className="level-left">
                                                     <div className="level-item">
-                                                        <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
-                                                            <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                        <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
+                                                            <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                         </figure>
                                                         <p className="subtitle is-6">
                                                             {this.state.content['academicEducation']['master']['vienna']['time']}
@@ -578,8 +578,8 @@ class CvLong extends React.Component {
                                             <div className="level">
                                                 <div className="level-left">
                                                     <div className="level-item">
-                                                        <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
-                                                            <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                        <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
+                                                            <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                         </figure>
                                                         <p className="subtitle is-6">
                                                             {this.state.content['academicEducation']['bachelor']['maastricht']['time']}
@@ -617,8 +617,8 @@ class CvLong extends React.Component {
                                             <div className="level">
                                                 <div className="level-left">
                                                     <div className="level-item">
-                                                        <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
-                                                            <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                        <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
+                                                            <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                         </figure> 
                                                         <p className="subtitle is-6">
                                                             {this.state.content['academicEducation']['bachelor']['whitworth']['time']}
@@ -672,8 +672,8 @@ class CvLong extends React.Component {
                                             <div className="level">
                                                 <div className="level-left">
                                                     <div className="level-item">
-                                                        <figure className="image is-32x32" style={{"margin-right":"0.5em"}}>
-                                                            <i class="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                        <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
+                                                            <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
                                                         </figure> 
                                                         <p className="subtitle is-6">
                                                             {this.state.content['courses']['bogotaBootCamp']['time']}
@@ -768,7 +768,7 @@ class CvLong extends React.Component {
                                 // style={this.state.profExperience ? this.state.styles['selected'] : this.state.styles['unSelected']}
                             >
                                 <a>
-                                    <span class="icon is-small"><i class="fas fa-briefcase" aria-hidden="true"></i></span>
+                                    <span className="icon is-small"><i className="fas fa-briefcase" aria-hidden="true"></i></span>
                                     <span>{this.state.content['headerProfessionalExperience'][languageIndex]}</span>
                                 </a>
                             </li>
@@ -776,7 +776,7 @@ class CvLong extends React.Component {
                                 className={this.state.acadEducation ? "is-active" : ""}
                             >
                                 <a>
-                                    <span class="icon is-small"><i class="fas fa-university" aria-hidden="true"></i></span>
+                                    <span className="icon is-small"><i className="fas fa-university" aria-hidden="true"></i></span>
                                     <span>{this.state.content['headerAcademicEducation'][languageIndex]}</span>
                                 </a>
                             </li>
@@ -784,7 +784,7 @@ class CvLong extends React.Component {
                                 className={this.state.courses ? "is-active" : ""}
                             >
                                 <a>
-                                    <span class="icon is-small"><i class="fas fa-scroll" aria-hidden="true"></i></span>
+                                    <span className="icon is-small"><i className="fas fa-scroll" aria-hidden="true"></i></span>
                                     <span>{this.state.content['headerCourses'][languageIndex]}</span>
                                 </a>
                             </li>
@@ -792,7 +792,7 @@ class CvLong extends React.Component {
                                 className={this.state.langStack ? "is-active" : ""}
                             >
                                 <a>
-                                    <span class="icon is-small"><i class="fas fa-cubes" aria-hidden="true"></i></span>
+                                    <span className="icon is-small"><i className="fas fa-cubes" aria-hidden="true"></i></span>
                                     <span>{this.state.content['headerLangStack'][languageIndex]}</span>
                                 </a>
                             </li>
