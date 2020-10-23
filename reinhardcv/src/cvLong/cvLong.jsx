@@ -24,11 +24,22 @@ class CvLong extends React.Component {
                 headerCourses: [ " Kurse",  " Courses"],
                 headerLangStack: [" Sprachen & Stack",  " Languages & Stack"],
                 professionalExperience: {
+                    jowo: {
+                        time: ["10/2020 - momentan", "10/2020 - currently"],
+                        workTitle: ["Software Developer"],
+                        companyName: ["Jonas und der Wolf GmbH"],
+                        location: ["Berlin, Deutschland", "Berlin, Germany"],
+                        header: ["Verantwortung und Aufgaben", "Responsibilities and Tasks"],
+                        description: ["Jonas und der Wolf entwickelt interaktive Websites, komplexe Applikationen and digitale Produkte", "Jonas und der Wolf develops interactive websites, complex applications and digital products"],
+                        tasks: [
+                            ["Django Backend Entwicklung", "Django Backend Development"]
+                        ],
+                    },
                     softwareDeveloper: {
                         title: ["Freelance Softwareentwickler", "Freelance Software Developer"],
-                        time: ["01/2020 - momentan", "01/2020 - currently"],
+                        time: ["01/2020 - 08/2020", "01/2020 - 08/2020"],
                         header: [" Projekte", " Projects"],
-                        projects: [": Full-Stack Entwicklung für ein Projekt der deutschen Handelskammer in Bogota. Wir entwickeln eine Plattform mit der Schulabgänger aus Lateinamerika sich für Studiengänge und Stipendien in Deutschland bewerben können. #NodeJS, #React, #MySQL, #AWS, #GIT",  ": Fullstack development for the german chamber of commerce in Bogota. We are building a platform that connects people from Latin America to german universities and scholarships. #NodeJS, #React, #MySQL, #AWS, #GIT"]
+                        projects: [": Full-Stack Entwicklung für ein Projekt der deutschen Handelskammer in Bogota. Entwicklung einer Plattform mit der Schulabgänger aus Lateinamerika sich für Studiengänge und Stipendien in Deutschland bewerben können. #NodeJS, #React, #MySQL, #AWS, #GIT",  ": Fullstack development for the german chamber of commerce in Bogota. Building a platform that connects people from Latin America to german universities and scholarships. #NodeJS, #React, #MySQL, #AWS, #GIT"]
                     },
                     synalis: {
                         description: ["synalis ist eine mittelständische Firma, die sich auf die Bereiche DMS / ECM, ERP, CRM, Collaboration, Microsoft Cloud und Cyber Security spezialisiert", "synalis is a mid-sized IT company from Germany that specializes in the areas of DMS / ECM, ERP, CRM, Collaboration, Microsoft Cloud and Cyber Security"],
@@ -165,6 +176,7 @@ class CvLong extends React.Component {
                             "React",
                             "NodeJS",
                             "Ruby on Rails",
+                            "Django",
                             "Git",
                         ],
 
@@ -295,6 +307,50 @@ class CvLong extends React.Component {
                                 <div className="container has-text-centered">
                                     <div className="columns">
                                         <div className="column is-5 is-narrow">
+                                            <h1 className="title is-3 has-text-left-tablet">Software Developer</h1>
+                                            <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.jonasundderwolf.de">Jonas und der Wolf GmbH</a></h5>
+                                            <h5 className="subtitle is-6 has-text-left-tablet">{this.state.content['professionalExperience']['jowo']['description'][props.languageIndex]}</h5>
+                                            <div className="level">
+                                                <div className="level-left">
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
+                                                            <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                            {this.state.content['professionalExperience']['jowo']['time'][props.languageIndex]}
+                                                        </p>
+                                                    </div>
+                                                    <div className="level-item">
+                                                        <figure className="image is-32x32">
+                                                            <img src={require("./location-pin-icon-13.jpg")} alt="location" />
+                                                        </figure> 
+                                                        <p className="subtitle is-6">
+                                                            {this.state.content['professionalExperience']['jowo']['location'][props.languageIndex]}
+                                                        </p>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                            
+                                        </div>
+                                        <div className="column is-offset-1 is-5 is-narrow">
+                                            <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['professionalExperience']['jowo']['header'][props.languageIndex]}</h5>
+                                            <div className="content">
+                                                <ul className="has-text-left">
+                                                    {this.state.content['professionalExperience']['jowo']['tasks'].map((item, index) => {
+                                                        return (<li>{item[props.languageIndex]}</li>)
+                                                    })}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section className="hero is-light is-bold">
+                            <div className="hero-body">
+                                <div className="container has-text-centered">
+                                    <div className="columns">
+                                        <div className="column is-5 is-narrow">
                                             <h1 className="title is-3 has-text-left-tablet">{this.state.content['professionalExperience']['softwareDeveloper']['title'][props.languageIndex]}</h1>
                                             <h5 className="subtitle is-6 has-text-left-tablet"></h5>
                                             <div className="level">
@@ -312,7 +368,7 @@ class CvLong extends React.Component {
                                                             <img src={require("./location-pin-icon-13.jpg")} alt="location" />
                                                         </figure> 
                                                         <p className="subtitle is-6">
-                                                        Remote
+                                                        Bogota
                                                         </p>
                                                     </div>
                                                 </div> 
