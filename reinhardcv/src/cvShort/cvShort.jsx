@@ -60,7 +60,7 @@ let data = {
     },
     jowo: {
       header: ["Oktober 2020", "October 2020"],
-      workTitle: ["Software Developer"],
+      workTitle: ["Softwareentwickler", "Software Developer"],
       companyName: ["Jonas und der Wolf GmbH"],
       location: ["Berlin, Deutschland", "Berlin, Germany"],
     },
@@ -234,7 +234,7 @@ function Timeline(props){
                       <div className="timeline-marker is-icon is-primary"></div>
                       <div className="timeline-content">
                         <p className="heading">{data['timeline']['jowo']['header'][languageIndex]}</p>
-                        <p><strong>{data['timeline']['jowo']['workTitle'][0]}</strong></p>
+                        <p><strong>{data['timeline']['jowo']['workTitle'][languageIndex]}</strong></p>
                         <p>{data['timeline']['jowo']['companyName']}</p>
                         <p>{data['timeline']['jowo']['location'][languageIndex]}</p>
                       </div>

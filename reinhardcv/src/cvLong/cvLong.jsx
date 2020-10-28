@@ -23,10 +23,10 @@ class CvLong extends React.Component {
                 headerAcademicEducation: [" Akademische Ausbildung",  " Academic education"],
                 headerCourses: [ " Kurse",  " Courses"],
                 headerLangStack: [" Sprachen & Stack",  " Languages & Stack"],
-                professionalExperience: {
-                    jowo: {
+                professionalExperience: [
+                    {
                         time: ["10/2020 - momentan", "10/2020 - currently"],
-                        workTitle: ["Software Developer"],
+                        title: ["Softwareentwickler", "Software Developer"],
                         companyName: ["Jonas und der Wolf GmbH"],
                         location: ["Berlin, Deutschland", "Berlin, Germany"],
                         header: ["Verantwortung und Aufgaben", "Responsibilities and Tasks"],
@@ -35,14 +35,27 @@ class CvLong extends React.Component {
                             ["Django Backend Entwicklung", "Django Backend Development"]
                         ],
                     },
-                    softwareDeveloper: {
+                    {
                         title: ["Freelance Softwareentwickler", "Freelance Software Developer"],
                         time: ["01/2020 - 08/2020", "01/2020 - 08/2020"],
+                        location: ["Bogotá, Kolumbien", "Bogotá, Colombia"],
                         header: [" Projekte", " Projects"],
-                        projects: [": Full-Stack Entwicklung für ein Projekt der deutschen Handelskammer in Bogota. Entwicklung einer Plattform mit der Schulabgänger aus Lateinamerika sich für Studiengänge und Stipendien in Deutschland bewerben können. #NodeJS, #React, #MySQL, #AWS, #GIT",  ": Fullstack development for the german chamber of commerce in Bogota. Building a platform that connects people from Latin America to german universities and scholarships. #NodeJS, #React, #MySQL, #AWS, #GIT"]
+                        projects: [
+                            {
+                                companyName: "Daxos",
+                                companyLink: "http://www.daxosline.com",
+                                description: [
+                                    "Full-Stack Entwicklung für ein Projekt der deutschen Handelskammer in Bogota. Entwicklung einer Plattform mit der Schulabgänger aus Lateinamerika sich für Studiengänge und Stipendien in Deutschland bewerben können. #NodeJS, #React, #MySQL, #AWS, #GIT",  
+                                    "Fullstack development for the german chamber of commerce in Bogota. Building a platform that connects people from Latin America to german universities and scholarships. #NodeJS, #React, #MySQL, #AWS, #GIT"
+                                ]
+                            },
+                        ],
                     },
-                    synalis: {
+                    {
                         description: ["synalis ist eine mittelständische Firma, die sich auf die Bereiche DMS / ECM, ERP, CRM, Collaboration, Microsoft Cloud und Cyber Security spezialisiert", "synalis is a mid-sized IT company from Germany that specializes in the areas of DMS / ECM, ERP, CRM, Collaboration, Microsoft Cloud and Cyber Security"],
+                        title: ["IT Consultant DMS/ECM", "IT Consultant DMS/ECM"],
+                        time: ["12/2018 - 10/2019"],
+                        companyName: ["synalis GmbH & Co. KG"],
                         location: ["Bonn, Deutschland", "Bonn, Germany"],
                         header: ["Verantwortung und Aufgaben", "Responsibilities and Tasks"],
                         tasks: [
@@ -52,13 +65,19 @@ class CvLong extends React.Component {
                             ["Durchführung von Workshops des Anforderungsmanagements, Einfügung neuer digitaler Prozesse und Systemintegration", "Led workshops to determine customer needs, align digital processes and optimize system integration"],
                         ],
                     },
-                    gapYear: {
+                    {
+                        title: ["Gap Year"],
                         description: ["2018 - Gap year", "2018 - Gap year"],
-                        tasks: ["Reisen, Volunteering, lernte Spanisch, Python-programmierung", "Travelled, volunteered, learned Spanish, wrote Python Code"],
+                        freeTime: [
+                            ["Reisen, Volunteering, lernte Spanisch, Python-programmierung", "Travelled, volunteered, learned Spanish, wrote Python Code"]
+                        ],
                     },
-                    solactive: {
+                    {
                         description: ["Solactive ist ein agiles, aggressiv expandierendes Fintech-Unternehmen spezialisiert auf Indexberechnung und passiv verwaltete Finanzprodukte", "Solactive is a fast paced, aggressively expansive Fintech company specialized in Index calculation and passively managed financial products"],
                         location: [ "Frankfurt, Deutschland", "Frankfurt, Germany"],
+                        companyName: ["Solactive AG"],
+                        title: ["Equity Index Analyst"],
+                        time: ["06/2016 - 12/2017"],
                         header: ["Verantwortung und Aufgaben", "Responsibilities and Tasks"],
                         tasks: [
                             ["IT-Projektmanagement, Testung und Freigabe von neuen Plattform-features für die Indexberechnung. Aufsetzung neuer Backend Kalkulationslogiken mit den Softwareentwicklern" ,"Managed IT projects, tested and released platform features for the index calculation. Set-up new back-end calculation logics with the developers"],
@@ -68,9 +87,11 @@ class CvLong extends React.Component {
                             ["Kontinuierliche Verbesserung der Prozesse zur Standardisierung in Verwendung von Python, VBA und SQL Databanken" , "Continuously improved processes to achieve standardization using Python, VBA and SQL Databases"],
                         ]
                     },
-                    bosch: {
+                    {
                         title: ["Qualitätsmanagement (Praktikum)", "Quality Management (Internship)"],
                         description: ["Bosch ist führender Zulieferer in der Automobilindustrie", "Bosch is a leader in the automotive supply industry and offers a vast variety of solutions"],
+                        companyName: ["Robert Bosch GmbH"],
+                        time: ["06/2015 - 05/2016"],
                         location: ["Brüssel, Belgien", "Brussels, Belgium"],
                         header: ["Verantwortung und Aufgaben", "Responsibilities and Tasks"],
                         tasks: [
@@ -78,39 +99,39 @@ class CvLong extends React.Component {
                             ["Erstellung und Optimierung von monatlichen Berichten unter Verwendung von Excel und VBA", "Created and optimized reports on a monthly basis by using Excel and VBA"],
                         ]
                     }
-                },
-                academicEducation: {
-                    master: {
-                        maastricht: {
-                            schoolName: ["Maastricht University, School of Business and Economics"],
+                ],
+                academicEducation: [
+                        {
+                            schoolName: ["Maastricht University, School of Business and Economics", "Maastricht University, School of Business and Economics"],
+                            schoolLink: "https://www.maastrichtuniversity.nl/",
                             time: ["09/2013 - 06/2015"],
                             location: ["Maastricht, Niederlande", "Maastricht, the Netherlands"],
-                            studyName: ["Master of Science: International Business - Strategy & Innovation"],
+                            studyName: ["Master of Science: International Business - Strategy & Innovation", "Master of Science: International Business - Strategy & Innovation"],
                             thesis: ["Die Masterarbeit untersuchte den Einfluss von Eigentümerstrukturen auf abnormale Marktleistungen die durch die Veräußerung von Unternehmensteilen entstehen", "Master thesis investigated the effect of ownership structures on divestiture abnormal market performance"],
                         },
-                        vienna: {
+                        {
                             schoolName: ["Wirtschaftsuniversität Wien", "Vienna University of Economics and Business"],
+                            schoolLink: "https://www.wu.ac.at/",
                             time: ["10/2014 - 02/2015"],
                             location: ["Wien, Österreich", "Vienna, Austria"],
                             studyName: ["Auslandssemester", "Study Abroad"],
-                        }
-                    },
-                    bachelor: {
-                        maastricht: {
-                            schoolName: ["Maastricht University, School of Business and Economics"],
+                        },
+                        {
+                            schoolName: ["Maastricht University, School of Business and Economics", "Maastricht University, School of Business and Economics"],
+                            schoolLink: "https://www.maastrichtuniversity.nl/",
                             time: ["09/2009 - 09/2013"],
                             location: ["Maastricht, Niederlande", "Maastricht, the Netherlands"],
-                            studyName: ["Bachelor of Science: International Business - Finance"],
+                            studyName: ["Bachelor of Science: International Business - Finance", "Bachelor of Science: International Business - Finance"],
                             thesis: ["Die Bachelorarbeit analysierte die anfängliche IPO-Performance und deren Zusammenhang mit der IPO-Preisfestsetzung", "Bachelor thesis analyzed initial IPO performance and its relation to IPO pricing"],
                         },
-                        whitworth: {
-                            schoolName: ["Whitworth University"],
+                        {
+                            schoolName: ["Whitworth University", "Whitworth University"],
+                            schoolLink: "https://www.whitworth.edu/",
                             time: ["02/2012 - 06/2012"],
-                            location: ["Spokane, USA"],
+                            location: ["Spokane, USA", "Spokane, USA"],
                             studyName: ["Auslandssemester", "Study Abroad"],
                         }
-                    }
-                },
+                ],
                 courses: {
                     bogotaBootCamp: {
                         courseName: ["Full-Stack Entwicklerkurs", "Full-stack developer course"],
@@ -194,7 +215,7 @@ class CvLong extends React.Component {
         update["acadEducation"] = false;
         update["langStack"] = false;
         update["courses"] = false;
-        update[segmentName] = !this.state[segmentName]
+        update[segmentName] = true;
         this.setState(update)
     }
 
@@ -288,251 +309,115 @@ class CvLong extends React.Component {
 
 
     ProfessionalExperience = (props) => {
+        let projectsFrame = (project) => {
+            return  <li>
+                        <a href={project["companyLink"]} target="_">{project["companyName"]}</a>: {project["description"][props.languageIndex]}
+                    </li>
+        }
+        let jobFrame = (job) => {
+            let contents = {};
+            ["description", "location", "tasks", "header", "time", "title", "companyName", "freeTime"].forEach((item, index) => {
+                job[item]
+                ? job[item].length > 1
+                    ? contents[item] = job[item][props.languageIndex]
+                    : contents[item] = job[item][0]
+                : contents[item] = ""
+            })
+            if(contents["title"] === "Gap Year"){
+                return (<section className="hero is-light is-bold">
+                            <div className="hero-body">
+                                <div className="container has-text-centered">
+                                    <div className="columns">
+                                        <div className="column is-5 is-narrow">
+                                            {contents['description']}
+                                        </div>
+                                        <div className="column  is-offset-1 is-5 is-narrow">
+                                            {contents['freeTime'][props.languageIndex]}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>)
+            }
+            else {
+                return (<section className="hero is-light is-bold">
+                            <div className="hero-body">
+                                <div className="container has-text-centered">
+                                    <div className="columns">
+                                        <div className="column is-5 is-narrow">
+                                            <h1 className="title is-3 has-text-left-tablet">{contents["title"]}</h1>
+                                            <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.jonasundderwolf.de">{contents["companyName"]}</a></h5>
+                                            <h5 className="subtitle is-6 has-text-left-tablet">{contents["description"]}</h5>
+                                            <div className="level">
+                                                <div className="level-left">
+                                                    <div className="level-item">
+                                                        {contents['time']
+                                                        ? <Fragment>
+                                                            <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
+                                                                <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                            </figure> 
+                                                            <p className="subtitle is-6">
+                                                                {contents['time']}
+                                                            </p>
+                                                        </Fragment>
+                                                        : ""
+                                                        }
+                                                    </div>
+                                                    <div className="level-item">
+                                                        {contents['location']
+                                                        ? <Fragment>
+                                                            <figure className="image is-32x32">
+                                                                <img src={require("./location-pin-icon-13.jpg")} alt="location" />
+                                                            </figure> 
+                                                            <p className="subtitle is-6">
+                                                                {contents['location']}
+                                                            </p>
+                                                            </Fragment>
+                                                        : ""
+                                                        }
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                            
+                                        </div>
+                                        <div className="column is-offset-1 is-5 is-narrow">
+                                            <h5 className="subtitle is-5 has-text-left-tablet">{contents['header']}</h5>
+                                            <div className="content">
+                                                <ul className="has-text-left">
+                                                    {
+                                                        job["projects"]
+                                                        ? job["projects"].map(projectsFrame)
+                                                        : <Fragment></Fragment>
+                                                    } 
+                                                    {
+                                                        job['tasks']
+                                                        ? job['tasks'].map((item, index) => {
+                                                            return (<li>{item[props.languageIndex]}</li>)
+                                                        })
+                                                        : <Fragment></Fragment>
+                                                    }
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>)
+
+            }
+             
+        }
+
         return (<Fragment>
                     <section className="hero is-bold has-background-info">
                         <div className="hero-body">
                             <h1 className="title is-2 has-text-centered has-text-white-ter">
-                                {/* <button className="button is-outlined is-link" onClick={() => this.toggleSegment("profExperience")}>
-                                    <span className="icon is-large">
-                                        <i className={this.state.profExperience ? this.state.eyeClassNames[1] : this.state.eyeClassNames[0]}></i>
-                                    </span>
-                                </button> */}
                                 {this.state.content['headerProfessionalExperience'][props.languageIndex]}
                             </h1>    
                         </div>
                     </section>
                     <div>
-                        <section className="hero is-light is-bold">
-                            <div className="hero-body">
-                                <div className="container has-text-centered">
-                                    <div className="columns">
-                                        <div className="column is-5 is-narrow">
-                                            <h1 className="title is-3 has-text-left-tablet">Software Developer</h1>
-                                            <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.jonasundderwolf.de">Jonas und der Wolf GmbH</a></h5>
-                                            <h5 className="subtitle is-6 has-text-left-tablet">{this.state.content['professionalExperience']['jowo']['description'][props.languageIndex]}</h5>
-                                            <div className="level">
-                                                <div className="level-left">
-                                                    <div className="level-item">
-                                                        <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
-                                                            <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
-                                                        </figure> 
-                                                        <p className="subtitle is-6">
-                                                            {this.state.content['professionalExperience']['jowo']['time'][props.languageIndex]}
-                                                        </p>
-                                                    </div>
-                                                    <div className="level-item">
-                                                        <figure className="image is-32x32">
-                                                            <img src={require("./location-pin-icon-13.jpg")} alt="location" />
-                                                        </figure> 
-                                                        <p className="subtitle is-6">
-                                                            {this.state.content['professionalExperience']['jowo']['location'][props.languageIndex]}
-                                                        </p>
-                                                    </div>
-                                                </div> 
-                                            </div>
-                                            
-                                        </div>
-                                        <div className="column is-offset-1 is-5 is-narrow">
-                                            <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['professionalExperience']['jowo']['header'][props.languageIndex]}</h5>
-                                            <div className="content">
-                                                <ul className="has-text-left">
-                                                    {this.state.content['professionalExperience']['jowo']['tasks'].map((item, index) => {
-                                                        return (<li>{item[props.languageIndex]}</li>)
-                                                    })}
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section className="hero is-light is-bold">
-                            <div className="hero-body">
-                                <div className="container has-text-centered">
-                                    <div className="columns">
-                                        <div className="column is-5 is-narrow">
-                                            <h1 className="title is-3 has-text-left-tablet">{this.state.content['professionalExperience']['softwareDeveloper']['title'][props.languageIndex]}</h1>
-                                            <h5 className="subtitle is-6 has-text-left-tablet"></h5>
-                                            <div className="level">
-                                                <div className="level-left">
-                                                    <div className="level-item">
-                                                        <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
-                                                            <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
-                                                        </figure> 
-                                                        <p className="subtitle is-6">
-                                                            {this.state.content['professionalExperience']['softwareDeveloper']['time'][props.languageIndex]}
-                                                        </p>
-                                                    </div>
-                                                    <div className="level-item">
-                                                        <figure className="image is-32x32">
-                                                            <img src={require("./location-pin-icon-13.jpg")} alt="location" />
-                                                        </figure> 
-                                                        <p className="subtitle is-6">
-                                                        Bogota
-                                                        </p>
-                                                    </div>
-                                                </div> 
-                                            </div>
-                                            
-                                        </div>
-                                        <div className="column is-offset-1 is-5 is-narrow">
-                                            <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['professionalExperience']['softwareDeveloper']['header'][props.languageIndex]}</h5>
-                                            <div className="content">
-                                                <ul className="has-text-left">
-                                                    <li><u><a href="http://www.daxosline.com">Daxos</a></u>
-                                                        {this.state.content['professionalExperience']['softwareDeveloper']['projects'][props.languageIndex]}
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section className="hero is-light is-bold">
-                            <div className="hero-body">
-                                <div className="container has-text-centered">
-                                    <div className="columns">
-                                        <div className="column is-5 is-narrow">
-                                            <h1 className="title is-3 has-text-left-tablet">IT Consultant DMS/ECM</h1>
-                                            <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.synalis.de">synalis GmbH & Co. KG</a></h5>
-                                            <h5 className="subtitle is-6 has-text-left-tablet">{this.state.content['professionalExperience']['synalis']['description'][props.languageIndex]}</h5>
-                                            <div className="level">
-                                                <div className="level-left">
-                                                    <div className="level-item">
-                                                        <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
-                                                            <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
-                                                        </figure> 
-                                                        <p className="subtitle is-6">
-                                                        12/2018 - 10/2019
-                                                        </p>
-                                                    </div>
-                                                    <div className="level-item">
-                                                        <figure className="image is-32x32">
-                                                            <img src={require("./location-pin-icon-13.jpg")} alt="location" />
-                                                        </figure> 
-                                                        <p className="subtitle is-6">
-                                                            {this.state.content['professionalExperience']['synalis']['location'][props.languageIndex]}
-                                                        </p>
-                                                    </div>
-                                                </div> 
-                                            </div>
-                                            
-                                        </div>
-                                        <div className="column is-offset-1 is-5 is-narrow">
-                                            <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['professionalExperience']['synalis']['header'][props.languageIndex]}</h5>
-                                            <div className="content">
-                                                <ul className="has-text-left">
-                                                    {this.state.content['professionalExperience']['synalis']['tasks'].map((item, index) => {
-                                                        return (<li>{item[props.languageIndex]}</li>)
-                                                    })}
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section className="hero is-light is-bold">
-                            <div className="hero-body">
-                                <div className="container has-text-centered">
-                                    <div className="columns">
-                                        <div className="column is-5 is-narrow">
-                                            {this.state.content['professionalExperience']['gapYear']['description'][props.languageIndex]}
-                                        </div>
-                                        <div className="column  is-offset-1 is-5 is-narrow">
-                                            {this.state.content['professionalExperience']['gapYear']['tasks'][props.languageIndex]}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section className="hero is-light is-bold">
-                            <div className="hero-body">
-                                <div className="container has-text-centered">
-                                    <div className="columns">
-                                        <div className="column is-5 is-narrow">
-                                            <h1 className="title is-3 has-text-left-tablet">Equity Index Analyst</h1>
-                                            <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.solactive.com">Solactive AG</a></h5>
-                                            <h5 className="subtitle is-6 has-text-left-tablet">{this.state.content['professionalExperience']['solactive']['description'][props.languageIndex]}</h5>
-                                            <div className="level">
-                                                <div className="level-left">
-                                                    <div className="level-item">
-                                                        <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
-                                                            <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
-                                                        </figure> 
-                                                        <p className="subtitle is-6">
-                                                            06/2016 - 01/2018
-                                                        </p>
-                                                    </div>
-                                                    <div className="level-item">
-                                                        <figure className="image is-32x32">
-                                                            <img src={require("./location-pin-icon-13.jpg")} alt="location" />
-                                                        </figure> 
-                                                        <p className="subtitle is-6">
-                                                            {this.state.content['professionalExperience']['solactive']['location'][props.languageIndex]}
-                                                        </p>
-                                                    </div>
-                                                </div> 
-                                            </div>
-                                        </div>
-                                        <div className="column  is-offset-1 is-5 is-narrow">
-                                            <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['professionalExperience']['solactive']['header'][props.languageIndex]}</h5>
-                                            <div className="content">
-                                                <ul className="has-text-left">
-                                                    {this.state.content['professionalExperience']['solactive']['tasks'].map((item, index) => {
-                                                        return (<li>{item[props.languageIndex]}</li>)
-                                                    })}
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section className="hero is-light is-bold">
-                            <div className="hero-body">
-                                <div className="container has-text-centered">
-                                    <div className="columns">
-                                        <div className="column is-5 is-narrow">
-                                            <h1 className="title is-3 has-text-left-tablet">{this.state.content['professionalExperience']['bosch']['title'][props.languageIndex]}</h1>
-                                            <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.solactive.com">Robert Bosch GmbH</a></h5>
-                                            <h5 className="subtitle is-6 has-text-left-tablet">{this.state.content['professionalExperience']['bosch']['description'][props.languageIndex]}</h5>
-                                            <div className="level">
-                                                <div className="level-left">
-                                                    <div className="level-item">
-                                                        <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
-                                                            <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
-                                                        </figure> 
-                                                        <p className="subtitle is-6">
-                                                            06/2015 - 05/2016
-                                                        </p>
-                                                    </div>
-                                                    <div className="level-item">
-                                                        <figure className="image is-32x32">
-                                                            <img src={require("./location-pin-icon-13.jpg")} alt="location" />
-                                                        </figure> 
-                                                        <p className="subtitle is-6">
-                                                            {this.state.content['professionalExperience']['bosch']['location'][props.languageIndex]}
-                                                        </p>
-                                                    </div>
-                                                </div>   
-                                            </div>
-                                        </div>
-                                        <div className="column  is-offset-1 is-5 is-narrow">
-                                            <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['professionalExperience']['bosch']['header'][props.languageIndex]}</h5>
-                                            <div className="content">
-                                                <ul className="has-text-left">
-                                                    {this.state.content['professionalExperience']['bosch']['tasks'].map((item, index) => {
-                                                        return (<li>{item[props.languageIndex]}</li>)
-                                                    })}
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+                        {this.state.content.professionalExperience.map(jobFrame)}
                     </div>
                 </Fragment>)
     }
@@ -552,152 +437,50 @@ class CvLong extends React.Component {
                         </div>
                     </section>
                     <div>
-                        <section className="hero is-light is-bold">
-                            <div className="hero-body">
-                                <div className="container has-text-centered">
-                                    <div className="columns">
-                                        <div className="column is-5 is-narrow">
-                                            <h1 className="title is-3 has-text-left-tablet"><a href="//www.maastrichtuniversity.nl/">{this.state.content['academicEducation']['master']['maastricht']['schoolName']}</a></h1>
-                                            <div className="level">
-                                                <div className="level-left">
-                                                    <div className="level-item">
-                                                        <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
-                                                            <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
-                                                        </figure> 
-                                                        <p className="subtitle is-6">
-                                                            {this.state.content['academicEducation']['master']['maastricht']['time']}
-                                                        </p>
+                        {this.state.content.academicEducation.map(school => {
+                            return <section className="hero is-light is-bold">
+                                        <div className="hero-body">
+                                            <div className="container has-text-centered">
+                                                <div className="columns">
+                                                    <div className="column is-5 is-narrow">
+                                                        <h1 className="title is-3 has-text-left-tablet"><a href={school['schoolLink']}>{school['schoolName'][props.languageIndex]}</a></h1>
+                                                        <div className="level">
+                                                            <div className="level-left">
+                                                                <div className="level-item">
+                                                                    <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
+                                                                        <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
+                                                                    </figure> 
+                                                                    <p className="subtitle is-6">
+                                                                        {school['time']}
+                                                                    </p>
+                                                                </div>
+                                                                <div className="level-item">
+                                                                    <figure className="image is-32x32">
+                                                                        <img src={require("./location-pin-icon-13.jpg")} alt="location" />
+                                                                    </figure> 
+                                                                    <p className="subtitle is-6">
+                                                                        {school['location'][props.languageIndex]}
+                                                                    </p>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
                                                     </div>
-                                                    <div className="level-item">
-                                                        <figure className="image is-32x32">
-                                                            <img src={require("./location-pin-icon-13.jpg")} alt="location" />
-                                                        </figure> 
-                                                        <p className="subtitle is-6">
-                                                            {this.state.content['academicEducation']['master']['maastricht']['location'][props.languageIndex]}
-                                                        </p>
-                                                    </div>
-                                                </div> 
-                                            </div>
-                                        </div>
-                                        <div className="column is-offset-1 is-5 is-narrow">
-                                            <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['academicEducation']['master']['maastricht']['studyName']}</h5>
-                                            <div className="content">
-                                                <ul className="has-text-left">
-                                                    <li>{this.state.content['academicEducation']['master']['maastricht']['thesis'][props.languageIndex]}</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section className="hero is-light is-bold">
-                            <div className="hero-body">
-                                <div className="container has-text-centered">
-                                    <div className="columns">
-                                        <div className="column is-5 is-narrow">
-                                            <h1 className="title is-3 has-text-left-tablet"><a href="//www.wu.ac.at/">{this.state.content['academicEducation']['master']['vienna']['schoolName'][props.languageIndex]}</a></h1>
-                                            <div className="level">
-                                                <div className="level-left">
-                                                    <div className="level-item">
-                                                        <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
-                                                            <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
-                                                        </figure>
-                                                        <p className="subtitle is-6">
-                                                            {this.state.content['academicEducation']['master']['vienna']['time']}
-                                                        </p> 
-                                                    </div>
-                                                    <div className="level-item">
-                                                        <figure className="image is-32x32">
-                                                            <img src={require("./location-pin-icon-13.jpg")} alt="location" />
-                                                        </figure> 
-                                                        <p className="subtitle is-6">
-                                                            {this.state.content['academicEducation']['master']['vienna']['location'][props.languageIndex]}
-                                                        </p>
+                                                    <div className="column is-offset-1 is-5 is-narrow">
+                                                        <h5 className="subtitle is-5 has-text-left-tablet">{school['studyName'][props.languageIndex]}</h5>
+                                                        {school['thesis'] 
+                                                        ? <div className="content">
+                                                            <ul className="has-text-left">
+                                                                <li>{school['thesis'][props.languageIndex]}</li>
+                                                            </ul>
+                                                          </div>
+                                                        : <Fragment></Fragment>
+                                                        }
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="column  is-offset-1 is-5 is-narrow">
-                                            <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['academicEducation']['master']['vienna']['studyName'][props.languageIndex]}</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section className="hero is-light is-bold">
-                            <div className="hero-body">
-                                <div className="container has-text-centered">
-                                    <div className="columns">
-                                        <div className="column is-5 is-narrow">
-                                            <h1 className="title is-3 has-text-left-tablet"><a href="//www.maastrichtuniversity.nl/">{this.state.content['academicEducation']['bachelor']['maastricht']['schoolName']}</a></h1>
-                                            <div className="level">
-                                                <div className="level-left">
-                                                    <div className="level-item">
-                                                        <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
-                                                            <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
-                                                        </figure>
-                                                        <p className="subtitle is-6">
-                                                            {this.state.content['academicEducation']['bachelor']['maastricht']['time']}
-                                                        </p>
-                                                    </div>
-                                                    <div className="level-item">
-                                                        <figure className="image is-32x32">
-                                                            <img src={require("./location-pin-icon-13.jpg")} alt="location" />
-                                                        </figure> 
-                                                        <p className="subtitle is-6">
-                                                            {this.state.content['academicEducation']['bachelor']['maastricht']['location'][props.languageIndex]}
-                                                        </p>
-                                                    </div>
-                                                </div>  
-                                            </div>
-                                        </div>
-                                        <div className="column  is-offset-1 is-5 is-narrow">
-                                            <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['academicEducation']['bachelor']['maastricht']['studyName']}</h5>
-                                            <div className="content">
-                                                <ul className="has-text-left">
-                                                    <li>{this.state.content['academicEducation']['bachelor']['maastricht']['thesis'][props.languageIndex]}</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section className="hero is-light is-bold">
-                            <div className="hero-body">
-                                <div className="container has-text-centered">
-                                    <div className="columns">
-                                        <div className="column is-5 is-narrow">
-                                            <h1 className="title is-3 has-text-left-tablet"><a href="//www.whitworth.edu/">{this.state.content['academicEducation']['bachelor']['whitworth']['schoolName']}</a></h1>
-                                            <div className="level">
-                                                <div className="level-left">
-                                                    <div className="level-item">
-                                                        <figure className="image is-32x32" style={{"marginRight":"0.5em"}}>
-                                                            <i className="far fa-calendar-alt fa-2x" style={{color:"#3298dc"}} alt="calender"></i>
-                                                        </figure> 
-                                                        <p className="subtitle is-6">
-                                                            {this.state.content['academicEducation']['bachelor']['whitworth']['time']}
-                                                        </p>
-                                                    </div>
-                                                    <div className="level-item">
-                                                        <figure className="image is-32x32">
-                                                            <img src={require("./location-pin-icon-13.jpg")} alt="location" />
-                                                        </figure> 
-                                                        <p className="subtitle is-6">
-                                                        {this.state.content['academicEducation']['bachelor']['whitworth']['location']}
-                                                        </p>
-                                                    </div>
-                                                </div>   
-                                            </div>
-                                        </div>
-                                        <div className="column  is-offset-1 is-5 is-narrow">
-                                            <h5 className="subtitle is-5 has-text-left-tablet">{this.state.content['academicEducation']['bachelor']['whitworth']['studyName'][props.languageIndex]}</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+                                    </section>
+                        })}
                     </div>
                 </Fragment>)
     }
@@ -723,7 +506,7 @@ class CvLong extends React.Component {
                                     <div className="columns">
                                         <div className="column is-5 is-narrow">
                                             <h1 className="title is-3 has-text-left-tablet">{this.state.content['courses']['bogotaBootCamp']['courseName'][props.languageIndex]}</h1>
-                                            <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.bogotabootcamp.com">{this.state.content['courses']['bogotaBootCamp']['courseProviderName'][props.languageIndex]}</a></h5>
+                                            <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.bogotabootcamp.com">{this.state.content['courses']['bogotaBootCamp']['courseProviderName'][0]}</a></h5>
                                             <h5 className="subtitle is-6 has-text-left-tablet">{this.state.content['courses']['bogotaBootCamp']['description'][props.languageIndex]}</h5>
                                             <div className="level">
                                                 <div className="level-left">
