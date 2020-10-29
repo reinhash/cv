@@ -28,6 +28,7 @@ class CvLong extends React.Component {
                         time: ["10/2020 - momentan", "10/2020 - currently"],
                         title: ["Softwareentwickler", "Software Developer"],
                         companyName: ["Jonas und der Wolf GmbH"],
+                        companyLink: "https://www.jonasundderwolf.de",
                         location: ["Berlin, Deutschland", "Berlin, Germany"],
                         header: ["Verantwortung und Aufgaben", "Responsibilities and Tasks"],
                         description: ["Jonas und der Wolf entwickelt interaktive Websites, komplexe Applikationen and digitale Produkte", "Jonas und der Wolf develops interactive websites, complex applications and digital products"],
@@ -56,6 +57,7 @@ class CvLong extends React.Component {
                         title: ["IT Consultant DMS/ECM", "IT Consultant DMS/ECM"],
                         time: ["12/2018 - 10/2019"],
                         companyName: ["synalis GmbH & Co. KG"],
+                        companyLink: "https://www.synalis.de",
                         location: ["Bonn, Deutschland", "Bonn, Germany"],
                         header: ["Verantwortung und Aufgaben", "Responsibilities and Tasks"],
                         tasks: [
@@ -76,6 +78,7 @@ class CvLong extends React.Component {
                         description: ["Solactive ist ein agiles, aggressiv expandierendes Fintech-Unternehmen spezialisiert auf Indexberechnung und passiv verwaltete Finanzprodukte", "Solactive is a fast paced, aggressively expansive Fintech company specialized in Index calculation and passively managed financial products"],
                         location: [ "Frankfurt, Deutschland", "Frankfurt, Germany"],
                         companyName: ["Solactive AG"],
+                        companyLink: "https://www.solactive.com",
                         title: ["Equity Index Analyst"],
                         time: ["06/2016 - 12/2017"],
                         header: ["Verantwortung und Aufgaben", "Responsibilities and Tasks"],
@@ -91,6 +94,7 @@ class CvLong extends React.Component {
                         title: ["Qualitätsmanagement (Praktikum)", "Quality Management (Internship)"],
                         description: ["Bosch ist führender Zulieferer in der Automobilindustrie", "Bosch is a leader in the automotive supply industry and offers a vast variety of solutions"],
                         companyName: ["Robert Bosch GmbH"],
+                        companyLink: "https://www.bosch.de",
                         time: ["06/2015 - 05/2016"],
                         location: ["Brüssel, Belgien", "Brussels, Belgium"],
                         header: ["Verantwortung und Aufgaben", "Responsibilities and Tasks"],
@@ -346,7 +350,7 @@ class CvLong extends React.Component {
                                     <div className="columns">
                                         <div className="column is-5 is-narrow">
                                             <h1 className="title is-3 has-text-left-tablet">{contents["title"]}</h1>
-                                            <h5 className="subtitle is-5 has-text-left-tablet"><a href="//www.jonasundderwolf.de">{contents["companyName"]}</a></h5>
+                                            <h5 className="subtitle is-5 has-text-left-tablet"><a href={job["companyLink"]}>{contents["companyName"]}</a></h5>
                                             <h5 className="subtitle is-6 has-text-left-tablet">{contents["description"]}</h5>
                                             <div className="level">
                                                 <div className="level-left">
