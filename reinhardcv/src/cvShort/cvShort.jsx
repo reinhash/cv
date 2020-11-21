@@ -15,7 +15,7 @@ let data = {
     bachelorWhitworth: {
       header: ["Januar 2012", "January 2012"],
       study: [ "Auslandssemester", "Study Abroad"],
-      schoolName: ["Whitworth University"],
+      schoolName: ["Whitworth University", "Whitworth University"],
       location: ["Spokane, USA"],
     },
     masterMaastricht: {
