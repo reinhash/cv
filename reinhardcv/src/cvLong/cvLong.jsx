@@ -15,7 +15,7 @@ class CvLong extends React.Component {
             acadEducation: false,
             langStack: false,
             courses: false,
-            phoneNumber: "+4915158359427‬",
+            phoneNumber: "+4917641108336‬",
             eyeClassNames: ["fas fa-eye", "fas fa-eye-slash"],
             content: {
                 location: ["Berlin, Deutschland", "Berlin, Germany"],

@@ -59,6 +59,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/helper-regex": "^7.10.5",
     "@creativebulma/bulma-collapsible": "^1.0.4"
   }
 }
